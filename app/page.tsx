@@ -217,6 +217,23 @@ export default function HomePage() {
             <div>
               <h4 className="text-xl font-bold mb-4">{t('handsOnTechnicalHeading')}</h4>
               <div className="grid grid-cols-1 gap-6">
+                <Link href="https://github.com/thongtr-dev" target="_blank" rel="noopener noreferrer" className="group block rounded border border-gray-200 dark:border-gray-700 bg-background-light dark:bg-background-dark hover:border-primary transition overflow-hidden">
+                  <div className="aspect-w-16 aspect-h-9 relative overflow-hidden rounded-t border-b border-gray-200 dark:border-gray-700">
+                    <div className="absolute top-2 right-2 z-20 bg-black/80 text-white text-[10px] font-mono px-2 py-1 rounded">AIO Research</div>
+                    <Image
+                      src="https://images.unsplash.com/photo-1544256718-3bcf237f3974?w=800"
+                      alt="Similarity Matching for Images and Texts"
+                      width={600}
+                      height={400}
+                      className="object-cover w-full h-full transform group-hover:scale-105 transition duration-700 filter grayscale group-hover:grayscale-0"
+                    />
+                  </div>
+                  <div className="p-4">
+                    <h5 className="font-display font-bold text-lg">Similarity Matching (CLIP & PyTorch)</h5>
+                    <p className="text-sm text-gray-600 dark:text-gray-400 mt-2 line-clamp-2">{t('projectSimilarityDescription')}</p>
+                  </div>
+                </Link>
+
                 <Link href="https://github.com/23210287thongtruong/customer360-risk" target="_blank" rel="noopener noreferrer" className="group block rounded border border-gray-200 dark:border-gray-700 bg-background-light dark:bg-background-dark hover:border-primary transition overflow-hidden">
                   <div className="aspect-w-16 aspect-h-9 relative overflow-hidden rounded-t border-b border-gray-200 dark:border-gray-700">
                     <div className="absolute top-2 right-2 z-20 bg-black/80 text-white text-[10px] font-mono px-2 py-1 rounded">University</div>

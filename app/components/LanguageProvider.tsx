@@ -60,16 +60,16 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
     // Hero Section (project/product/bridge-focused)
     founderEngineer: { en: 'AI Engineer', ja: 'AIエンジニア' },
     building: { en: 'Building', ja: '構築' },
-    dataDriven: { en: 'Production RAG', ja: '本番用RAGシステム' },
+    dataDriven: { en: 'Production AI/ML', ja: '本番用AI/MLシステム' },
     solutionsAt: { en: 'and Scalable AI', ja: 'およびスケーラブルAI' },
     scale: { en: 'Solutions', ja: 'ソリューション' },
     heroBio: {
-      en: "AI Engineer and Co-Founder with hands-on experience designing and scaling production-grade RAG systems and LLM pipelines from MVP to scale. Specialized in Python, FastAPI, LlamaIndex, pgvector, and distributed background processing. Experienced in architecting robust scraping architectures (Crawl4AI), integrating advanced LLMs (GPT-5-mini), optimizing database indexing, and leading technical delivery in agile startup environments. Bilingual (Japanese/English) developer with dual degrees in IT and Japanese Studies.",
-      ja: 'AIエンジニア兼共同創業者として、本番環境向けのRAGシステムやLLMパイプラインをゼロから設計・スケールした実務経験を持ちます。Python、FastAPI、LlamaIndex、pgvector、分散バックグラウンド処理のスペシャリスト。Crawl4AIを活用した堅牢なスクレイピングアーキテクチャの構築、GPT-5-miniなどの先進的なLLMの統合、データベースインデックスの最適化に精通。ITと日本研究の二つの学士号を持つバイリンガル（日本語/英語）開発者。'
+      en: "AI Engineer and Co-Founder with hands-on experience designing and scaling production-grade AI/ML applications, data pipelines, and LLM systems. Specializing in Python, FastAPI, PyTorch, LlamaIndex, pgvector, and distributed background processing. Active student in the All-In-One (AIO) AI program, building a strong foundation in machine learning, deep learning, computer vision, and NLP algorithms. Bilingual (Japanese/English) developer with dual degrees in IT and Japanese Studies.",
+      ja: 'AIエンジニア兼共同創業者として、本番環境向けのAI/MLアプリケーション、データパイプライン、LLMシステムの設計・スケールに実務経験を持ちます。Python、FastAPI、PyTorch、LlamaIndex、pgvector、分散バックグラウンド処理のスペシャリスト。All-In-One (AIO) AIプログラムで学び、機械学習、ディープラーニング、コンピュータビジョン/自然言語処理アルゴリズムの強固な基礎を築いています。'
     },
     viewProjects: { en: 'View_Projects', ja: 'プロジェクトを見る' },
     downloadCV: { en: 'Download CV', ja: '履歴書ダウンロード' },
-    dataEngineering: { en: 'RAG & LLM Integration', ja: 'RAG & LLM統合' },
+    dataEngineering: { en: 'AI/ML & Data Engineering', ja: 'AI/ML & データエンジニアリング' },
     aiMlIntegration: { en: 'Data Ingestion & Scraping', ja: 'データ収集 & スクレイピング' },
     fullStack: { en: 'Full-Stack Backend', ja: 'フルスタック・バックエンド' },
 
@@ -140,11 +140,11 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
     },
     professionalGrowthContent2: {
       en: "At Nexus Tech Global, as Co-Founder and Lead AI Engineer, I designed and built SiteBotic's core technical architecture. I architected our vector search RAG pipeline using pgvector and LlamaIndex, and built the scraping service using Crawl4AI to replace Playwright, resolving Playwright container OOM crashes and adding support for SPAs. I integrated OpenAI's GPT-5-mini, managing 400k context validations and custom model routing. To eliminate thread-safety bottlenecks in Dramatiq background task workers, I refactored the task processing engine to use a single persistent AsyncIO event loop. I also migrated user cookie security to session-only storage to prevent cross-session chat retention, and upgraded the entire frontend to React 19.2.7 and Vercel AI SDK v7.0.0.",
-      ja: "Nexus Tech Globalでは、共同創業者兼リードAIエンジニアとして、SiteBoticの主要な技術設計と開発を担当しました。pgvectorとLlamaIndexを用いたベクトル検索RAGパイプラインの設計、およびPlaywrightからCrawl4AIスクレイピングシステムへの移行を主導し、コンテナのOOMクラッシュ回避とSPA対応を実現。400kコンテキストウィンドウを持つGPT-5-miniの統合（カスタムルーティング等の実装）に加え、Dramatiq非同期タスク処理時のスレッドセーフに関するボトルネックを解消するため単一持続的AsyncIOイベントループ化を実装しました。さらに、クロスセッションの会話漏洩を防ぐためセッション専用クッキー管理へ移行し、フロントエンド全体をReact 19.2.7およびVercel AI SDK v7.0.0へアップグレードしました。"
+      ja: "Nexus Tech Globalでは、共同創業者兼リードAIエンジニアとして、SiteBoticの主要な技術設計と開発を担当しました。pgvector and LlamaIndexを用いたベクトル検索RAGパイプラインの設計、およびPlaywrightからCrawl4AIスクレイピングシステムへの移行を主導し、コンテナのOOMクラッシュ回避とSPA対応を実現。400kコンテキストウィンドウを持つGPT-5-miniの統合（カスタムルーティング等の実装）に加え、Dramatiq非同期タスク処理時のスレッドセーフに関するボトルネックを解消するため単一持続的AsyncIOイベントループ化を実装しました。さらに、クロスセッションの会話漏洩を防ぐためセッション専用クッキー管理へ移行し、フロントエンド全体をReact 19.2.7およびVercel AI SDK v7.0.0へアップグレードしました。"
     },
     professionalGrowthContent3: {
-      en: "My passion for AI Engineering grew out of building SiteBotic. Designing the system from scratch taught me how to tackle complex technical challenges—from optimizing vector retrieval speeds and managing RAG pipeline token consumption to scaling background crawling workers. I realized that my strengths lie in translating complex AI research concepts into reliable, production-ready backend systems and data pipelines. Moving forward, I want to deepen my expertise in large-scale LLM application development, multi-agent systems, and specialized data crawling infrastructures.",
-      ja: "AIエンジニアリングへの私の情熱は、SiteBoticの構築を通じて育まれました。システムをゼロから設計することで、ベクトル検索の高速化やRAGパイプラインのトークン消費量管理、バックグラウンドクローラーのスケールなど、複雑な技術的課題を解決する面白さを知りました。私の強みは、AIの概念を信頼性の高い本番用バックエンドシステムやデータパイプラインへと落とし込むことにあります。今後は、大規模なLLMアプリケーション開発、マルチエージェントシステム、データ収集インフラの専門性をさらに深めていたいと考えています。"
+      en: "My passion for AI/ML Engineering grew out of building SiteBotic and is further driven by my current academic focus in the AIO 2026 AI Program. Designing systems from scratch and studying advanced AI curricula have taught me how to tackle complex technical challenges—from optimizing vector retrieval speeds to training predictive ML/DL models. I realize that my strengths lie in translating complex mathematical and AI research concepts into reliable, production-ready backend systems and data pipelines. Moving forward, I want to deepen my expertise in deep learning, computer vision, NLP, and multi-agent systems.",
+      ja: "AI/MLエンジニアリングへの私の情熱は、SiteBoticの構築を通じて育まれ、さらにAIO 2026 AIプログラムでの現在の学術的焦点によって後押しされています。システムをゼロから設計し、高度なAIカリキュラムを研究することで、ベクトル検索の高速化から予測ML/DLモデルのトレーニングまで、複雑な技術的課題を解決する面白さを知りました。私の強みは、複雑な数学やAIの概念を信頼性の高い本番用バックエンドシステムやデータパイプラインへと落とし込むことにあります。今後は、ディープラーニング、コンピュータビジョン、自然言語処理、マルチエージェントシステムの専門性をさらに深めたいと考えています。"
     },
 
     // Future Goals Section
@@ -158,8 +158,8 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
       ja: 'UITでの情報技術の学位取得は、コンピュータサイエンスの厳格な基礎を提供し、実践的なソフトウェア開発経験を補完します。情報技術と日本語学の二つの学位を組み合わせることで、バイリンガルなAI開発者として、開発チームと日本の関係者の双方に対して技術的な詳細を明確に伝えることができます。'
     },
     futureGoalsContent3: {
-      en: 'I aim to secure a full-time role as an AI Engineer or Full-Stack Backend Developer where I can design, build, and optimize RAG systems, LLM-based agents, and high-performance backend platforms. I am highly interested in contributing to technical projects that require collaboration between bilingual engineering teams.',
-      ja: 'AIエンジニアまたはフルスタック・バックエンド開発者としてフルタイムの役割を獲得し、RAGシステム、LLMベースのエージェント、高性能バックエンドプラットフォームの設計・構築・最適化に貢献することを目指しています。バイリンガルな開発チーム間でのコラボレーションを必要とする技術プロジェクトへの貢献に強い意欲を持っています。'
+      en: 'I aim to secure a full-time role as an AI/ML Engineer or Full-Stack Backend Developer where I can design, build, and optimize machine learning models, computer vision/NLP pipelines, and high-performance backend platforms. I am highly interested in contributing to technical projects that require collaboration between bilingual engineering teams.',
+      ja: 'AI/MLエンジニアまたはフルスタック・バックエンド開発者としてフルタイムの役割を獲得し、機械学習モデル、コンピュータビジョン/自然言語処理パイプライン、高性能バックエンドプラットフォームの設計・構築・最適化に貢献することを目指しています。バイリンガルな開発チーム間でのコラボレーションを必要とする技術プロジェクトへの貢献に強い意欲を持っています。'
     },
 
     // Call to Action
@@ -292,6 +292,21 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
     tag_SystemArchitecture: { en: 'System Architecture', ja: 'システムアーキテクチャ' },
     tag_BackendEngineering: { en: 'Backend Engineering', ja: 'バックエンドエンジニアリング' },
     tag_ApacheSpark: { en: 'Apache Spark', ja: 'Apache Spark' },
+    tag_NumPy: { en: 'NumPy', ja: 'NumPy' },
+    tag_CLIP: { en: 'CLIP', ja: 'CLIP' },
+    tag_PyTorch: { en: 'PyTorch', ja: 'PyTorch' },
+    tag_ComputerVision: { en: 'Computer Vision', ja: 'コンピュータビジョン' },
+    tag_NLP: { en: 'NLP', ja: '自然言語処理' },
+    
+    // Project Similarity Matching
+    projectSimilarityDescription: {
+      en: 'Research project benchmarking image-text similarity models, including ResNet50, Least-Squares projection, and CLIP.',
+      ja: 'ResNet50、最小二乗投影モデル、CLIPなどを用いた画像・テキスト類似度マッチング手法のベンチマーク研究プロジェクト。'
+    },
+    projectSimilarityLongDescription: {
+      en: 'Led a five-member research team (Trang Giay Trang Team) to implement and benchmark multiple image–text similarity matching approaches, including a baseline (ResNet50 + TF-IDF), a Least-Squares-based linear projection model (W), and OpenAI\'s CLIP contrastive embedding framework.',
+      ja: '5人の研究チーム（Trang Giay Trangチーム）のリーダーとして、ResNet50 + TF-IDFを用いたベースライン、最小二乗法に基づく線形投影モデル（W）、およびOpenAIのCLIP対照学習埋め込みフレームワークを含む、複数の画像・テキスト類似度マッチング手法の実装とベンチマークを主導しました。'
+    },
     tag_PySpark: { en: 'PySpark', ja: 'PySpark' },
     tag_ApacheAirflow: { en: 'Apache Airflow', ja: 'Apache Airflow' },
     tag_PostgreSQL: { en: 'PostgreSQL', ja: 'PostgreSQL' },
@@ -340,20 +355,20 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
     testimonialAuthorTitle: { en: 'Founder & CEO, Nexus Tech Global', ja: 'Founder & CEO, Nexus Tech Global' },
 
     // PM-focused short cards for homepage -> Refocused to AI Engineering
-    pmCardTitle1: { en: 'RAG & Vector Search', ja: 'RAG & ベクトル検索' },
+    pmCardTitle1: { en: 'Machine Learning & Deep Learning', ja: '機械学習 & ディープラーニング' },
     pmCardDesc1: {
-      en: 'pgvector databases, custom retrievers, reranking strategies, hybrid search, context window optimization, metadata filtering.',
-      ja: 'pgvectorデータベース、カスタムリトリーバー、リランキング戦略、ハイブリッド検索、コンテキスト窓の最適化、メタデータフィルタリング。'
+      en: 'Supervised & unsupervised learning, deep learning (MLPs, CNNs, Transformers), PyTorch, NumPy, data analysis (SQL/Pandas), MLOps, and model evaluation.',
+      ja: '教師あり/なし学習、ディープラーニング (MLP, CNN, Transformer)、PyTorch、NumPy、データ分析 (SQL/Pandas)、MLOps、モデル評価。'
     },
-    pmCardTitle2: { en: 'LLM & Agentic Integration', ja: 'LLM & エージェント統合' },
+    pmCardTitle2: { en: 'Generative AI & LLMs', ja: '生成AI & LLM統合' },
     pmCardDesc2: {
-      en: 'OpenAI GPT-5-mini, LlamaIndex, LangChain, function calling, agentic memory management, structured LLM outputs.',
-      ja: 'OpenAI GPT-5-mini、LlamaIndex、LangChain、関数呼び出し（ファンクションコーリング）、エージェントメモリ管理、構造化LLM出力。'
+      en: 'LlamaIndex RAG pipelines, vector search (pgvector), custom retrievers, function calling, LLM APIs (OpenAI GPT-5-mini, Claude, Gemini), and agentic workflows.',
+      ja: 'LlamaIndex RAGパイプライン、ベクトル検索 (pgvector)、カスタムリトリーバー、関数呼び出し、LLM API (OpenAI GPT-5-mini, Claude, Gemini)、エージェントワークフロー。'
     },
     pmCardTitle3: { en: 'Data Scraping & Pipelines', ja: 'データ収集 & パイプライン' },
     pmCardDesc3: {
-      en: 'Crawl4AI, Playwright, SPA crawling, distributed data pipelines, HTML parsing, async request scheduling.',
-      ja: 'Crawl4AI、Playwright、SPAスクレイピング、分散データパイプライン、HTMLパース、非同期リクエストスケジューリング。'
+      en: 'Crawl4AI, Playwright, SPA crawling, distributed data pipelines (Spark, Airflow), HTML parsing, and ETL processing.',
+      ja: 'Crawl4AI、Playwright、SPAスクレイピング、分散データパイプライン (Spark, Airflow)、HTMLパース、ETL処理。'
     },
     pmCardTitle4: { en: 'SaaS Backend & Infrastructure', ja: 'SaaS バックエンド & インフラ' },
     pmCardDesc4: {
@@ -366,8 +381,8 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
     contactHeroTitleLine1: { en: "Let's build something", ja: '一緒に何かを' },
     contactHeroTitleHighlight: { en: 'future-proof.', ja: '将来に強いものに。' },
     contactHeroDescription: {
-      en: "AI Engineer and Backend Developer experienced in building RAG pipelines, data ingestion architectures, and scalable SaaS platforms. I specialize in turning complex AI research concepts into production-grade systems. Let's discuss how I can help you implement or optimize your AI solutions.",
-      ja: 'RAGパイプライン、データ収集アーキテクチャ、およびスケーラブルなSaaSプラットフォームの構築経験を持つAIエンジニア兼バックエンド開発者。複雑なAIの概念を本番レベルのシステムへと具現化することを得意とします。AIソリューションの実装や最適化について、ぜひお話しましょう。'
+      en: "AI/ML Engineer and Backend Developer experienced in building machine learning models, RAG pipelines, data ingestion architectures, and scalable SaaS platforms. Active in advanced AI/ML research and programs. Let's discuss how I can help you implement or optimize your intelligent solutions.",
+      ja: '機械学習モデル、RAGパイプライン、データ収集アーキテクチャ、およびスケーラブルなSaaSプラットフォームの構築経験を持つAI/MLエンジニア兼バックエンド開発者。先進的なAI/ML研究およびプログラムに取り組んでいます。インテリジェントなソリューションの実装や最適化について、ぜひお話しましょう。'
     },
     contactDirectLine: { en: 'Direct Line', ja: 'ダイレクトライン' },
     contactSyncUp: { en: 'Sync Up', ja: '打ち合わせ' },
@@ -381,7 +396,7 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
     placeholderName: { en: 'Enter your name', ja: 'お名前を入力してください' },
     placeholderEmail: { en: 'name@domain.com', ja: 'name@domain.com' },
     placeholderMessage: { en: 'Describe your project requirements...', ja: 'プロジェクトの要件をご記入ください…' },
-    sectorOptionEtl: { en: 'AI & RAG Engineering', ja: 'AI & RAG エンジニアリング' },
+    sectorOptionEtl: { en: 'AI/ML & Data Engineering', ja: 'AI/ML & データエンジニアリング' },
     sectorOptionBackend: { en: 'Backend Development', ja: 'バックエンド開発' },
     sectorOptionDataPlatform: { en: 'Bilingual Technical Integration', ja: 'バイリンガル技術統合' },
     sectorOptionConsulting: { en: 'Full-Stack Web App', ja: 'フルスタックWebアプリ' },
