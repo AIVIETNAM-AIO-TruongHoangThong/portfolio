@@ -58,20 +58,20 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
     contact: { en: './contact', ja: './連絡先' },
 
     // Hero Section (project/product/bridge-focused)
-    founderEngineer: { en: 'Project Manager', ja: 'プロジェクトマネージャー' },
+    founderEngineer: { en: 'AI Engineer', ja: 'AIエンジニア' },
     building: { en: 'Building', ja: '構築' },
-    dataDriven: { en: 'Bridge Systems', ja: 'ブリッジシステム' },
-    solutionsAt: { en: 'for Data & AI', ja: 'データ & AI向け' },
-    scale: { en: 'Scale', ja: 'スケール' },
+    dataDriven: { en: 'Production RAG', ja: '本番用RAGシステム' },
+    solutionsAt: { en: 'and Scalable AI', ja: 'およびスケーラブルAI' },
+    scale: { en: 'Solutions', ja: 'ソリューション' },
     heroBio: {
-      en: "Project Manager and Associate Founder with hands-on experience leading early-stage SaaS products from MVP to first customer. Proven ability to manage cross-functional teams, define goals and scope, conduct cost–benefit analysis, and deliver features iteratively using Agile frameworks. Experienced in stakeholder communication, prioritization, and execution in resource-constrained startup environments. Bilingual (Japanese/English) technical leader with dual degrees in IT and Japanese Studies.",
-      ja: 'プロジェクトマネージャー兼共同創業者として、初期段階のSaaS製品をMVPから初顧客獲得まで導いた実務経験を持ちます。クロスファンクショナルチームの管理、目標とスコープの定義、コストベネフィット分析、アジャイルフレームワークを用いた反復的な機能提供に実績があります。リソース制約のあるスタートアップ環境でのステークホルダーコミュニケーション、優先順位付け、実行に精通。ITと日本研究の二つの学士号を持つバイリンガル（日本語/英語）技術リーダー。'
+      en: "AI Engineer and Co-Founder with hands-on experience designing and scaling production-grade RAG systems and LLM pipelines from MVP to scale. Specialized in Python, FastAPI, LlamaIndex, pgvector, and distributed background processing. Experienced in architecting robust scraping architectures (Crawl4AI), integrating advanced LLMs (GPT-5-mini), optimizing database indexing, and leading technical delivery in agile startup environments. Bilingual (Japanese/English) developer with dual degrees in IT and Japanese Studies.",
+      ja: 'AIエンジニア兼共同創業者として、本番環境向けのRAGシステムやLLMパイプラインをゼロから設計・スケールした実務経験を持ちます。Python、FastAPI、LlamaIndex、pgvector、分散バックグラウンド処理のスペシャリスト。Crawl4AIを活用した堅牢なスクレイピングアーキテクチャの構築、GPT-5-miniなどの先進的なLLMの統合、データベースインデックスの最適化に精通。ITと日本研究の二つの学士号を持つバイリンガル（日本語/英語）開発者。'
     },
     viewProjects: { en: 'View_Projects', ja: 'プロジェクトを見る' },
     downloadCV: { en: 'Download CV', ja: '履歴書ダウンロード' },
-    dataEngineering: { en: 'Bridge & Delivery', ja: 'ブリッジ & デリバリー' },
-    aiMlIntegration: { en: 'Product Management', ja: 'プロダクトマネジメント' },
-    fullStack: { en: 'Data & AI Systems', ja: 'データ & AIシステム' },
+    dataEngineering: { en: 'RAG & LLM Integration', ja: 'RAG & LLM統合' },
+    aiMlIntegration: { en: 'Data Ingestion & Scraping', ja: 'データ収集 & スクレイピング' },
+    fullStack: { en: 'Full-Stack Backend', ja: 'フルスタック・バックエンド' },
 
     // About Page
     beforeDownloadCV: { en: 'Before You Download My CV', ja: '履歴書をダウンロードする前に' },
@@ -133,18 +133,18 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
     },
 
     // Professional Growth Section
-    professionalGrowthTitle: { en: 'From Freelance to Product Leadership', ja: 'フリーランスからプロダクトリーダーへ' },
+    professionalGrowthTitle: { en: 'From Freelance to AI Engineering Leadership', ja: 'フリーランスからAIエンジニアリングリーダーへ' },
     professionalGrowthContent1: {
-      en: 'My freelance WordPress work opened doors into product and delivery roles. Over time I moved from implementation to coordinating teams, clarifying requirements, and ensuring releases met business goals. This hands-on progression gave me both technical credibility and a practical understanding of product delivery.',
-      ja: 'フリーランスでのWordPress業務が、プロダクトとデリバリーの役割への扉を開きました。実装からチームの調整、要件の明確化、リリースがビジネス目標を満たすことの保証へと役割が変化しました。この実務を通じて、技術的信頼性とプロダクトデリバリーに関する実践的な理解を得ました。'
+      en: 'My freelance WordPress work opened doors into backend and systems engineering roles. Over time I transitioned from building simple web interfaces to architecting complex data processing systems, optimizing databases, and designing scalable API services. This hands-on progression gave me strong technical foundations and a practical understanding of backend architecture.',
+      ja: 'フリーランスでのWordPress業務が、バックエンドおよびシステム開発の役割への扉を開きました。単純なウェブインターフェースの構築から、複雑なデータ処理システム、データベース最適化、スケーラブルなAPI設計へと役割がシフト。この実務を通じて、強固な技術基盤とバックエンド設計に関する実践的な理解を得ました。'
     },
     professionalGrowthContent2: {
-      en: 'At Nexus Tech Global, as Associate Founder and Project Manager, I led SiteBotic from MVP to first customer within 6 months, managing iterative delivery through Agile sprints with a lean, cross-functional team. I managed a small, high-impact team (AI engineer, freelance QA, designer, marketers), balancing scope, priorities, and delivery speed under resource constraints. I secured the company\'s first customer by leveraging our AI-driven custom development to deploy chatbot-enabled production websites. I conducted cost-benefit analyses on system architecture (cloud microservices vs self-hosted monolith), enabling informed stakeholder decisions on scalability and cost. I defined a lean hiring strategy, deliberately avoiding over-hiring while maintaining delivery effectiveness and cost efficiency. I applied structured project management frameworks (initiation, goal-setting, scope, execution, closure) to guide feature delivery, and delivered a sentiment analysis feature that detects negative user conversations and alerts chatbot owners, improving customer experience monitoring.',
-      ja: 'Nexus Tech Globalでは、共同創業者兼プロジェクトマネージャーとして、6ヶ月以内にSiteBoticをMVPから初顧客獲得まで導き、リーンなクロスファンクショナルチームとともにアジャイルスプリントを通じて反復的デリバリーを管理しました。小規模で影響力の高いチーム（AIエンジニア、フリーランスQA、デザイナー、マーケター）を管理し、リソース制約下でスコープ、優先順位、デリバリースピードのバランスを調整。AI駆動カスタム開発を活用してチャットボット対応の本番ウェブサイトを展開し、会社初の顧客を獲得しました。システムアーキテクチャ（クラウドマイクロサービス vs セルフホストモノリス）のコストベネフィット分析を実施し、スケーラビリティとコストに関する情報に基づいたステークホルダーの意思決定を可能に。リーンな採用戦略を定義し、デリバリー効果とコスト効率を維持しながら過剰採用を意図的に回避。構造化されたプロジェクト管理フレームワーク（開始、目標設定、スコープ、実行、終了）を適用して機能デリバリーをガイドし、ネガティブなユーザー会話を検出してチャットボット所有者にアラートを送る感情分析機能を提供し、顧客体験モニタリングを改善しました。'
+      en: "At Nexus Tech Global, as Co-Founder and Lead AI Engineer, I designed and built SiteBotic's core technical architecture. I architected our vector search RAG pipeline using pgvector and LlamaIndex, and built the scraping service using Crawl4AI to replace Playwright, resolving Playwright container OOM crashes and adding support for SPAs. I integrated OpenAI's GPT-5-mini, managing 400k context validations and custom model routing. To eliminate thread-safety bottlenecks in Dramatiq background task workers, I refactored the task processing engine to use a single persistent AsyncIO event loop. I also migrated user cookie security to session-only storage to prevent cross-session chat retention, and upgraded the entire frontend to React 19.2.7 and Vercel AI SDK v7.0.0.",
+      ja: "Nexus Tech Globalでは、共同創業者兼リードAIエンジニアとして、SiteBoticの主要な技術設計と開発を担当しました。pgvectorとLlamaIndexを用いたベクトル検索RAGパイプラインの設計、およびPlaywrightからCrawl4AIスクレイピングシステムへの移行を主導し、コンテナのOOMクラッシュ回避とSPA対応を実現。400kコンテキストウィンドウを持つGPT-5-miniの統合（カスタムルーティング等の実装）に加え、Dramatiq非同期タスク処理時のスレッドセーフに関するボトルネックを解消するため単一持続的AsyncIOイベントループ化を実装しました。さらに、クロスセッションの会話漏洩を防ぐためセッション専用クッキー管理へ移行し、フロントエンド全体をReact 19.2.7およびVercel AI SDK v7.0.0へアップグレードしました。"
     },
     professionalGrowthContent3: {
-      en: 'My interest in moving into the Product Management space comes primarily from my experience building the startup SiteBotic. That was the first time I managed not only technical implementation, but also task planning, team coordination, and stakeholder communication—balancing trade-offs and delivering product versions iteratively until reaching a stable release. This process genuinely excited me in a way I hadn\'t experienced before, which is why I want to further pursue the PM path. These experiences taught me how to make pragmatic trade-offs, communicate clearly with both engineers and business stakeholders, and use data to validate product decisions. My background in humanities and technology helps me bridge cultural and technical gaps when working with international teams.',
-      ja: 'プロダクトマネジメントの分野に移行したいという私の興味は、主にスタートアップSiteBoticを構築した経験から来ています。それは、技術的な実装だけでなく、タスク計画、チーム調整、ステークホルダーコミュニケーションを管理した初めての機会でした—トレードオフのバランスを取り、安定したリリースに達するまでプロダクトバージョンを反復的に提供しました。このプロセスは、私がこれまで経験したことのない方法で私を本当に興奮させました。それが、PMの道をさらに追求したい理由です。これらの経験から、実用的なトレードオフの判断、エンジニアとビジネスの両方の関係者への明確なコミュニケーション、製品意思決定の検証にデータを用いる方法を学びました。人文系と技術のバックグラウンドは、国際チームでの文化的・技術的ギャップを埋めるのに役立ちます。'
+      en: "My passion for AI Engineering grew out of building SiteBotic. Designing the system from scratch taught me how to tackle complex technical challenges—from optimizing vector retrieval speeds and managing RAG pipeline token consumption to scaling background crawling workers. I realized that my strengths lie in translating complex AI research concepts into reliable, production-ready backend systems and data pipelines. Moving forward, I want to deepen my expertise in large-scale LLM application development, multi-agent systems, and specialized data crawling infrastructures.",
+      ja: "AIエンジニアリングへの私の情熱は、SiteBoticの構築を通じて育まれました。システムをゼロから設計することで、ベクトル検索の高速化やRAGパイプラインのトークン消費量管理、バックグラウンドクローラーのスケールなど、複雑な技術的課題を解決する面白さを知りました。私の強みは、AIの概念を信頼性の高い本番用バックエンドシステムやデータパイプラインへと落とし込むことにあります。今後は、大規模なLLMアプリケーション開発、マルチエージェントシステム、データ収集インフラの専門性をさらに深めていたいと考えています。"
     },
 
     // Future Goals Section
@@ -154,12 +154,12 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
       ja: '現在、UIT（情報技術大学）で情報技術の第二学士号の最終段階にいます。これはUSSHと同じベトナム国家大学ホーチミン市システムの一部です。すべてのコースワークを完了し、「Very Good」の学位分類を達成し、現在2026年6月に公式の成績証明書と学士号証明書を待っています。'
     },
     futureGoalsContent2: {
-      en: 'Completing my IT degree complements my product experience by strengthening my technical literacy. With dual degrees in Japanese Studies and Information Technology, I can both coordinate technical teams and communicate effectively with Japanese stakeholders — a valuable combination for international product delivery.',
-      ja: 'ITの学位を修了することで、プロダクト経験に技術的理解が補完されます。日本語学と情報技術の二つの学位により、技術チームを調整し、日本の関係者と効果的にコミュニケーションを取ることができ、国際的なプロダクトデリバリーにおいて価値のある組み合わせを提供します。'
+      en: 'Completing my IT degree from UIT provides a rigorous computer science foundation that complements my hands-on software development experience. Combining a degree in Information Technology with Japanese Studies allows me to serve as a bilingual AI developer, communicating technical details clearly with both engineering teams and Japanese stakeholders.',
+      ja: 'UITでの情報技術の学位取得は、コンピュータサイエンスの厳格な基礎を提供し、実践的なソフトウェア開発経験を補完します。情報技術と日本語学の二つの学位を組み合わせることで、バイリンガルなAI開発者として、開発チームと日本の関係者の双方に対して技術的な詳細を明確に伝えることができます。'
     },
     futureGoalsContent3: {
-      en: 'I aim to transition into full-time product or project leadership roles where I can apply my technical background, bilingual communication, and hands-on delivery experience to help teams ship valuable software. I am particularly interested in roles that require coordinating between Japanese stakeholders and engineering teams.',
-      ja: '私は技術的背景、バイリンガルのコミュニケーション能力、実践的なデリバリー経験を活かして、プロダクトまたはプロジェクトのフルタイムのリーダーシップ職に移行することを目指しています。特に日本の関係者とエンジニアリングチームの間を調整する役割に興味があります。'
+      en: 'I aim to secure a full-time role as an AI Engineer or Full-Stack Backend Developer where I can design, build, and optimize RAG systems, LLM-based agents, and high-performance backend platforms. I am highly interested in contributing to technical projects that require collaboration between bilingual engineering teams.',
+      ja: 'AIエンジニアまたはフルスタック・バックエンド開発者としてフルタイムの役割を獲得し、RAGシステム、LLMベースのエージェント、高性能バックエンドプラットフォームの設計・構築・最適化に貢献することを目指しています。バイリンガルな開発チーム間でのコラボレーションを必要とする技術プロジェクトへの貢献に強い意欲を持っています。'
     },
 
     // Call to Action
@@ -168,26 +168,26 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
 
     // Footer
     initializeCollaboration: { en: 'Initialize collaboration?', ja: 'コラボレーションを開始しますか？' },
-    availableForFreelance: { en: 'Available for product/project leadership roles, freelance PM/PO work, and open to full-time opportunities.', ja: 'プロダクト/プロジェクトのリーダーシップ、フリーランスのPM/PO業務に対応可能で、フルタイムの機会にもオープンです。' },
+    availableForFreelance: { en: 'Available for AI engineering roles, RAG integration, backend development, and open to full-time opportunities.', ja: 'AIエンジニアリング、RAG統合、バックエンド開発に対応可能で、フルタイムの機会にもオープンです。' },
     sitemap: { en: 'Sitemap', ja: 'サイトマップ' },
     contactInfo: { en: 'Contact_Info', ja: '連絡先情報' },
     location: { en: 'Ho Chi Minh City, VN', ja: 'ホーチミン市、ベトナム' },
     systemRightsReserved: { en: 'System_All_Rights_Reserved.', ja: 'システム_全著作権所有。' },
     executedWith: { en: 'Executed with Logic & Caffeine', ja: '論理とカフェインで実行' },
-
+ 
     // Home - Selected Works
     selectedWorksHeading: { en: 'Selected Works', ja: '選抜プロジェクト' },
-    productLeadershipHeading: { en: 'Product Leadership', ja: 'プロダクトリーダーシップ' },
-    handsOnTechnicalHeading: { en: 'Hands‑On Technical', ja: '実務（ハンズオン）' },
+    productLeadershipHeading: { en: 'Production AI Platforms', ja: '本番運用AIプラットフォーム' },
+    handsOnTechnicalHeading: { en: 'AI & Data Engineering', ja: 'AI & データエンジニアリング' },
     viewAllProjects: { en: 'view_all_projects()', ja: 'view_all_projects()' },
     productionBadge: { en: 'Production', ja: '本番環境' },
     nexusSelectedDescription: {
-      en: 'Founder & Project Manager - Leading project delivery, stakeholder communication, and cross-functional coordination for AI-driven SaaS solutions.',
-      ja: '創業者兼プロジェクトマネージャーとして、AI搭載SaaSソリューションのプロジェクトデリバリー、ステークホルダーコミュニケーション、クロスファンクショナル調整を主導。'
+      en: 'Co-Founder & Lead AI Engineer - Leading AI system architecture, RAG pipelines development, and backend scaling for SaaS solutions.',
+      ja: '共同創業者・リードAIエンジニアとして、SaaSソリューションのAIシステム設計、RAG開発、バックエンドのスケーリングを主導。'
     },
     siteboticSelectedDescription: {
-      en: 'Associate Founder & Product Owner — led product development and delivery for SiteBotic, a no-code AI chatbot SaaS.',
-      ja: '共同創業者・プロダクトオーナー — ノーコードAIチャットボットSaaS「SiteBotic」の開発とデリバリーを主導。'
+      en: 'Lead AI Engineer — designed and implemented RAG pipelines, scraping architecture, and background task workers.',
+      ja: 'リードAIエンジニア — RAGパイプライン、スクレイピングアーキテクチャ、バックグラウンド処理の実装を担当。'
     },
     tagAiPlatforms: { en: 'AI Platforms', ja: 'AIプラットフォーム' },
     tagEtlPipelines: { en: 'ETL Pipelines', ja: 'ETLパイプライン' },
@@ -200,16 +200,16 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
     projectsHeroTitleLine1: { en: 'From AI Platforms to', ja: 'AIプラットフォームから' },
     projectsHeroTitleLine2: { en: 'Data Pipelines.', ja: 'データパイプラインまで。' },
     projectsHeroDescription: {
-      en: 'Product strategy, cross-functional delivery, and technical coordination for software and AI products. From roadmap to release, I help teams deliver reliable, user-focused solutions.',
-      ja: 'プロダクト戦略、クロスファンクショナルなデリバリー、ソフトウェアやAIプロダクトの技術調整。ロードマップからリリースまで、ユーザーに価値ある信頼できるソリューションを提供するためにチームを支援します。'
+      en: 'AI system design, RAG pipeline implementation, and backend architecture for production platforms. From parsing pipelines to model optimization, I help teams build robust, intelligent solutions.',
+      ja: 'AIシステム設計、RAGパイプラインの実装、本番環境向けバックエンドアーキテクチャ。パース処理からモデル最適化まで、信頼性が高くインテリジェントなソリューションの構築をサポートします。'
     },
     statsCompanyFounded: { en: 'Company Founded', ja: '設立した会社' },
     statsProjectsBuilt: { en: 'Projects Built', ja: '構築したプロジェクト' },
     statsSaaSPlatform: { en: 'SaaS Platform', ja: 'SaaSプラットフォーム' },
-    projectsCTAHeading: { en: 'Need a Project Manager, Product Owner, or Bridge Engineer (Japanese)?', ja: 'プロジェクトマネージャー、プロダクトオーナー、またはブリッジエンジニア（日本語）をお探しですか？' },
+    projectsCTAHeading: { en: 'Need an AI Engineer, RAG Specialist, or Backend Developer?', ja: 'AIエンジニア、RAGスペシャリスト、またはバックエンド開発者をお探しですか？' },
     projectsCTADescription: {
-      en: "I coordinate teams, define product strategy, and bridge technical and Japanese stakeholders to deliver value.",
-      ja: 'チーム調整、プロダクト戦略の定義、技術と日本のステークホルダーの橋渡しを通じて価値を届けます。'
+      en: 'I design RAG architectures, scale data pipelines, integrate advanced LLMs, and build reliable backend systems.',
+      ja: 'RAGアーキテクチャの設計、データパイプラインの拡張、先進的なLLMの統合、および信頼性の高いバックエンドシステムの構築を担当します。'
     },
     projectsCTAButton: { en: "Let's_Talk()", ja: '話しましょう()' },
     visitLiveApp: { en: 'Visit live app', ja: '本番アプリを見る' },
@@ -219,20 +219,20 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
 
     // Projects Page - Project Descriptions
     projectNexusDescription: {
-      en: 'AI technology company specializing in custom chatbot solutions, software development, and AI-driven business solutions.',
-      ja: 'カスタムチャットボットソリューション、ソフトウェア開発、AI駆動のビジネスソリューションを専門とするAIテクノロジー企業。'
+      en: 'Enterprise-grade AI chatbot platform and custom RAG solutions.',
+      ja: 'エンタープライズ向けのAIチャットボットプラットフォームおよびカスタムRAGソリューション。'
     },
     projectNexusLongDescription: {
-      en: 'Associate Founder of Nexus Tech Global, an AI technology company delivering enterprise-grade chatbot solutions, custom software development, and AI integration services. Leading technical strategy and product development for innovative AI-powered business solutions.',
-      ja: 'Nexus Tech Globalの共同創業者として、エンタープライズ向けチャットボットソリューション、カスタムソフトウェア開発、AI統合サービスを提供。革新的なAI駆動ビジネスソリューションの技術戦略とプロダクト開発をリード。'
+      en: 'Co-Founder and Lead AI Engineer at Nexus Tech Global, building enterprise-grade chatbot systems, custom RAG solutions, and distributed scraping pipelines. Leading AI development and backend architectures for all products.',
+      ja: 'Nexus Tech Globalの共同創業者兼リードAIエンジニアとして、エンタープライズ向けのチャットボットシステム、カスタムRAGソリューション、分散スクレイピングパイプラインの構築を担当。全製品のAI開発とバックエンド設計をリード。'
     },
     projectSiteboticDescription: {
       en: 'AI-Powered Chatbot Platform - No-code SaaS enabling websites to deploy intelligent chatbots trained on their content.',
       ja: 'AI搭載チャットボットプラットフォーム。ノーコードSaaSとして、ウェブサイトコンテンツで学習したインテリジェントチャットボットを簡単に導入可能。'
     },
     projectSiteboticLongDescription: {
-      en: 'Dev Lead for SiteBotic at Nexus Tech Global. Built from scratch by our dev team - a production SaaS platform that automatically crawls websites, trains AI chatbots on content, and deploys with one-click embed. Features RAG pipeline with pgvector, async processing with Dramatiq + Redis, customizable UI, analytics dashboard, and microservices architecture.',
-      ja: 'Nexus Tech GlobalにてSiteBoticの開発リードを担当。ウェブサイトを自動クロールし、コンテンツでAIチャットボットを学習させ、ワンクリックで埋め込み配信できる本番運用SaaSプラットフォームをゼロから構築。pgvectorを用いたRAGパイプライン、Dramatiq + Redisによる非同期処理、カスタマイズ可能なUI、分析ダッシュボード、マイクロサービスアーキテクチャを備える。'
+      en: 'Dev Lead for SiteBotic at Nexus Tech Global. Built and scaled a production SaaS platform that crawls websites, trains AI chatbots on content, and deploys with a one-click embed. Features a pgvector RAG pipeline, single persistent AsyncIO event loop for Dramatiq background task workers to resolve database and lazy loading bottlenecks, and a Crawl4AI-based scraping system replacing Playwright to support SPAs and eliminate container crashes. Integrated GPT-5-mini with a 400k context window, upgraded the frontend to React 19.2.7 and Vercel AI SDK v7.0.0, and migrated cookies to session-only storage to prevent cross-session chat retention.',
+      ja: 'Nexus Tech GlobalにてSiteBoticの開発リードを担当。ウェブサイトを自動クロールし、コンテンツでAIチャットボットを学習させ、ワンクリックで埋め込み配信できる本番運用SaaSプラットフォームを構築・スケール。pgvectorを用いたRAGパイプライン、DB接続や遅延ロードのボトルネックを解消するDramatiqワーカー用の単一持続的AsyncIOイベントループ、Playwrightから移行してSPA対応とコンテナクラッシュ回避を実現したCrawl4AIスクレイピングシステムを実装。400kコンテキストウィンドウのGPT-5-miniを統合し、フロントエンドをReact 19.2.7およびVercel AI SDK v7.0.0へアップグレード、クロスセッションの履歴保持を防ぐためセッション専用クッキー管理へ移行。'
     },
     projectPALTechDescription: {
       en: 'Software Engineer specializing in data-intensive systems, bridging frontend and data platform teams for high-traffic applications.',
@@ -288,6 +288,9 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
     tag_SoftwareDevelopment: { en: 'Software Development', ja: 'ソフトウェア開発' },
     tag_Enterprise: { en: 'Enterprise', ja: 'エンタープライズ' },
     tag_Leadership: { en: 'Leadership', ja: 'リーダーシップ' },
+    tag_RAGPlatforms: { en: 'RAG Platforms', ja: 'RAGプラットフォーム' },
+    tag_SystemArchitecture: { en: 'System Architecture', ja: 'システムアーキテクチャ' },
+    tag_BackendEngineering: { en: 'Backend Engineering', ja: 'バックエンドエンジニアリング' },
     tag_ApacheSpark: { en: 'Apache Spark', ja: 'Apache Spark' },
     tag_PySpark: { en: 'PySpark', ja: 'PySpark' },
     tag_ApacheAirflow: { en: 'Apache Airflow', ja: 'Apache Airflow' },
@@ -330,32 +333,32 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
     testimonialsLabel: { en: 'Testimonials', ja: '推薦の声' },
     testimonialsHeading: { en: 'What People Say', ja: '推薦の声' },
     testimonialContent: {
-      en: 'Thong is a talented Project Manager with strong organizational and execution skills. While our company is moving in a different strategic and cultural direction, I genuinely believe his strengths will be an excellent fit in the right environment. He brings clarity, accountability, and structure to teams, and any organization looking for a capable Project Manager would benefit from his contributions.',
-      ja: 'Thong is a talented Project Manager with strong organizational and execution skills. While our company is moving in a different strategic and cultural direction, I genuinely believe his strengths will be an excellent fit in the right environment. He brings clarity, accountability, and structure to teams, and any organization looking for a capable Project Manager would benefit from his contributions.'
+      en: 'Thong is a talented AI Engineer and technical leader with strong execution and system architecture skills. While our company is moving in a different strategic and cultural direction, I genuinely believe his strengths will be an excellent fit in the right environment. He brings technical clarity, database performance, and robust system designs to teams, and any organization looking for a capable AI Engineer would benefit from his contributions.',
+      ja: 'Thongは、強力な実行力とシステム設計スキルを備えた才能あるAIエンジニア兼テクニカルリーダーです。弊社は異なる戦略的および文化的方向に進んでいますが、彼の強みは適切な環境で素晴らしいフィット感になると心から信じています。彼はチームに技術的な明確さ、データベースのパフォーマンス、および堅牢なシステム設計をもたらし、有能なAIエンジニアを探している組織は彼の貢献から大きな恩恵を受けるでしょう。'
     },
     testimonialAuthorName: { en: 'Bryan Hoang', ja: 'Bryan Hoang' },
     testimonialAuthorTitle: { en: 'Founder & CEO, Nexus Tech Global', ja: 'Founder & CEO, Nexus Tech Global' },
 
-    // PM-focused short cards for homepage
-    pmCardTitle1: { en: 'Project & Delivery Management', ja: 'プロジェクト＆デリバリ管理' },
+    // PM-focused short cards for homepage -> Refocused to AI Engineering
+    pmCardTitle1: { en: 'RAG & Vector Search', ja: 'RAG & ベクトル検索' },
     pmCardDesc1: {
-      en: 'Project initiation, goal & scope definition, backlog prioritization, sprint planning, Agile execution, release management.',
-      ja: 'プロジェクト開始、目標とスコープの定義、バックログの優先順位付け、スプリント計画、アジャイル実行、リリース管理。'
+      en: 'pgvector databases, custom retrievers, reranking strategies, hybrid search, context window optimization, metadata filtering.',
+      ja: 'pgvectorデータベース、カスタムリトリーバー、リランキング戦略、ハイブリッド検索、コンテキスト窓の最適化、メタデータフィルタリング。'
     },
-    pmCardTitle2: { en: 'Stakeholder Management', ja: 'ステークホルダー管理' },
+    pmCardTitle2: { en: 'LLM & Agentic Integration', ja: 'LLM & エージェント統合' },
     pmCardDesc2: {
-      en: 'Trade-off communication, cost-benefit analysis, expectation alignment across business and technical teams.',
-      ja: 'トレードオフのコミュニケーション、コストベネフィット分析、ビジネスと技術チーム間の期待値調整。'
+      en: 'OpenAI GPT-5-mini, LlamaIndex, LangChain, function calling, agentic memory management, structured LLM outputs.',
+      ja: 'OpenAI GPT-5-mini、LlamaIndex、LangChain、関数呼び出し（ファンクションコーリング）、エージェントメモリ管理、構造化LLM出力。'
     },
-    pmCardTitle3: { en: 'Team Leadership', ja: 'チームリーダーシップ' },
+    pmCardTitle3: { en: 'Data Scraping & Pipelines', ja: 'データ収集 & パイプライン' },
     pmCardDesc3: {
-      en: 'Cross-functional coordination (engineering, QA, design, marketing), lean team execution under resource constraints.',
-      ja: 'クロスファンクショナルな調整（エンジニアリング、QA、デザイン、マーケティング）、リソース制約下でのリーンチーム実行。'
+      en: 'Crawl4AI, Playwright, SPA crawling, distributed data pipelines, HTML parsing, async request scheduling.',
+      ja: 'Crawl4AI、Playwright、SPAスクレイピング、分散データパイプライン、HTMLパース、非同期リクエストスケジューリング。'
     },
-    pmCardTitle4: { en: 'Product Execution & Agile', ja: 'プロダクト実行＆アジャイル' },
+    pmCardTitle4: { en: 'SaaS Backend & Infrastructure', ja: 'SaaS バックエンド & インフラ' },
     pmCardDesc4: {
-      en: 'MVP definition, iterative delivery, user feedback incorporation, Scrum ceremonies, incremental delivery, retrospectives.',
-      ja: 'MVP定義、反復的デリバリー、ユーザーフィードバックの取り込み、スクラム儀式、段階的デリバリー、レトロスペクティブ。'
+      en: 'Python, FastAPI, Dramatiq + Redis async workers, single persistent AsyncIO event loops, Docker, PostgreSQL database optimization.',
+      ja: 'Python、FastAPI、Dramatiq + Redis非同期ワーカー、単一持続的AsyncIOイベントループ、Docker、PostgreSQLデータベース最適化。'
     },
 
     // Contact Page
@@ -363,8 +366,8 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
     contactHeroTitleLine1: { en: "Let's build something", ja: '一緒に何かを' },
     contactHeroTitleHighlight: { en: 'future-proof.', ja: '将来に強いものに。' },
     contactHeroDescription: {
-      en: 'Project Manager and Product Owner experienced in coordinating engineering teams and Japanese stakeholders. I translate business needs into technical requirements, keep delivery on schedule, and ensure alignment across teams. Let\'s discuss how I can support your product or project.',
-      ja: 'プロジェクトマネージャー兼プロダクトオーナーとして、エンジニアチームと日本のステークホルダーの調整に豊富な経験があります。ビジネスの要件を技術要件に翻訳し、納期を守りつつチーム間の連携を確保します。あなたのプロダクトやプロジェクトをどのように支援できるか、ぜひお話しましょう。'
+      en: "AI Engineer and Backend Developer experienced in building RAG pipelines, data ingestion architectures, and scalable SaaS platforms. I specialize in turning complex AI research concepts into production-grade systems. Let's discuss how I can help you implement or optimize your AI solutions.",
+      ja: 'RAGパイプライン、データ収集アーキテクチャ、およびスケーラブルなSaaSプラットフォームの構築経験を持つAIエンジニア兼バックエンド開発者。複雑なAIの概念を本番レベルのシステムへと具現化することを得意とします。AIソリューションの実装や最適化について、ぜひお話しましょう。'
     },
     contactDirectLine: { en: 'Direct Line', ja: 'ダイレクトライン' },
     contactSyncUp: { en: 'Sync Up', ja: '打ち合わせ' },
@@ -378,10 +381,10 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
     placeholderName: { en: 'Enter your name', ja: 'お名前を入力してください' },
     placeholderEmail: { en: 'name@domain.com', ja: 'name@domain.com' },
     placeholderMessage: { en: 'Describe your project requirements...', ja: 'プロジェクトの要件をご記入ください…' },
-    sectorOptionEtl: { en: 'Project Management', ja: 'プロジェクト管理' },
-    sectorOptionBackend: { en: 'Product Ownership', ja: 'プロダクトオーナーシップ' },
-    sectorOptionDataPlatform: { en: 'Bridge Software Engineer (Japanese)', ja: 'ブリッジエンジニア（日本語）' },
-    sectorOptionConsulting: { en: 'Project Coordination', ja: 'プロジェクトコーディネーション' },
+    sectorOptionEtl: { en: 'AI & RAG Engineering', ja: 'AI & RAG エンジニアリング' },
+    sectorOptionBackend: { en: 'Backend Development', ja: 'バックエンド開発' },
+    sectorOptionDataPlatform: { en: 'Bilingual Technical Integration', ja: 'バイリンガル技術統合' },
+    sectorOptionConsulting: { en: 'Full-Stack Web App', ja: 'フルスタックWebアプリ' },
     sectorOptionOther: { en: 'Other', ja: 'その他' },
     buttonSending: { en: 'Sending...', ja: '送信中…' },
     buttonSendTransmission: { en: 'Send Transmission', ja: '送信する' },
@@ -401,8 +404,8 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
       ja: 'まずは簡単に自己紹介を交わしてから、履歴書をお渡しできればと思っています。'
     },
     cvHeroParagraph2: {
-      en: "Fill out the form below and I'll send you my latest CV. I'm always interested in connecting with project managers, engineering teams, and technical leaders.",
-      ja: '下のフォームにご入力いただければ、最新の履歴書をお送りします。プロジェクトマネージャー、エンジニアリングチーム、技術リーダーの皆さまとつながれるのを楽しみにしています。'
+      en: "Fill out the form below and I'll send you my latest CV. I'm always interested in connecting with other developers, engineering teams, and AI/ML researchers.",
+      ja: '下のフォームにご入力いただければ、最新の履歴書をお送りします。開発者仲間、エンジニアリングチーム、AI/ML研究者の皆さまとつながれるのを楽しみにしています。'
     },
     cvFormTitle: { en: 'Get My CV', ja: '履歴書を受け取る' },
     labelCompanyOptional: { en: 'Company_ (Optional)', ja: '会社名_（任意）' },

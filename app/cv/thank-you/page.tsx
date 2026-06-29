@@ -47,7 +47,7 @@ export default function CVThankYouPage() {
 
             <div className="space-y-6">
               <a
-                href={language === 'en' ? "https://drive.google.com/file/d/1NoNVqUorg96lAA5D6l3bk7fhDhuMdQK9/view?usp=sharing" : "https://drive.google.com/file/d/1LgCg2Tj-rGAtGzxIx2In1otvtabhUBIJ/view?usp=sharing"}
+                href="https://drive.google.com/file/d/1QRrL0R1ZYQRM6KSnR-0PJ8y1GbPE6uth/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white bg-primary hover:bg-blue-600 font-mono transition-all duration-300 shadow-[0_0_10px_rgba(59,130,246,0.2)] hover:shadow-[0_0_20px_rgba(59,130,246,0.4)] rounded-lg"

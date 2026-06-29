@@ -13,7 +13,7 @@ const projects = [
     descriptionKey: 'projectNexusDescription',
     longDescriptionKey: 'projectNexusLongDescription',
     image: '/nexus-tech-global-thumbnail.png',
-    tags: ['AI Solutions', 'Software Development', 'Enterprise', 'Leadership'],
+    tags: ['RAG Platforms', 'System Architecture', 'Backend Engineering'],
     version: 'Production',
     year: '2025',
     category: 'Company',
