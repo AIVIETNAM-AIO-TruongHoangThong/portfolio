@@ -59,13 +59,13 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
 
     // Hero Section (project/product/bridge-focused)
     founderEngineer: { en: 'AI Engineer', ja: 'AIエンジニア' },
-    building: { en: 'Building', ja: '構築' },
-    dataDriven: { en: 'Production AI/ML', ja: '本番用AI/MLシステム' },
-    solutionsAt: { en: 'and Scalable AI', ja: 'およびスケーラブルAI' },
-    scale: { en: 'Solutions', ja: 'ソリューション' },
+    building: { en: 'Building', ja: '構築する' },
+    dataDriven: { en: 'Scalable AI', ja: 'スケーラブルなAI' },
+    solutionsAt: { en: '& Backend', ja: '& バックエンド' },
+    scale: { en: 'Systems', ja: 'システム' },
     heroBio: {
-      en: "AI Engineer and Co-Founder with hands-on experience designing and scaling production-grade AI/ML applications, data pipelines, and LLM systems. Specializing in Python, FastAPI, PyTorch, LlamaIndex, pgvector, and distributed background processing. Active student in the All-In-One (AIO) AI program, building a strong foundation in machine learning, deep learning, computer vision, and NLP algorithms. Bilingual (Japanese/English) developer with dual degrees in IT and Japanese Studies.",
-      ja: 'AIエンジニア兼共同創業者として、本番環境向けのAI/MLアプリケーション、データパイプライン、LLMシステムの設計・スケールに実務経験を持ちます。Python、FastAPI、PyTorch、LlamaIndex、pgvector、分散バックグラウンド処理のスペシャリスト。All-In-One (AIO) AIプログラムで学び、機械学習、ディープラーニング、コンピュータビジョン/自然言語処理アルゴリズムの強固な基礎を築いています。'
+      en: "AI/ML Engineer and Backend Developer with hands-on experience designing and scaling production-grade intelligent systems and data pipelines.",
+      ja: '本番環境向けのインテリジェントシステムやデータパイプラインの設計・スケーリングに実務経験を持つ、AI/MLエンジニア兼バックエンド開発者。'
     },
     viewProjects: { en: 'View_Projects', ja: 'プロジェクトを見る' },
     downloadCV: { en: 'Download CV', ja: '履歴書ダウンロード' },
@@ -88,78 +88,78 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
     // About Page Story Sections
     earlyDaysTitle: { en: 'The Beginning: From Pascal to Japanese Studies', ja: '始まり：パスカルから日本語学科へ' },
     earlyDaysContent1: {
-      en: 'My journey into technology wasn\'t straightforward. In high school for the gifted, I was exposed to programming with Pascal, but I wasn\'t particularly interested or good at it. It took me a while to even get familiar with basic concepts like for loops and programming terminology in general.',
-      ja: 'テクノロジーへの道は一直線ではありませんでした。特別な高校でパスカルプログラミングに触れましたが、特に興味を持ったり、上手くできたりしませんでした。forループやプログラミング用語などの基本概念に慣れるのに時間がかかりました。'
+      en: 'My tech journey began with a false start in high school Pascal. Rather than pursuing CS immediately, I followed my passion for Japanese culture, earning a B.A. in Japanese Studies from USSH in 2020.',
+      ja: '高校でのプログラミング体験はうまくいかず、一度はITから離れました。代わりに日本文化への情熱を追求し、2020年にUSSHで日本語学の学士号を取得しました。'
     },
     earlyDaysContent2: {
-      en: 'I graduated high school with a strong interest in Japanese cultures, which led me to pursue a Japanese Studies major at USSH-HCM VNU (University of Social Sciences and Humanities, Ho Chi Minh City, Vietnam National University). Looking back, this was one of my best decisions - it gave me a much-needed break from IT and allowed me to explore social subjects.',
-      ja: '高校を卒業する頃、日本文化に強い興味を持ち、USSH-HCM VNU（ベトナム国家大学ホーチミン市人文社会科学大学）で日本語学科を専攻することになりました。振り返ってみると、これは私のベストな決断の一つでした。ITから必要な休憩を取らせ、社会的な科目を探求する機会を与えてくれました。'
+      en: 'This humanities background gave me a unique perspective on cross-cultural communication. I am now completing my second B.S. in Information Technology at UIT (graduating June 2026), combining technical expertise with cultural bridging.',
+      ja: 'この人文学の背景は、異文化コミュニケーションにおいて独自の視点を与えてくれました。現在はUITで情報技術の第二学士課程にあり（2026年6月卒業予定）、技術と文化の架け橋となることを目指しています。'
     },
     earlyDaysContent3: {
-      en: 'I earned my first bachelor\'s degree in Japanese Studies in 2020 during the height of the COVID-19 pandemic. Today, I hold two bachelor\'s degrees - one in Japanese Studies from USSH and another in Information Technology from UIT, both part of the Vietnam National University Ho Chi Minh City system, that I\'m completing in June 2026. This unique combination gives me both cultural understanding and technical expertise, particularly valuable for international collaborations.',
-      ja: '2020年、COVID-19パンデミックの最中に日本語学科の最初の学士号を取得しました。現在、私は二つの学士号を持っています。一つはUSSHの日本語学科、もう一つはUITの情報技術で、どちらもベトナム国家大学ホーチミン市システムに属し、2026年6月に修了予定です。このユニークな組み合わせは、文化的な理解と技術的な専門知識の両方を提供し、特に国際的なコラボレーションにおいて価値があります。'
+      en: '',
+      ja: ''
     },
 
     // Self-Taught Journey Section
     selfTaughtTitle: { en: 'Rediscovering Programming: From Games to Code', ja: 'プログラミングの再発見：ゲームからコードへ' },
     selfTaughtContent1: {
-      en: 'During my second and third years of university, I started dabbling in programming again, driven by my love for playing games and game development in general. This passion led me to create my first games, which are still live and playable on itch.io.',
-      ja: '大学の2年目と3年目に、ゲームをプレイすることとゲーム開発全般への愛情から、再びプログラミングに手を出し始めました。この情熱が、私の最初のゲームを作成するきっかけとなり、今でもitch.ioでライブプレイ可能です。'
+      en: 'During university, my love for gaming led me back to programming. I created my first games on itch.io, realizing that coding was simply a tool to build what I love.',
+      ja: '大学在学中、ゲーム好きが高じて再びプログラミングの世界へ。itch.ioで自作ゲームを公開し、コーディングが「好きなものを作るためのツール」であることに気づきました。'
     },
-    tryMyGames: { en: '🎮 Try my games:', ja: '🎮 私のゲームを試してみてください：' },
-    gameTimeKiller: { en: 'They might help you kill some time during breaks!', ja: '休憩中に時間を潰すのに役立つかもしれません！' },
-    pSLiamNote: { en: 'P.S. Liam Vessalius is actually an anime character name - a nod to my deep dive into Japanese culture that eventually led me to study Japanese formally.', ja: 'P.S. Liam Vessaliusは実際のアニメキャラクターの名前です - 最終的に日本語を正式に勉強するきっかけとなった日本文化への深い没入へのオマージュです。' },
+    tryMyGames: { en: '🎮 Try my games:', ja: '🎮 自作ゲームはこちら：' },
+    gameTimeKiller: { en: 'They might help you kill some time during breaks!', ja: '休憩中の暇つぶしにどうぞ！' },
+    pSLiamNote: { en: 'P.S. Liam Vessalius is an anime reference - a nod to my Japanese cultural immersion.', ja: 'P.S. Liam Vessaliusはアニメのキャラクター名です。日本文化への没頭へのオマージュです。' },
     selfTaughtContent2: {
-      en: 'After graduation, the real world hit hard. With my Japanese Studies degree, I tried to find work in the gaming industry within Japanese environments, but despite my best efforts, I couldn\'t get noticed - my humanities background wasn\'t seen as relevant for technical gaming roles. I had to take whatever work I could find to put food on the table - teaching English and Japanese at private centers.',
-      ja: '卒業後、現実世界が厳しく襲ってきました。日本語学科の学位を持って、日本語環境でのゲーム業界での仕事を求めましたが、懸命の努力にもかかわらず注目されることができませんでした - 私の人文科学の背景は技術的なゲームの役割には関連性がないと見なされました。食卓に食べ物を並べるために、プライベートセンターで英語と日本語を教える仕事を何でも引き受けなければなりませんでした。'
+      en: 'After graduation, breaking into the tech industry with a humanities degree was tough. I taught languages to make ends meet while relentlessly upskilling in web development.',
+      ja: '卒業後、文系出身でIT業界へ参入するのは困難でした。語学講師として生計を立てながら、Web開発のスキルを必死に磨きました。'
     },
     selfTaughtContent3: {
-      en: "While I've transitioned fully into tech and haven't actively used my Japanese studies professionally, I maintain my language skills and cultural understanding. This background could be valuable for Japanese companies or international projects requiring cross-cultural communication and understanding of Japanese business practices.",
-      ja: '完全にテクノロジーに移行し、日本語学習を積極的に職業的に使用していませんが、言語スキルと文化的理解を維持しています。この背景は、日本企業や異文化間コミュニケーションと日本のビジネス慣行の理解を必要とする国際プロジェクトにとって価値があるかもしれません。'
+      en: 'While I haven\'t actively used my Japanese studies professionally, my language skills and cultural understanding remain strong assets for international projects.',
+      ja: '語学力を仕事で直接活かす機会は少なかったものの、言語スキルと文化的な理解は、今でも国際的なプロジェクトにおいて強みとなっています。'
     },
 
     // About Page - Japanese Ability Note (final section)
     japaneseAbilityNote: {
-      en: "I retain strong reading and listening comprehension in Japanese. My spoken Japanese is currently rusty and would benefit from regular use. I'm comfortable supporting written translation, documentation review, and stakeholder coordination between English and Japanese. With daily practice or immersion (roughly six months), I can regain business-level spoken fluency and serve effectively as a bridge between technical teams and Japanese stakeholders.",
-      ja: '読む・聞く力は比較的保たれていますが、話す力は現在錆びついており、定期的な運用で回復が必要です。書面での翻訳、ドキュメント確認、関係者間の調整などの業務サポートには対応可能です。日常的に日本語を使う環境（概ね半年程度）をいただければ、ビジネスレベルの会話力を取り戻し、技術チームと日本側の橋渡しとして効果的に貢献できるようになります。'
+      en: "I retain strong reading/listening comprehension in Japanese. With daily immersion (roughly six months), I can regain business-level spoken fluency and serve as an effective bridge for technical teams.",
+      ja: '日本語の読解と聴解は維持しています。実務環境で約半年ほど日常的に使用すれば、ビジネスレベルの会話力も取り戻し、技術チームと日本側の効果的な架け橋になれると確信しています。'
     },
     selfTaughtContent4: {
-      en: 'When COVID hit Vietnam severely, I was forced to stay home. During this time, I dedicated myself to learning SEO and WordPress. I tried my hand at affiliate marketing and Amazon dropshipping, though I quickly learned it wasn\'t as easy as it seemed.',
-      ja: 'COVIDがベトナムを深刻に襲ったとき、私は家に閉じ込められました。この期間、私はSEOとWordPressの学習に専念しました。アフィリエイトマーケティングとAmazonドロップシッピングに手を出しましたが、思ったほど簡単ではないことをすぐに学びました。'
+      en: 'During the COVID lockdowns, I dedicated myself entirely to self-taught web development, focusing on SEO and WordPress. Through trial and error, I found my footing.',
+      ja: 'コロナ禍のロックダウン中、SEOとWordPressを中心にWeb開発の独学に専念しました。試行錯誤を繰り返す中で、技術的な基盤を固めました。'
     },
     selfTaughtContent5: {
-      en: 'With my basic WordPress and SEO skills, I applied for related jobs and landed my first unofficial freelance gig as a WordPress Developer. This marked the beginning of my professional journey in tech, and I continue to hold this title as a freelancer until 2022 when I got my first official full time job as WordPress developer.',
-      ja: '基本的なWordPressとSEOのスキルで、関連する仕事に応募し、WordPress開発者としての最初の非公式フリーランスの仕事を獲得しました。これはテクノロジーでの私のプロフェッショナルな旅の始まりを示し、2022年に最初の公式フルタイムのWordPress開発者の仕事を得るまでフリーランサーとしてこのタイトルを維持し続けました。'
+      en: 'These skills landed me my first freelance gigs, paving the way for my transition to professional backend and systems engineering. By 2022, I secured my first full-time role as a WordPress developer.',
+      ja: 'これらのスキルで初のフリーランス案件を獲得し、バックエンドやシステムエンジニアリングへの道を切り拓きました。そして2022年、WordPress開発者として初のフルタイム職に就きました。'
     },
 
     // Professional Growth Section
     professionalGrowthTitle: { en: 'From Freelance to AI Engineering Leadership', ja: 'フリーランスからAIエンジニアリングリーダーへ' },
     professionalGrowthContent1: {
-      en: 'My freelance WordPress work opened doors into backend and systems engineering roles. Over time I transitioned from building simple web interfaces to architecting complex data processing systems, optimizing databases, and designing scalable API services. This hands-on progression gave me strong technical foundations and a practical understanding of backend architecture.',
-      ja: 'フリーランスでのWordPress業務が、バックエンドおよびシステム開発の役割への扉を開きました。単純なウェブインターフェースの構築から、複雑なデータ処理システム、データベース最適化、スケーラブルなAPI設計へと役割がシフト。この実務を通じて、強固な技術基盤とバックエンド設計に関する実践的な理解を得ました。'
+      en: 'Freelancing quickly scaled into full backend and systems engineering. I shifted from building simple web interfaces to designing scalable database structures, web scrapers, and background task architectures.',
+      ja: 'フリーランスでの活動は、すぐに本格的なバックエンドやシステム開発へと発展しました。単純なWeb制作から、スケーラブルなDB設計、高効率なスクレイパー、バックグラウンド処理のアーキテクチャ設計へとシフトしました。'
     },
     professionalGrowthContent2: {
-      en: "At Nexus Tech Global, as Co-Founder and Lead AI Engineer, I designed and built SiteBotic's core technical architecture. I architected our vector search RAG pipeline using pgvector and LlamaIndex, and built the scraping service using Crawl4AI to replace Playwright, resolving Playwright container OOM crashes and adding support for SPAs. I integrated OpenAI's GPT-5-mini, managing 400k context validations and custom model routing. To eliminate thread-safety bottlenecks in Dramatiq background task workers, I refactored the task processing engine to use a single persistent AsyncIO event loop. I also migrated user cookie security to session-only storage to prevent cross-session chat retention, and upgraded the entire frontend to React 19.2.7 and Vercel AI SDK v7.0.0.",
-      ja: "Nexus Tech Globalでは、共同創業者兼リードAIエンジニアとして、SiteBoticの主要な技術設計と開発を担当しました。pgvector and LlamaIndexを用いたベクトル検索RAGパイプラインの設計、およびPlaywrightからCrawl4AIスクレイピングシステムへの移行を主導し、コンテナのOOMクラッシュ回避とSPA対応を実現。400kコンテキストウィンドウを持つGPT-5-miniの統合（カスタムルーティング等の実装）に加え、Dramatiq非同期タスク処理時のスレッドセーフに関するボトルネックを解消するため単一持続的AsyncIOイベントループ化を実装しました。さらに、クロスセッションの会話漏洩を防ぐためセッション専用クッキー管理へ移行し、フロントエンド全体をReact 19.2.7およびVercel AI SDK v7.0.0へアップグレードしました。"
+      en: "At Nexus Tech Global, I led the AI and backend engineering. Key accomplishments include: building our pgvector/LlamaIndex RAG pipeline, migrating to Crawl4AI to fix container OOM issues, refactoring Dramatiq workers to use a persistent AsyncIO event loop, and upgrading to React 19 / Vercel AI SDK v7.",
+      ja: "Nexus Tech Globalでは、AIおよびバックエンドエンジニアリングを主導しました。主な実績：pgvector/LlamaIndexによるRAG構築、Crawl4AIへの移行によるOOM問題の解決、DramatiqワーカーのAsyncIO化によるスレッドセーフ向上、React 19 / Vercel AI SDK v7へのアップグレード。"
     },
     professionalGrowthContent3: {
-      en: "My passion for AI/ML Engineering grew out of building SiteBotic and is further driven by my current academic focus in the AIO 2026 AI Program. Designing systems from scratch and studying advanced AI curricula have taught me how to tackle complex technical challenges—from optimizing vector retrieval speeds to training predictive ML/DL models. I realize that my strengths lie in translating complex mathematical and AI research concepts into reliable, production-ready backend systems and data pipelines. Moving forward, I want to deepen my expertise in deep learning, computer vision, NLP, and multi-agent systems.",
-      ja: "AI/MLエンジニアリングへの私の情熱は、SiteBoticの構築を通じて育まれ、さらにAIO 2026 AIプログラムでの現在の学術的焦点によって後押しされています。システムをゼロから設計し、高度なAIカリキュラムを研究することで、ベクトル検索の高速化から予測ML/DLモデルのトレーニングまで、複雑な技術的課題を解決する面白さを知りました。私の強みは、複雑な数学やAIの概念を信頼性の高い本番用バックエンドシステムやデータパイプラインへと落とし込むことにあります。今後は、ディープラーニング、コンピュータビジョン、自然言語処理、マルチエージェントシステムの専門性をさらに深めたいと考えています。"
+      en: 'My hands-on experience at Nexus Tech Global and structured training in the AIO 2026 AI Program solidified my transition into AI/ML engineering. I specialize in bridging the gap between machine learning models and reliable backend systems.',
+      ja: 'Nexus Tech Globalでの実務経験とAIO 2026 AIプログラムでの専門学習を通じて、AI/MLエンジニアリングへの移行を確固たるものにしました。機械学習モデルと堅牢なバックエンドシステムを繋ぐ開発を得意としています。'
     },
 
     // Future Goals Section
     futureGoalsTitle: { en: 'Looking Ahead: Completing the Circle', ja: 'これから：旅の締めくくりへ' },
     futureGoalsContent1: {
-      en: 'I\'m currently at the final stage of my second bachelor\'s degree in Information Technology at UIT (University of Information Technology), part of the same Vietnam National University Ho Chi Minh City system as USSH. I\'ve completed all coursework and achieved a "Very Good" degree classification, and I\'m now awaiting my official academic transcript and bachelor\'s degree certificate in June 2026.',
-      ja: '現在、UIT（情報技術大学）で情報技術の第二学士号の最終段階にいます。これはUSSHと同じベトナム国家大学ホーチミン市システムの一部です。すべてのコースワークを完了し、「Very Good」の学位分類を達成し、現在2026年6月に公式の成績証明書と学士号証明書を待っています。'
+      en: 'I have completed all my coursework for my second Bachelor\'s degree in Information Technology at UIT, achieving a "Very Good" classification. I am graduating in June 2026.',
+      ja: 'UITにおける情報技術の第二学士号課程の全科目を修了し、「Very Good（優）」の成績を収めました。2026年6月に卒業を迎えます。'
     },
     futureGoalsContent2: {
-      en: 'Completing my IT degree from UIT provides a rigorous computer science foundation that complements my hands-on software development experience. Combining a degree in Information Technology with Japanese Studies allows me to serve as a bilingual AI developer, communicating technical details clearly with both engineering teams and Japanese stakeholders.',
-      ja: 'UITでの情報技術の学位取得は、コンピュータサイエンスの厳格な基礎を提供し、実践的なソフトウェア開発経験を補完します。情報技術と日本語学の二つの学位を組み合わせることで、バイリンガルなAI開発者として、開発チームと日本の関係者の双方に対して技術的な詳細を明確に伝えることができます。'
+      en: 'My academic computer science background complements my practical engineering skills. Combined with my Japanese Studies degree, it enables me to serve as a bilingual engineer bridging technical teams and international partners.',
+      ja: 'コンピュータサイエンスの学術的背景は、実践的な開発スキルを補完します。日本語学の学位と組み合わせることで、技術チームと国際的なパートナーを繋ぐバイリンガルエンジニアとして貢献できます。'
     },
     futureGoalsContent3: {
-      en: 'I aim to secure a full-time role as an AI/ML Engineer or Full-Stack Backend Developer where I can design, build, and optimize machine learning models, computer vision/NLP pipelines, and high-performance backend platforms. I am highly interested in contributing to technical projects that require collaboration between bilingual engineering teams.',
-      ja: 'AI/MLエンジニアまたはフルスタック・バックエンド開発者としてフルタイムの役割を獲得し、機械学習モデル、コンピュータビジョン/自然言語処理パイプライン、高性能バックエンドプラットフォームの設計・構築・最適化に貢献することを目指しています。バイリンガルな開発チーム間でのコラボレーションを必要とする技術プロジェクトへの貢献に強い意欲を持っています。'
+      en: 'I am seeking a full-time role as an AI/ML Engineer or Backend Developer, where I can build and deploy machine learning models, computer vision/NLP pipelines, and scalable backend systems.',
+      ja: 'AI/MLモデルのデプロイ、CV/NLPパイプライン構築、そしてバックエンドシステム開発に貢献できる、AI/MLエンジニアまたはバックエンド開発者としてのフルタイムの機会を探しています。'
     },
 
     // Call to Action
@@ -167,8 +167,8 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
     getInTouch: { en: 'Get In Touch', ja: '連絡する' },
 
     // Footer
-    initializeCollaboration: { en: 'Initialize collaboration?', ja: 'コラボレーションを開始しますか？' },
-    availableForFreelance: { en: 'Available for AI engineering roles, RAG integration, backend development, and open to full-time opportunities.', ja: 'AIエンジニアリング、RAG統合、バックエンド開発に対応可能で、フルタイムの機会にもオープンです。' },
+    initializeCollaboration: { en: "Ready to Collaborate?", ja: 'コラボレーションの準備はできていますか？' },
+    availableForFreelance: { en: 'Specializing in machine learning, deep learning, and scalable backend systems. Actively seeking full-time opportunities.', ja: '機械学習、ディープラーニング、スケーラブルなバックエンドシステムに特化。フルタイムの機会を積極的に募集しています。' },
     sitemap: { en: 'Sitemap', ja: 'サイトマップ' },
     contactInfo: { en: 'Contact_Info', ja: '連絡先情報' },
     location: { en: 'Ho Chi Minh City, VN', ja: 'ホーチミン市、ベトナム' },
@@ -206,10 +206,10 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
     statsCompanyFounded: { en: 'Company Founded', ja: '設立した会社' },
     statsProjectsBuilt: { en: 'Projects Built', ja: '構築したプロジェクト' },
     statsSaaSPlatform: { en: 'SaaS Platform', ja: 'SaaSプラットフォーム' },
-    projectsCTAHeading: { en: 'Need an AI Engineer, RAG Specialist, or Backend Developer?', ja: 'AIエンジニア、RAGスペシャリスト、またはバックエンド開発者をお探しですか？' },
+    projectsCTAHeading: { en: 'Need an AI/ML Engineer or Backend Developer?', ja: 'AI/MLエンジニア、またはバックエンド開発者をお探しですか？' },
     projectsCTADescription: {
-      en: 'I design RAG architectures, scale data pipelines, integrate advanced LLMs, and build reliable backend systems.',
-      ja: 'RAGアーキテクチャの設計、データパイプラインの拡張、先進的なLLMの統合、および信頼性の高いバックエンドシステムの構築を担当します。'
+      en: 'I build machine learning models, scale data pipelines, and develop robust backend systems.',
+      ja: '機械学習モデルの構築、データパイプラインの拡張、および堅牢なバックエンドシステムの開発を担当します。'
     },
     projectsCTAButton: { en: "Let's_Talk()", ja: '話しましょう()' },
     visitLiveApp: { en: 'Visit live app', ja: '本番アプリを見る' },
@@ -293,6 +293,9 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
     tag_BackendEngineering: { en: 'Backend Engineering', ja: 'バックエンドエンジニアリング' },
     tag_ApacheSpark: { en: 'Apache Spark', ja: 'Apache Spark' },
     tag_NumPy: { en: 'NumPy', ja: 'NumPy' },
+    tag_ResNet50: { en: 'ResNet50', ja: 'ResNet50' },
+    tag_Matplotlib: { en: 'Matplotlib', ja: 'Matplotlib' },
+
     tag_CLIP: { en: 'CLIP', ja: 'CLIP' },
     tag_PyTorch: { en: 'PyTorch', ja: 'PyTorch' },
     tag_ComputerVision: { en: 'Computer Vision', ja: 'コンピュータビジョン' },
@@ -355,34 +358,38 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
     testimonialAuthorTitle: { en: 'Founder & CEO, Nexus Tech Global', ja: 'Founder & CEO, Nexus Tech Global' },
 
     // PM-focused short cards for homepage -> Refocused to AI Engineering
-    pmCardTitle1: { en: 'Machine Learning & Deep Learning', ja: '機械学習 & ディープラーニング' },
-    pmCardDesc1: {
-      en: 'Supervised & unsupervised learning, deep learning (MLPs, CNNs, Transformers), PyTorch, NumPy, data analysis (SQL/Pandas), MLOps, and model evaluation.',
-      ja: '教師あり/なし学習、ディープラーニング (MLP, CNN, Transformer)、PyTorch、NumPy、データ分析 (SQL/Pandas)、MLOps、モデル評価。'
-    },
-    pmCardTitle2: { en: 'Generative AI & LLMs', ja: '生成AI & LLM統合' },
-    pmCardDesc2: {
-      en: 'LlamaIndex RAG pipelines, vector search (pgvector), custom retrievers, function calling, LLM APIs (OpenAI GPT-5-mini, Claude, Gemini), and agentic workflows.',
-      ja: 'LlamaIndex RAGパイプライン、ベクトル検索 (pgvector)、カスタムリトリーバー、関数呼び出し、LLM API (OpenAI GPT-5-mini, Claude, Gemini)、エージェントワークフロー。'
-    },
-    pmCardTitle3: { en: 'Data Scraping & Pipelines', ja: 'データ収集 & パイプライン' },
-    pmCardDesc3: {
-      en: 'Crawl4AI, Playwright, SPA crawling, distributed data pipelines (Spark, Airflow), HTML parsing, and ETL processing.',
-      ja: 'Crawl4AI、Playwright、SPAスクレイピング、分散データパイプライン (Spark, Airflow)、HTMLパース、ETL処理。'
-    },
-    pmCardTitle4: { en: 'SaaS Backend & Infrastructure', ja: 'SaaS バックエンド & インフラ' },
-    pmCardDesc4: {
-      en: 'Python, FastAPI, Dramatiq + Redis async workers, single persistent AsyncIO event loops, Docker, PostgreSQL database optimization.',
-      ja: 'Python、FastAPI、Dramatiq + Redis非同期ワーカー、単一持続的AsyncIOイベントループ、Docker、PostgreSQLデータベース最適化。'
-    },
+    certificationsHeading: { en: 'Certifications & Degrees', ja: '資格と学位' },
+    certificationsLabel: { en: 'Education', ja: '教育' },
+    verifyCredential: { en: 'Verify Credential', ja: '資格証明書を確認' },
+    academicDegree: { en: 'Academic Degree', ja: '学士号' },
+
+    cert1Issuer: { en: 'Google Cloud | Coursera', ja: 'Google Cloud | Coursera' },
+    cert1Title: { en: 'Google Cloud Data Engineer Specialization', ja: 'Google Cloud データエンジニア 専門講座' },
+    cert1Desc: { en: 'Comprehensive specialization covering Google Cloud infrastructure, deployment, and highly scalable architectures.', ja: 'Google Cloudのインフラ、デプロイ、スケーラブルなアーキテクチャを網羅した専門講座。' },
+
+    cert2Issuer: { en: 'Duke University | Coursera', ja: 'Duke University | Coursera' },
+    cert2Title: { en: 'Java Programming Fundamentals Specialization', ja: 'Java プログラミング基礎 専門講座' },
+    cert2Desc: { en: 'Foundational training in core programming concepts, software engineering, and object-oriented design using Java.', ja: 'Javaを用いたコアプログラミング、ソフトウェアエンジニアリング、オブジェクト指向設計の基礎。' },
+
+    cert3Issuer: { en: 'AIO | AI VIET NAM', ja: 'AIO | AI VIET NAM' },
+    cert3Title: { en: 'AI VIET NAM - AIO 2026 (Module 01)', ja: 'AI VIET NAM - AIO 2026（モジュール01）' },
+    cert3Desc: { en: 'Intensive academic program focusing on machine learning, deep learning, computer vision, and NLP.', ja: '機械学習、ディープラーニング、コンピュータビジョン、自然言語処理に特化した集中プログラム。' },
+
+    cert4Issuer: { en: 'UIT - VNUHCM', ja: 'UIT - VNUHCM' },
+    cert4Title: { en: 'B.S. Information Technology', ja: '情報技術 学士号' },
+    cert4Desc: { en: 'Rigorous computer science curriculum covering data structures, algorithms, databases, and software engineering. Graduated with a "Very Good" classification.', ja: 'データ構造、アルゴリズム、データベース、ソフトウェアエンジニアリングを網羅する厳格なコンピュータサイエンスのカリキュラム。「Very Good（優）」の成績で卒業。' },
+
+    cert5Issuer: { en: 'USSH - VNUHCM', ja: 'USSH - VNUHCM' },
+    cert5Title: { en: 'B.A. Japanese Studies', ja: '日本語学 学士号' },
+    cert5Desc: { en: 'In-depth study of Japanese language, culture, society, and cross-cultural communication.', ja: '日本語、日本文化、社会、および異文化コミュニケーションの深い理解。' },
 
     // Contact Page
     contactInitialize: { en: 'Initialize Contact', ja: 'コンタクトを開始' },
     contactHeroTitleLine1: { en: "Let's build something", ja: '一緒に何かを' },
     contactHeroTitleHighlight: { en: 'future-proof.', ja: '将来に強いものに。' },
     contactHeroDescription: {
-      en: "AI/ML Engineer and Backend Developer experienced in building machine learning models, RAG pipelines, data ingestion architectures, and scalable SaaS platforms. Active in advanced AI/ML research and programs. Let's discuss how I can help you implement or optimize your intelligent solutions.",
-      ja: '機械学習モデル、RAGパイプライン、データ収集アーキテクチャ、およびスケーラブルなSaaSプラットフォームの構築経験を持つAI/MLエンジニア兼バックエンド開発者。先進的なAI/ML研究およびプログラムに取り組んでいます。インテリジェントなソリューションの実装や最適化について、ぜひお話しましょう。'
+      en: "AI/ML Engineer and Backend Developer experienced in building machine learning models, deep learning systems, data pipelines, and scalable backend architectures. Let's discuss how I can help you implement or optimize your intelligent solutions.",
+      ja: '機械学習モデル、ディープラーニングシステム、データパイプライン、スケーラブルなバックエンドアーキテクチャの構築経験を持つAI/MLエンジニア兼バックエンド開発者。インテリジェントなソリューションの実装や最適化について、ぜひお話しましょう。'
     },
     contactDirectLine: { en: 'Direct Line', ja: 'ダイレクトライン' },
     contactSyncUp: { en: 'Sync Up', ja: '打ち合わせ' },

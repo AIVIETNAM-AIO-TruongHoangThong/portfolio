@@ -10,20 +10,20 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#3B82F6", // Tech Blue
-        secondary: "#0F172A", // Slate 900
-        accent: "#06B6D4", // Cyan
-        "background-light": "#F0F4F8", // Slightly cooler grey/blue tint
-        "background-dark": "#0B1121", // Deep dark blue/black
+        primary: "#FF3366", // Crimson
+        secondary: "#18181B", // Zinc 900
+        accent: "#E11D48", // Rose 600
+        "background-light": "#FAFAFA", // Zinc 50
+        "background-dark": "#09090B", // Zinc 950
         "surface-light": "#FFFFFF",
-        "surface-dark": "#151F32", // Darker slate
-        "text-light": "#334155", // Slate 700
-        "text-dark": "#E2E8F0", // Slate 200
-        "tech-border": "#2563EB",
+        "surface-dark": "#18181B", // Zinc 900
+        "text-light": "#27272A", // Zinc 800
+        "text-dark": "#E4E4E7", // Zinc 200
+        "tech-border": "#27272A", // Zinc 800
       },
       fontFamily: {
         sans: ["var(--font-inter)", "sans-serif"],
-        display: ["var(--font-space-grotesk)", "sans-serif"],
+        display: ["var(--font-newsreader)", "serif"],
         mono: ["var(--font-jetbrains-mono)", "monospace"],
       },
       backgroundImage: {

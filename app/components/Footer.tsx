@@ -6,7 +6,7 @@ import { useLanguage } from "./LanguageProvider";
 export default function Footer() {
   const { t } = useLanguage();
   return (
-    <footer className="bg-background-dark text-white pt-20 pb-10 border-t border-gray-800 relative overflow-hidden">
+    <footer className="bg-background-dark text-white pt-20 pb-10 border-t border-zinc-800 relative overflow-hidden">
       <div
         className="absolute inset-0 opacity-10"
         style={{
@@ -16,13 +16,13 @@ export default function Footer() {
       ></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 border-b border-gray-800 pb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 border-b border-zinc-800 pb-12">
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center gap-2 mb-6">
-              <div className="h-8 w-8 bg-primary rounded-sm flex items-center justify-center">
+              <div className="h-8 w-8 bg-primary flex items-center justify-center">
                 <span className="font-mono font-bold text-white">&gt;_</span>
               </div>
-              <span className="font-display font-bold text-2xl tracking-tighter">
+              <span className="font-display font-medium text-2xl tracking-tighter">
                 Thong Truong
               </span>
             </div>
@@ -39,7 +39,7 @@ export default function Footer() {
                 href="https://www.linkedin.com/in/thongtr/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded border border-gray-700 hover:border-primary hover:bg-primary/20 hover:text-primary flex items-center justify-center transition duration-300"
+                className="w-10 h-10 border border-gray-700 hover:border-primary hover:bg-primary/20 hover:text-primary flex items-center justify-center transition duration-300"
               >
                 <span className="text-xs font-bold font-mono">IN</span>
               </a>
@@ -47,9 +47,33 @@ export default function Footer() {
                 href="https://github.com/thongtr-dev"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded border border-gray-700 hover:border-primary hover:bg-primary/20 hover:text-primary flex items-center justify-center transition duration-300"
+                className="w-10 h-10 border border-gray-700 hover:border-primary hover:bg-primary/20 hover:text-primary flex items-center justify-center transition duration-300"
               >
                 <span className="text-xs font-bold font-mono">GH</span>
+              </a>
+              <a
+                href="https://www.youtube.com/@thongtruongnhaonhao"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 border border-gray-700 hover:border-red-500 hover:bg-red-500/20 hover:text-red-500 flex items-center justify-center transition duration-300"
+              >
+                <span className="text-xs font-bold font-mono">YT</span>
+              </a>
+              <a
+                href="https://zalo.me/84859864079"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 border border-gray-700 hover:border-blue-500 hover:bg-blue-500/20 hover:text-blue-500 flex items-center justify-center transition duration-300"
+              >
+                <span className="text-xs font-bold font-mono">ZL</span>
+              </a>
+              <a
+                href="https://wa.me/84859864079"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 border border-gray-700 hover:border-green-500 hover:bg-green-500/20 hover:text-green-500 flex items-center justify-center transition duration-300"
+              >
+                <span className="text-xs font-bold font-mono">WA</span>
               </a>
             </div>
           </div>

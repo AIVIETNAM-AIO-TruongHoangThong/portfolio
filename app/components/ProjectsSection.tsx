@@ -6,7 +6,7 @@ export default function ProjectsSection() {
 	return (
 		<section className="pt-20 pb-20 px-4">
 			<div className="max-w-6xl mx-auto">
-				<motion.h2 initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} className="text-3xl mb-16 text-center md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-400 to-teal-400">
+				<motion.h2 initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} className="text-4xl mb-16 md:text-6xl font-display font-medium text-zinc-900 dark:text-zinc-100 tracking-tight border-b-4 border-primary pb-8 inline-block">
 					My Projects
 				</motion.h2>
 
@@ -16,7 +16,7 @@ export default function ProjectsSection() {
 						initial={{ opacity: 0, y: 20 }}
 						whileInView={{ opacity: 1, y: 0 }}
 						viewport={{ once: true }}
-						className="bg-gray-900/50 rounded-xl overflow-hidden border border-gray-800"
+						className="bg-zinc-50 dark:bg-zinc-900 overflow-hidden border border-zinc-300 dark:border-zinc-700"
 					>
 						<div className="p-8">
 							<div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -49,9 +49,9 @@ export default function ProjectsSection() {
 									</div>
 								</div>
 
-								<div className="bg-black/30 rounded-xl p-6">
+								<div className="bg-black/30 p-6">
 									<h4 className="text-sm font-semibold text-gray-400 mb-4">Platform Architecture</h4>
-									<div className="aspect-[4/3] bg-black/50 rounded-lg p-4">
+									<div className="aspect-[4/3] bg-black/50 p-4">
 										<svg className="w-full h-full" viewBox="0 0 400 300">
 											{/* User Websites */}
 											<g>
@@ -143,7 +143,7 @@ export default function ProjectsSection() {
 							initial={{ opacity: 0, y: 20 }}
 							whileInView={{ opacity: 1, y: 0 }}
 							viewport={{ once: true }}
-							className="bg-gray-900/50 rounded-xl overflow-hidden border border-gray-800"
+							className="bg-zinc-900 overflow-hidden border border-zinc-800"
 						>
 							<div className="p-8">
 								<div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -172,9 +172,9 @@ export default function ProjectsSection() {
 										</div>
 									</div>
 
-									<div className="bg-black/30 rounded-xl p-6">
+									<div className="bg-black/30 p-6">
 										<h4 className="text-sm font-semibold text-gray-400 mb-4">Data Engineering Architecture</h4>
-										<div className="aspect-[4/3] bg-black/50 rounded-lg p-4">
+										<div className="aspect-[4/3] bg-black/50 p-4">
 											<svg className="w-full h-full" viewBox="0 0 400 300">
 												{/* Data Sources Layer */}
 												<g>
@@ -254,7 +254,7 @@ export default function ProjectsSection() {
 							initial={{ opacity: 0, y: 20 }}
 							whileInView={{ opacity: 1, y: 0 }}
 							viewport={{ once: true }}
-							className="bg-gray-900/50 rounded-xl overflow-hidden border border-gray-800"
+							className="bg-zinc-900 overflow-hidden border border-zinc-800"
 						>
 							<div className="p-8">
 								<div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -282,9 +282,9 @@ export default function ProjectsSection() {
 										</div>
 									</div>
 
-									<div className="bg-black/30 rounded-xl p-6">
+									<div className="bg-black/30 p-6">
 										<h4 className="text-sm font-semibold text-gray-400 mb-4">System Architecture</h4>
-										<div className="aspect-[4/3] bg-black/50 rounded-lg p-4">
+										<div className="aspect-[4/3] bg-black/50 p-4">
 											<svg className="w-full h-full" viewBox="0 0 400 300">
 												{/* Frontend Layer */}
 												<g>
@@ -364,7 +364,7 @@ export default function ProjectsSection() {
 							initial={{ opacity: 0, y: 20 }}
 							whileInView={{ opacity: 1, y: 0 }}
 							viewport={{ once: true }}
-							className="bg-gray-900/50 rounded-xl overflow-hidden border border-gray-800"
+							className="bg-zinc-900 overflow-hidden border border-zinc-800"
 						>
 							<div className="p-8">
 								<div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -392,9 +392,9 @@ export default function ProjectsSection() {
 										</div>
 									</div>
 
-									<div className="bg-black/30 rounded-xl p-6">
+									<div className="bg-black/30 p-6">
 										<h4 className="text-sm font-semibold text-gray-400 mb-4">Application Architecture</h4>
-										<div className="aspect-[4/3] bg-black/50 rounded-lg p-4">
+										<div className="aspect-[4/3] bg-black/50 p-4">
 											<svg className="w-full h-full" viewBox="0 0 400 300">
 												{/* GUI Layer */}
 												<g>
@@ -482,7 +482,7 @@ export default function ProjectsSection() {
 							initial={{ opacity: 0, y: 20 }}
 							whileInView={{ opacity: 1, y: 0 }}
 							viewport={{ once: true }}
-							className="bg-gray-900/50 rounded-xl overflow-hidden border border-gray-800"
+							className="bg-zinc-900 overflow-hidden border border-zinc-800"
 						>
 							<div className="p-8">
 								<div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -510,9 +510,9 @@ export default function ProjectsSection() {
 										</div>
 									</div>
 
-									<div className="bg-black/30 rounded-xl p-6">
+									<div className="bg-black/30 p-6">
 										<h4 className="text-sm font-semibold text-gray-400 mb-4">Data Flow Architecture</h4>
-										<div className="aspect-[4/3] bg-black/50 rounded-lg p-4">
+										<div className="aspect-[4/3] bg-black/50 p-4">
 											<svg className="w-full h-full" viewBox="0 0 400 300">
 												{/* Frontend Layer */}
 												<g>

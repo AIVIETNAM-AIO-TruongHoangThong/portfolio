@@ -4,27 +4,27 @@
 
 @layer base {
   body {
-    @apply bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark antialiased transition-colors duration-300;
+    @apply bg-zinc-50 dark:bg-zinc-950 text-text-light dark:text-text-dark antialiased transition-colors duration-300;
   }
 }
 
 @layer utilities {
   .tech-grid {
     background-size: 40px 40px;
-    background-image: linear-gradient(to right, rgba(59, 130, 246, 0.05) 1px, transparent 1px),
-                      linear-gradient(to bottom, rgba(59, 130, 246, 0.05) 1px, transparent 1px);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+                      linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
   }
   
   .dark .tech-grid {
-    background-image: linear-gradient(to right, rgba(59, 130, 246, 0.08) 1px, transparent 1px),
-                      linear-gradient(to bottom, rgba(59, 130, 246, 0.08) 1px, transparent 1px);
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                      linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
   }
 
   .corner-bracket {
     position: absolute;
     width: 1.5rem;
     height: 1.5rem;
-    border-color: #3B82F6;
+    border-color: #FF3366;
     transition: all 0.3s ease;
   }
 
@@ -60,7 +60,7 @@
     background: repeating-linear-gradient(
       to bottom,
       transparent 0%,
-      rgba(59, 130, 246, 0.02) 50%,
+      rgba(255, 51, 102, 0.02) 50%,
       transparent 100%
     );
     background-size: 100% 4px;

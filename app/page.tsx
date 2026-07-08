@@ -15,38 +15,34 @@ export default function HomePage() {
       
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden tech-grid min-h-screen flex items-center">
-        <div className="absolute top-0 right-0 w-1/2 h-1/2 bg-primary/5 blur-[100px] rounded-full pointer-events-none"></div>
-        <div className="absolute bottom-0 left-0 w-1/3 h-1/3 bg-accent/5 blur-[80px] rounded-full pointer-events-none"></div>
+        <div className="absolute top-0 right-0 w-1/2 h-1/2 bg-primary/5 pointer-events-none"></div>
+        <div className="absolute bottom-0 left-0 w-1/3 h-1/3 bg-accent/5 pointer-events-none"></div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div className="order-2 lg:order-1 lg:col-span-7 space-y-8">
               <div className="space-y-4">
-                <div className="inline-flex items-center gap-3 px-3 py-1.5 border border-primary/20 bg-primary/5 rounded-md backdrop-blur-sm">
+                <div className="inline-flex items-center gap-3 px-3 py-1.5 border border-primary/20 bg-primary/5">
                   <span className="flex h-2 w-2 relative">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                    <span className="animate-ping absolute inline-flex h-full w-full bg-green-400 opacity-75"></span>
+                    <span className="relative inline-flex h-2 w-2 bg-green-500"></span>
                   </span>
                   <span className="font-mono text-primary text-xs font-bold tracking-wide uppercase">
                       {t('founderEngineer')}
                   </span>
                 </div>
                 
-                <h1 className="text-5xl lg:text-7xl font-display font-bold text-gray-900 dark:text-white leading-[1.1] tracking-tight">
+                <h1 className="text-6xl lg:text-8xl font-display font-medium text-zinc-900 dark:text-white leading-[1.05] tracking-tight border-l-8 border-primary pl-6">
                   {t('building')} <br />
-                  <span className="relative inline-block text-primary">
-                    <span className="relative z-10">{t('dataDriven')}</span>
-                    <span className="absolute bottom-2 left-0 w-full h-3 bg-accent/20 -skew-x-12"></span>
-                  </span>
-                  <br />
+                  <span className="text-primary italic">{t('dataDriven')}</span><br />
                   {t('solutionsAt')} <br />
                   {t('scale')}
                 </h1>
               </div>
               
-              <div className="bg-white/50 dark:bg-gray-800/50 border-l-4 border-primary p-6 backdrop-blur-sm max-w-2xl rounded-r-lg">
-                <p className="font-mono text-sm text-primary mb-2 opacity-75">{/* bio.txt */}</p>
-                <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed font-light">
+              <div className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-6 max-w-2xl shadow-none">
+                <p className="font-mono text-sm text-zinc-500 dark:text-zinc-400 mb-2 uppercase tracking-widest">{/* SYSTEM.LOG_BIO_LOADED */}</p>
+                <p className="text-lg text-zinc-700 dark:text-zinc-300 leading-relaxed font-sans">
                   {t('heroBio')}
                 </p>
               </div>
@@ -64,21 +60,17 @@ export default function HomePage() {
                 
                 <Link 
                   href="/about"
-                  className="group inline-flex items-center justify-center px-8 py-3.5 text-base font-bold text-gray-700 dark:text-gray-200 bg-transparent border-2 border-gray-200 dark:border-gray-700 hover:border-primary dark:hover:border-primary transition-all font-mono"
+                  className="group inline-flex items-center justify-center px-8 py-3.5 text-base font-bold text-zinc-700 dark:text-zinc-200 bg-transparent border-2 border-zinc-300 dark:border-zinc-700 hover:border-primary dark:hover:border-primary transition-all font-mono"
                 >
                   <span className="mr-2 opacity-0 -ml-4 group-hover:opacity-100 group-hover:ml-0 transition-all duration-300 text-primary">&gt;</span>
                   {t('downloadCV')}
                 </Link>
               </div>
               
-              <div className="pt-8 flex flex-wrap gap-8 text-xs font-mono text-gray-500 dark:text-gray-400 uppercase tracking-widest border-t border-gray-200 dark:border-gray-800 mt-8">
+              <div className="pt-8 flex flex-wrap gap-8 text-xs font-mono text-gray-500 dark:text-gray-400 uppercase tracking-widest border-t border-zinc-300 dark:border-zinc-800 mt-8">
                 <div className="flex items-center gap-2">
                   <span className="material-icons text-lg text-primary">storage</span>
                   {t('dataEngineering')}
-                </div>
-                <div className="flex items-center gap-2">
-                  <span className="material-icons text-lg text-accent">psychology</span>
-                  {t('aiMlIntegration')}
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="material-icons text-lg text-blue-400">code</span>
@@ -89,19 +81,16 @@ export default function HomePage() {
             
             <div className="order-1 lg:order-2 lg:col-span-5 relative flex justify-center lg:justify-end">
               <div className="relative w-full max-w-md group">
-                <div className="absolute -top-10 -right-10 w-40 h-40 border border-primary/20 rounded-full border-dashed animate-[spin_10s_linear_infinite]"></div>
-                <div className="absolute -bottom-5 -left-5 w-24 h-24 border border-accent/20 rounded-full border-dashed animate-[spin_8s_linear_infinite_reverse]"></div>
-                <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-accent/20 rounded opacity-0 group-hover:opacity-100 transition duration-700 blur-xl"></div>
-                
-                <div className="relative bg-background-light dark:bg-background-dark p-2 border border-gray-200 dark:border-gray-700 shadow-2xl">
+                {/* Removed spinning borders for a brutalist static feel */}
+                <div className="relative bg-zinc-100 dark:bg-zinc-900 p-3 border border-zinc-300 dark:border-zinc-700">
                   <div className="corner-bracket corner-bracket-tl"></div>
                   <div className="corner-bracket corner-bracket-tr"></div>
                   <div className="corner-bracket corner-bracket-bl"></div>
                   <div className="corner-bracket corner-bracket-br"></div>
                   
-                  <div className="relative overflow-hidden bg-gray-800 aspect-[3/4] group-hover:shadow-[inset_0_0_20px_rgba(59,130,246,0.3)] transition-all duration-500">
-                    <div className="scanlines absolute inset-0 z-20 opacity-30"></div>
-                    <div className="absolute inset-0 bg-primary/10 mix-blend-overlay z-10 group-hover:bg-transparent transition duration-500"></div>
+                  <div className="relative overflow-hidden bg-zinc-950 aspect-[3/4] transition-all duration-500 border border-zinc-800">
+                    <div className="scanlines absolute inset-0 z-20 opacity-40 mix-blend-overlay"></div>
+                    <div className="absolute inset-0 bg-black/20 z-10"></div>
                     
                     <Image
                       src="/profile.jpg"
@@ -114,19 +103,19 @@ export default function HomePage() {
                     />
                     
                     <div className="absolute top-4 left-4 z-30 flex flex-col gap-1">
-                      <span className="bg-black/80 backdrop-blur text-primary text-[10px] font-mono px-2 py-0.5 border-l-2 border-primary">
+                      <span className="bg-black/80 text-primary text-[10px] font-mono px-2 py-0.5 border-l-2 border-primary">
                         ID: T_TRUONG
                       </span>
-                      <span className="bg-black/80 backdrop-blur text-white/70 text-[10px] font-mono px-2 py-0.5 border-l-2 border-accent">
+                      <span className="bg-black/80 text-white/70 text-[10px] font-mono px-2 py-0.5 border-l-2 border-accent">
                         ROLE: DEV
                       </span>
                     </div>
                     
-                    <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/90 to-transparent z-30">
+                    <div className="absolute bottom-0 left-0 right-0 p-4 /90 z-30">
                       <div className="flex justify-between items-end">
                         <div>
                           <p className="text-accent text-xs font-mono mb-1">STATUS: AVAILABLE</p>
-                          <div className="h-1 w-24 bg-gray-700 rounded-full overflow-hidden">
+                          <div className="h-1 w-24 bg-gray-700 overflow-hidden">
                             <div className="h-full bg-primary w-2/3 animate-pulse"></div>
                           </div>
                         </div>
@@ -141,11 +130,11 @@ export default function HomePage() {
                   </div>
                 </div>
                 
-                <div className="absolute -right-6 bottom-20 bg-surface-light dark:bg-surface-dark p-3 rounded border border-gray-200 dark:border-gray-700 shadow-xl hidden md:block z-40 transform translate-x-4 group-hover:translate-x-0 transition duration-500">
-                  <div className="flex gap-1.5 mb-2 border-b border-gray-100 dark:border-gray-800 pb-2">
-                    <div className="w-2 h-2 rounded-full bg-red-500"></div>
-                    <div className="w-2 h-2 rounded-full bg-yellow-500"></div>
-                    <div className="w-2 h-2 rounded-full bg-green-500"></div>
+                <div className="absolute -right-6 bottom-20 bg-white dark:bg-zinc-900 p-3 border border-zinc-300 dark:border-zinc-700 hidden md:block z-40 transform translate-x-4 group-hover:translate-x-0 transition duration-500">
+                  <div className="flex gap-1.5 mb-2 border-b border-gray-100 dark:border-zinc-800 pb-2">
+                    <div className="w-2 h-2 bg-red-500"></div>
+                    <div className="w-2 h-2 bg-yellow-500"></div>
+                    <div className="w-2 h-2 bg-green-500"></div>
                   </div>
                   <pre className="font-mono text-[10px] leading-tight text-gray-500 dark:text-gray-400">
                     <span className="text-purple-500">def</span> <span className="text-blue-500">build_future</span>():
@@ -159,12 +148,12 @@ export default function HomePage() {
       </section>
       
       {/* Selected Projects Preview */}
-      <section className="py-24 bg-surface-light dark:bg-surface-dark relative border-t border-gray-200 dark:border-gray-800">
+      <section className="py-24 bg-white dark:bg-zinc-900 relative border-t border-zinc-300 dark:border-zinc-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-8 flex items-center justify-between">
             <div>
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-gray-900 dark:text-white mb-2">{t('selectedWorksHeading')}</h2>
-              <p className="text-gray-600 dark:text-gray-400 font-mono text-sm">{/* Executed_Projects_List */}</p>
+              <h2 className="text-3xl md:text-4xl font-display font-medium text-zinc-900 dark:text-white mb-2">{t('selectedWorksHeading')}</h2>
+              <p className="text-zinc-600 dark:text-zinc-400 font-mono text-sm">{/* Executed_Projects_List */}</p>
             </div>
             <Link 
               href="/projects"
@@ -178,9 +167,9 @@ export default function HomePage() {
             <div>
               <h4 className="text-xl font-bold mb-4">{t('productLeadershipHeading')}</h4>
               <div className="grid grid-cols-1 gap-6">
-                <Link href="https://nexustechglobal.com" target="_blank" rel="noopener noreferrer" className="group block rounded border border-gray-200 dark:border-gray-700 bg-background-light dark:bg-background-dark hover:border-primary transition overflow-hidden">
-                  <div className="aspect-w-16 aspect-h-9 relative overflow-hidden rounded-t border-b border-gray-200 dark:border-gray-700">
-                    <div className="absolute top-2 right-2 z-20 bg-black/80 text-white text-[10px] font-mono px-2 py-1 rounded">{t('productionBadge')}</div>
+                <div className="group block border border-zinc-300 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-950 transition overflow-hidden">
+                  <div className="aspect-w-16 aspect-h-9 relative overflow-hidden border-b border-zinc-300 dark:border-zinc-700">
+                    <div className="absolute top-2 right-2 z-20 bg-black/80 text-white text-[10px] font-mono px-2 py-1">{t('productionBadge')}</div>
                     <Image
                       src="/nexus-tech-global-thumbnail.png"
                       alt="Nexus Tech Global"
@@ -189,15 +178,28 @@ export default function HomePage() {
                       className="object-cover w-full h-full transform group-hover:scale-105 transition duration-700 filter grayscale group-hover:grayscale-0"
                     />
                   </div>
-                  <div className="p-4">
-                    <h5 className="font-display font-bold text-lg">Nexus Tech Global</h5>
-                    <p className="text-sm text-gray-600 dark:text-gray-400 mt-2 line-clamp-2">{t('nexusSelectedDescription')}</p>
+                  <div className="p-4 flex flex-col justify-between">
+                    <div>
+                      <h5 className="font-display font-medium text-lg">Nexus Tech Global</h5>
+                      <p className="text-sm text-zinc-600 dark:text-zinc-400 mt-2 line-clamp-2">{t('nexusSelectedDescription')}</p>
+                    </div>
+                    <div className="flex flex-wrap gap-3 mt-4 pt-4 border-t border-gray-100 dark:border-zinc-800">
+                      <a 
+                        href="https://nexustechglobal.com" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="inline-flex items-center gap-1.5 px-3 py-1.5 border border-zinc-300 dark:border-zinc-700 hover:border-primary text-xs font-mono text-zinc-700 dark:text-zinc-300 hover:text-primary transition duration-200"
+                      >
+                        <span className="material-icons text-sm">language</span>
+                        Website
+                      </a>
+                    </div>
                   </div>
-                </Link>
+                </div>
 
-                <Link href="https://sitebotic.com" target="_blank" rel="noopener noreferrer" className="group block rounded border border-gray-200 dark:border-gray-700 bg-background-light dark:bg-background-dark hover:border-primary transition overflow-hidden">
-                  <div className="aspect-w-16 aspect-h-9 relative overflow-hidden rounded-t border-b border-gray-200 dark:border-gray-700">
-                    <div className="absolute top-2 right-2 z-20 bg-black/80 text-white text-[10px] font-mono px-2 py-1 rounded">{t('productionBadge')}</div>
+                <div className="group block border border-zinc-300 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-950 transition overflow-hidden">
+                  <div className="aspect-w-16 aspect-h-9 relative overflow-hidden border-b border-zinc-300 dark:border-zinc-700">
+                    <div className="absolute top-2 right-2 z-20 bg-black/80 text-white text-[10px] font-mono px-2 py-1">{t('productionBadge')}</div>
                     <Image
                       src="/sitebotic-thumbnail.png"
                       alt="SiteBotic AI Chatbot Platform"
@@ -206,20 +208,33 @@ export default function HomePage() {
                       className="object-cover w-full h-full transform group-hover:scale-105 transition duration-700 filter grayscale group-hover:grayscale-0"
                     />
                   </div>
-                  <div className="p-4">
-                    <h5 className="font-display font-bold text-lg">SiteBotic</h5>
-                    <p className="text-sm text-gray-600 dark:text-gray-400 mt-2 line-clamp-2">{t('siteboticSelectedDescription')}</p>
+                  <div className="p-4 flex flex-col justify-between">
+                    <div>
+                      <h5 className="font-display font-medium text-lg">SiteBotic</h5>
+                      <p className="text-sm text-zinc-600 dark:text-zinc-400 mt-2 line-clamp-2">{t('siteboticSelectedDescription')}</p>
+                    </div>
+                    <div className="flex flex-wrap gap-3 mt-4 pt-4 border-t border-gray-100 dark:border-zinc-800">
+                      <a 
+                        href="https://sitebotic.com" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="inline-flex items-center gap-1.5 px-3 py-1.5 border border-zinc-300 dark:border-zinc-700 hover:border-primary text-xs font-mono text-zinc-700 dark:text-zinc-300 hover:text-primary transition duration-200"
+                      >
+                        <span className="material-icons text-sm">language</span>
+                        Website
+                      </a>
+                    </div>
                   </div>
-                </Link>
+                </div>
               </div>
             </div>
 
             <div>
               <h4 className="text-xl font-bold mb-4">{t('handsOnTechnicalHeading')}</h4>
               <div className="grid grid-cols-1 gap-6">
-                <Link href="https://github.com/thongtr-dev" target="_blank" rel="noopener noreferrer" className="group block rounded border border-gray-200 dark:border-gray-700 bg-background-light dark:bg-background-dark hover:border-primary transition overflow-hidden">
-                  <div className="aspect-w-16 aspect-h-9 relative overflow-hidden rounded-t border-b border-gray-200 dark:border-gray-700">
-                    <div className="absolute top-2 right-2 z-20 bg-black/80 text-white text-[10px] font-mono px-2 py-1 rounded">AIO Research</div>
+                <div className="group block border border-zinc-300 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-950 transition overflow-hidden">
+                  <div className="aspect-w-16 aspect-h-9 relative overflow-hidden border-b border-zinc-300 dark:border-zinc-700">
+                    <div className="absolute top-2 right-2 z-20 bg-black/80 text-white text-[10px] font-mono px-2 py-1">AIO Research</div>
                     <Image
                       src="https://images.unsplash.com/photo-1544256718-3bcf237f3974?w=800"
                       alt="Similarity Matching for Images and Texts"
@@ -228,15 +243,37 @@ export default function HomePage() {
                       className="object-cover w-full h-full transform group-hover:scale-105 transition duration-700 filter grayscale group-hover:grayscale-0"
                     />
                   </div>
-                  <div className="p-4">
-                    <h5 className="font-display font-bold text-lg">Similarity Matching (CLIP & PyTorch)</h5>
-                    <p className="text-sm text-gray-600 dark:text-gray-400 mt-2 line-clamp-2">{t('projectSimilarityDescription')}</p>
+                  <div className="p-4 flex flex-col justify-between">
+                    <div>
+                      <h5 className="font-display font-medium text-lg">Similarity Matching (CLIP & PyTorch)</h5>
+                      <p className="text-sm text-zinc-600 dark:text-zinc-400 mt-2 line-clamp-2">{t('projectSimilarityDescription')}</p>
+                    </div>
+                    <div className="flex flex-wrap gap-3 mt-4 pt-4 border-t border-gray-100 dark:border-zinc-800">
+                      <a 
+                        href="https://github.com/AIVIETNAM-AIO-TruongHoangThong/AIO2026-Conquer-Module-01" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="inline-flex items-center gap-1.5 px-3 py-1.5 border border-zinc-300 dark:border-zinc-700 hover:border-primary text-xs font-mono text-zinc-700 dark:text-zinc-300 hover:text-primary transition duration-200"
+                      >
+                        <span className="material-icons text-sm">code</span>
+                        GitHub
+                      </a>
+                      <a 
+                        href="https://www.youtube.com/watch?v=CljX-IhiE7w&t=1432s" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="inline-flex items-center gap-1.5 px-3 py-1.5 border border-zinc-300 dark:border-zinc-700 hover:border-primary text-xs font-mono text-zinc-700 dark:text-zinc-300 hover:text-primary transition duration-200"
+                      >
+                        <span className="material-icons text-sm">play_circle</span>
+                        YouTube
+                      </a>
+                    </div>
                   </div>
-                </Link>
+                </div>
 
-                <Link href="https://github.com/23210287thongtruong/customer360-risk" target="_blank" rel="noopener noreferrer" className="group block rounded border border-gray-200 dark:border-gray-700 bg-background-light dark:bg-background-dark hover:border-primary transition overflow-hidden">
-                  <div className="aspect-w-16 aspect-h-9 relative overflow-hidden rounded-t border-b border-gray-200 dark:border-gray-700">
-                    <div className="absolute top-2 right-2 z-20 bg-black/80 text-white text-[10px] font-mono px-2 py-1 rounded">University</div>
+                <div className="group block border border-zinc-300 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-950 transition overflow-hidden">
+                  <div className="aspect-w-16 aspect-h-9 relative overflow-hidden border-b border-zinc-300 dark:border-zinc-700">
+                    <div className="absolute top-2 right-2 z-20 bg-black/80 text-white text-[10px] font-mono px-2 py-1">University</div>
                     <Image
                       src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800"
                       alt="Customer 360 Risk Scoring System"
@@ -245,15 +282,28 @@ export default function HomePage() {
                       className="object-cover w-full h-full transform group-hover:scale-105 transition duration-700 filter grayscale group-hover:grayscale-0"
                     />
                   </div>
-                  <div className="p-4">
-                    <h5 className="font-display font-bold text-lg">Customer 360 Risk Scoring</h5>
-                    <p className="text-sm text-gray-600 dark:text-gray-400 mt-2 line-clamp-2">{t('projectCustomer360Description')}</p>
+                  <div className="p-4 flex flex-col justify-between">
+                    <div>
+                      <h5 className="font-display font-medium text-lg">Customer 360 Risk Scoring</h5>
+                      <p className="text-sm text-zinc-600 dark:text-zinc-400 mt-2 line-clamp-2">{t('projectCustomer360Description')}</p>
+                    </div>
+                    <div className="flex flex-wrap gap-3 mt-4 pt-4 border-t border-gray-100 dark:border-zinc-800">
+                      <a 
+                        href="https://github.com/23210287thongtruong/customer360-risk" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="inline-flex items-center gap-1.5 px-3 py-1.5 border border-zinc-300 dark:border-zinc-700 hover:border-primary text-xs font-mono text-zinc-700 dark:text-zinc-300 hover:text-primary transition duration-200"
+                      >
+                        <span className="material-icons text-sm">code</span>
+                        GitHub
+                      </a>
+                    </div>
                   </div>
-                </Link>
+                </div>
 
-                <Link href="https://github.com/23210287thongtruong/recommendation-system" target="_blank" rel="noopener noreferrer" className="group block rounded border border-gray-200 dark:border-gray-700 bg-background-light dark:bg-background-dark hover:border-primary transition overflow-hidden">
-                  <div className="aspect-w-16 aspect-h-9 relative overflow-hidden rounded-t border-b border-gray-200 dark:border-gray-700">
-                    <div className="absolute top-2 right-2 z-20 bg-black/80 text-white text-[10px] font-mono px-2 py-1 rounded">University</div>
+                <div className="group block border border-zinc-300 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-950 transition overflow-hidden">
+                  <div className="aspect-w-16 aspect-h-9 relative overflow-hidden border-b border-zinc-300 dark:border-zinc-700">
+                    <div className="absolute top-2 right-2 z-20 bg-black/80 text-white text-[10px] font-mono px-2 py-1">University</div>
                     <Image
                       src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=800"
                       alt="Book Recommendation System"
@@ -262,74 +312,158 @@ export default function HomePage() {
                       className="object-cover w-full h-full transform group-hover:scale-105 transition duration-700 filter grayscale group-hover:grayscale-0"
                     />
                   </div>
-                  <div className="p-4">
-                    <h5 className="font-display font-bold text-lg">Book Recommendation System</h5>
-                    <p className="text-sm text-gray-600 dark:text-gray-400 mt-2 line-clamp-2">{t('projectBookRecDescription')}</p>
+                  <div className="p-4 flex flex-col justify-between">
+                    <div>
+                      <h5 className="font-display font-medium text-lg">Book Recommendation System</h5>
+                      <p className="text-sm text-zinc-600 dark:text-zinc-400 mt-2 line-clamp-2">{t('projectBookRecDescription')}</p>
+                    </div>
+                    <div className="flex flex-wrap gap-3 mt-4 pt-4 border-t border-gray-100 dark:border-zinc-800">
+                      <a 
+                        href="https://github.com/23210287thongtruong/recommendation-system" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="inline-flex items-center gap-1.5 px-3 py-1.5 border border-zinc-300 dark:border-zinc-700 hover:border-primary text-xs font-mono text-zinc-700 dark:text-zinc-300 hover:text-primary transition duration-200"
+                      >
+                        <span className="material-icons text-sm">code</span>
+                        GitHub
+                      </a>
+                    </div>
                   </div>
-                </Link>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
       
-      {/* Core Competencies Section */}
-      <section className="py-24 bg-background-light dark:bg-background-dark relative">
+      {/* Certifications & Degrees Section */}
+      <section className="py-24 bg-zinc-50 dark:bg-zinc-950 relative">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMSIgY3k9IjEiIHI9IjEiIGZpbGw9InJnYmEoNTksIDEzMCwgMjQ2LCAwLjEpIi8+PC9zdmc+')] [mask-image:linear-gradient(to_bottom,white,transparent)]"></div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-4 border-b border-gray-200 dark:border-gray-800 pb-8">
+          <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-4 border-b border-zinc-300 dark:border-zinc-800 pb-8">
             <div className="max-w-2xl">
               <div className="flex items-center gap-2 mb-2">
                 <span className="h-px w-8 bg-primary"></span>
-                <h2 className="text-sm font-mono text-primary font-bold uppercase tracking-widest">{t('capabilitiesLabel')}</h2>
+                <h2 className="text-sm font-mono text-primary font-bold uppercase tracking-widest">{t('certificationsLabel')}</h2>
               </div>
-              <h3 className="text-3xl md:text-4xl font-display font-bold text-gray-900 dark:text-white">{t('coreCompetenciesHeading')}</h3>
+              <h3 className="text-3xl md:text-4xl font-display font-medium text-zinc-900 dark:text-white">{t('certificationsHeading')}</h3>
             </div>
-            <p className="text-gray-500 font-mono text-xs text-right hidden md:block">
-              {/* SYSTEM_MODULES_LOADED<br />
-              OPTIMIZED_FOR_PERFORMANCE */}
-            </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="group bg-surface-light dark:bg-surface-dark p-1 rounded-lg hover:shadow-xl hover:shadow-primary/10 transition duration-300">
-              <div className="h-full bg-background-light dark:bg-background-dark p-7 rounded border border-gray-200 dark:border-gray-800 group-hover:border-primary/50 relative overflow-hidden">
-                <div className="w-12 h-12 bg-primary/10 flex items-center justify-center text-primary mb-6 rounded border border-primary/20">
-                  <span className="material-icons text-2xl">insights</span>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Card 1: Google Cloud */}
+            <div className="group bg-white dark:bg-zinc-900 p-1 hover: hover:-primary/10 transition duration-300">
+              <div className="h-full bg-zinc-50 dark:bg-zinc-950 p-7 border border-zinc-300 dark:border-zinc-800 group-hover:border-primary/50 flex flex-col justify-between relative overflow-hidden">
+                <div>
+                  <div className="flex items-center justify-between mb-6">
+                    <div className="w-12 h-12 bg-primary/10 flex items-center justify-center text-primary border border-primary/20">
+                      <span className="material-icons text-2xl">cloud</span>
+                    </div>
+                    <span className="text-[10px] font-mono text-gray-400 uppercase tracking-wider">{t('cert1Issuer')}</span>
+                  </div>
+                  <h3 className="text-xl font-display font-medium text-zinc-900 dark:text-white mb-3">{t('cert1Title')}</h3>
+                  <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">{t('cert1Desc')}</p>
                 </div>
-                <h3 className="text-xl font-display font-bold text-gray-900 dark:text-white mb-3">{t('pmCardTitle1')}</h3>
-                <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">{t('pmCardDesc1')}</p>
+                <a 
+                  href="https://www.coursera.org/account/accomplishments/specialization/LYM33YOBPSG0" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="inline-flex items-center gap-1.5 text-xs font-mono text-primary hover:text-blue-700 font-bold mt-6 pt-4 border-t border-gray-100 dark:border-zinc-800 w-full group/btn"
+                >
+                  {t('verifyCredential')}
+                  <span className="material-icons text-xs group-hover/btn:translate-x-0.5 transition-transform">arrow_forward</span>
+                </a>
               </div>
             </div>
 
-            <div className="group bg-surface-light dark:bg-surface-dark p-1 rounded-lg hover:shadow-xl hover:shadow-primary/10 transition duration-300">
-              <div className="h-full bg-background-light dark:bg-background-dark p-7 rounded border border-gray-200 dark:border-gray-800 group-hover:border-primary/50 relative overflow-hidden">
-                <div className="w-12 h-12 bg-accent/10 flex items-center justify-center text-accent mb-6 rounded border border-accent/20">
-                  <span className="material-icons text-2xl">event</span>
+            {/* Card 2: Java Specialization */}
+            <div className="group bg-white dark:bg-zinc-900 p-1 hover: hover:-primary/10 transition duration-300">
+              <div className="h-full bg-zinc-50 dark:bg-zinc-950 p-7 border border-zinc-300 dark:border-zinc-800 group-hover:border-primary/50 flex flex-col justify-between relative overflow-hidden">
+                <div>
+                  <div className="flex items-center justify-between mb-6">
+                    <div className="w-12 h-12 bg-blue-500/10 flex items-center justify-center text-blue-500 border border-blue-500/20">
+                      <span className="material-icons text-2xl">code</span>
+                    </div>
+                    <span className="text-[10px] font-mono text-gray-400 uppercase tracking-wider">{t('cert2Issuer')}</span>
+                  </div>
+                  <h3 className="text-xl font-display font-medium text-zinc-900 dark:text-white mb-3">{t('cert2Title')}</h3>
+                  <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">{t('cert2Desc')}</p>
                 </div>
-                <h3 className="text-xl font-display font-bold text-gray-900 dark:text-white mb-3">{t('pmCardTitle2')}</h3>
-                <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">{t('pmCardDesc2')}</p>
+                <a 
+                  href="https://www.coursera.org/account/accomplishments/specialization/FHEWGD14O2HV" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="inline-flex items-center gap-1.5 text-xs font-mono text-primary hover:text-blue-700 font-bold mt-6 pt-4 border-t border-gray-100 dark:border-zinc-800 w-full group/btn"
+                >
+                  {t('verifyCredential')}
+                  <span className="material-icons text-xs group-hover/btn:translate-x-0.5 transition-transform">arrow_forward</span>
+                </a>
               </div>
             </div>
 
-            <div className="group bg-surface-light dark:bg-surface-dark p-1 rounded-lg hover:shadow-xl hover:shadow-primary/10 transition duration-300">
-              <div className="h-full bg-background-light dark:bg-background-dark p-7 rounded border border-gray-200 dark:border-gray-800 group-hover:border-primary/50 relative overflow-hidden">
-                <div className="w-12 h-12 bg-blue-500/10 flex items-center justify-center text-blue-500 mb-6 rounded border border-blue-500/20">
-                  <span className="material-icons text-2xl">language</span>
+            {/* Card 3: AIO */}
+            <div className="group bg-white dark:bg-zinc-900 p-1 hover: hover:-primary/10 transition duration-300">
+              <div className="h-full bg-zinc-50 dark:bg-zinc-950 p-7 border border-zinc-300 dark:border-zinc-800 group-hover:border-primary/50 flex flex-col justify-between relative overflow-hidden">
+                <div>
+                  <div className="flex items-center justify-between mb-6">
+                    <div className="w-12 h-12 bg-accent/10 flex items-center justify-center text-accent border border-accent/20">
+                      <span className="material-icons text-2xl">psychology</span>
+                    </div>
+                    <span className="text-[10px] font-mono text-gray-400 uppercase tracking-wider">{t('cert3Issuer')}</span>
+                  </div>
+                  <h3 className="text-xl font-display font-medium text-zinc-900 dark:text-white mb-3">{t('cert3Title')}</h3>
+                  <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">{t('cert3Desc')}</p>
                 </div>
-                <h3 className="text-xl font-display font-bold text-gray-900 dark:text-white mb-3">{t('pmCardTitle3')}</h3>
-                <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">{t('pmCardDesc3')}</p>
+                <a 
+                  href="https://lms.aivietnam.edu.vn/verification/accomplishments/78243493" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="inline-flex items-center gap-1.5 text-xs font-mono text-primary hover:text-blue-700 font-bold mt-6 pt-4 border-t border-gray-100 dark:border-zinc-800 w-full group/btn"
+                >
+                  {t('verifyCredential')}
+                  <span className="material-icons text-xs group-hover/btn:translate-x-0.5 transition-transform">arrow_forward</span>
+                </a>
               </div>
             </div>
 
-            <div className="group bg-surface-light dark:bg-surface-dark p-1 rounded-lg hover:shadow-xl hover:shadow-primary/10 transition duration-300">
-              <div className="h-full bg-background-light dark:bg-background-dark p-7 rounded border border-gray-200 dark:border-gray-800 group-hover:border-primary/50 relative overflow-hidden">
-                <div className="w-12 h-12 bg-green-500/10 flex items-center justify-center text-green-500 mb-6 rounded border border-green-500/20">
-                  <span className="material-icons text-2xl">groups</span>
+            {/* Card 4: UIT Degree */}
+            <div className="group bg-white dark:bg-zinc-900 p-1 hover: hover:-primary/10 transition duration-300">
+              <div className="h-full bg-zinc-50 dark:bg-zinc-950 p-7 border border-zinc-300 dark:border-zinc-800 group-hover:border-primary/50 flex flex-col justify-between relative overflow-hidden">
+                <div>
+                  <div className="flex items-center justify-between mb-6">
+                    <div className="w-12 h-12 bg-green-500/10 flex items-center justify-center text-green-500 border border-green-500/20">
+                      <span className="material-icons text-2xl">school</span>
+                    </div>
+                    <span className="text-[10px] font-mono text-gray-400 uppercase tracking-wider">{t('cert4Issuer')}</span>
+                  </div>
+                  <h3 className="text-xl font-display font-medium text-zinc-900 dark:text-white mb-3">{t('cert4Title')}</h3>
+                  <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">{t('cert4Desc')}</p>
                 </div>
-                <h3 className="text-xl font-display font-bold text-gray-900 dark:text-white mb-3">{t('pmCardTitle4')}</h3>
-                <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">{t('pmCardDesc4')}</p>
+                <div className="inline-flex items-center gap-1.5 text-xs font-mono text-gray-400 mt-6 pt-4 border-t border-gray-100 dark:border-zinc-800 w-full cursor-default">
+                  <span className="material-icons text-xs text-green-500">workspace_premium</span>
+                  {t('academicDegree')}
+                </div>
+              </div>
+            </div>
+
+            {/* Card 5: USSH Degree */}
+            <div className="group bg-white dark:bg-zinc-900 p-1 hover: hover:-primary/10 transition duration-300">
+              <div className="h-full bg-zinc-50 dark:bg-zinc-950 p-7 border border-zinc-300 dark:border-zinc-800 group-hover:border-primary/50 flex flex-col justify-between relative overflow-hidden">
+                <div>
+                  <div className="flex items-center justify-between mb-6">
+                    <div className="w-12 h-12 bg-purple-500/10 flex items-center justify-center text-purple-500 border border-purple-500/20">
+                      <span className="material-icons text-2xl">translate</span>
+                    </div>
+                    <span className="text-[10px] font-mono text-gray-400 uppercase tracking-wider">{t('cert5Issuer')}</span>
+                  </div>
+                  <h3 className="text-xl font-display font-medium text-zinc-900 dark:text-white mb-3">{t('cert5Title')}</h3>
+                  <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">{t('cert5Desc')}</p>
+                </div>
+                <div className="inline-flex items-center gap-1.5 text-xs font-mono text-gray-400 mt-6 pt-4 border-t border-gray-100 dark:border-zinc-800 w-full cursor-default">
+                  <span className="material-icons text-xs text-purple-500">workspace_premium</span>
+                  {t('academicDegree')}
+                </div>
               </div>
             </div>
           </div>
@@ -337,6 +471,27 @@ export default function HomePage() {
       </section>
       
       <TestimonialsSection />
+      
+      {/* CTA Section */}
+      <section className="py-24 bg-white dark:bg-zinc-900 relative border-t border-zinc-300 dark:border-zinc-800">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-display font-medium text-zinc-900 dark:text-white mb-6">
+              {t('projectsCTAHeading')}
+            </h2>
+            <p className="text-lg text-zinc-600 dark:text-zinc-300 mb-10">
+              {t('projectsCTADescription')}
+            </p>
+            
+            <a
+              href="/contact"
+              className="inline-flex items-center justify-center px-8 py-3.5 text-base font-bold text-white bg-primary hover:bg-blue-600 font-mono transition-all duration-300 hover:-[0_0_20px_rgba(59,130,246,0.4)]"
+            >
+              {t('projectsCTAButton')}
+            </a>
+          </div>
+        </div>
+      </section>
       
       <Footer />
     </>

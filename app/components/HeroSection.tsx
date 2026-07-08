@@ -19,7 +19,7 @@ export default function HeroSection() {
           className="text-center mb-8 md:mb-12"
         >
           <div className="space-y-3 md:space-y-4 mb-6 md:mb-8">
-            <h1 className="text-4xl leading-normal md:leading-relaxed md:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-teal-500">
+            <h1 className="text-4xl leading-normal md:leading-relaxed md:text-7xl font-bold text-zinc-900 dark:text-zinc-100">
               Thong Truong
             </h1>
             <h2 className="text-2xl md:text-4xl font-bold text-white">Project Manager & Product Owner</h2>
@@ -61,15 +61,15 @@ export default function HeroSection() {
             </p>
           </div>
             <div className="flex flex-wrap justify-center gap-2 md:gap-3 mb-6 md:mb-8">
-              <span className="px-3 md:px-4 py-1.5 md:py-2 bg-yellow-500/20 rounded-full text-yellow-300 text-xs md:text-sm border border-yellow-500/30">Product Strategy</span>
-              <span className="px-3 md:px-4 py-1.5 md:py-2 bg-purple-600/20 rounded-full text-purple-300 text-xs md:text-sm border border-purple-500/30">Roadmapping</span>
-              <span className="px-3 md:px-4 py-1.5 md:py-2 bg-blue-500/20 rounded-full text-blue-300 text-xs md:text-sm border border-blue-500/30">Stakeholder Mgmt</span>
-              <span className="px-3 md:px-4 py-1.5 md:py-2 bg-orange-600/20 rounded-full text-orange-300 text-xs md:text-sm border border-orange-500/30">Engineering Coordination</span>
-              <span className="px-3 md:px-4 py-1.5 md:py-2 bg-red-600/20 rounded-full text-red-300 text-xs md:text-sm border border-red-500/30">Japanese (Business)</span>
-              <span className="px-3 md:px-4 py-1.5 md:py-2 bg-lime-500/20 rounded-full text-lime-300 text-xs md:text-sm border border-lime-500/30">Delivery Management</span>
-              <span className="px-3 md:px-4 py-1.5 md:py-2 bg-teal-600/20 rounded-full text-teal-300 text-xs md:text-sm border border-teal-500/30">SaaS / AI</span>
-              <span className="px-3 md:px-4 py-1.5 md:py-2 bg-indigo-600/20 rounded-full text-indigo-300 text-xs md:text-sm border border-indigo-500/30">UX Collaboration</span>
-              <span className="px-3 md:px-4 py-1.5 md:py-2 bg-emerald-500/20 rounded-full text-emerald-300 text-xs md:text-sm border border-emerald-500/30">Product Ops</span>
+              <span className="px-3 md:px-4 py-1.5 md:py-2 bg-yellow-500/20 text-yellow-300 text-xs md:text-sm border border-yellow-500/30">Product Strategy</span>
+              <span className="px-3 md:px-4 py-1.5 md:py-2 bg-purple-600/20 text-purple-300 text-xs md:text-sm border border-purple-500/30">Roadmapping</span>
+              <span className="px-3 md:px-4 py-1.5 md:py-2 bg-blue-500/20 text-blue-300 text-xs md:text-sm border border-blue-500/30">Stakeholder Mgmt</span>
+              <span className="px-3 md:px-4 py-1.5 md:py-2 bg-orange-600/20 text-orange-300 text-xs md:text-sm border border-orange-500/30">Engineering Coordination</span>
+              <span className="px-3 md:px-4 py-1.5 md:py-2 bg-red-600/20 text-red-300 text-xs md:text-sm border border-red-500/30">Japanese (Business)</span>
+              <span className="px-3 md:px-4 py-1.5 md:py-2 bg-lime-500/20 text-lime-300 text-xs md:text-sm border border-lime-500/30">Delivery Management</span>
+              <span className="px-3 md:px-4 py-1.5 md:py-2 bg-teal-600/20 text-teal-300 text-xs md:text-sm border border-teal-500/30">SaaS / AI</span>
+              <span className="px-3 md:px-4 py-1.5 md:py-2 bg-indigo-600/20 text-indigo-300 text-xs md:text-sm border border-indigo-500/30">UX Collaboration</span>
+              <span className="px-3 md:px-4 py-1.5 md:py-2 bg-emerald-500/20 text-emerald-300 text-xs md:text-sm border border-emerald-500/30">Product Ops</span>
             </div>
         </motion.div>
 
@@ -79,13 +79,13 @@ export default function HeroSection() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3 }}
-            className="bg-gray-900/50 backdrop-blur-sm rounded-lg border border-gray-800 p-4 md:p-8"
+            className="bg-zinc-900 border border-zinc-800 p-4 md:p-8"
           >
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
               {/* Data Pipeline Layer */}
               <div
                 className={`p-4 md:p-6 rounded-lg transition-colors border-2 ${
-                  selectedStack === 'backend' ? 'bg-purple-500/20 border-purple-500/50' : 'bg-gray-800/50 hover:bg-gray-800/80 border-transparent'
+                  selectedStack === 'backend' ? 'bg-purple-500/20 border-purple-500/50' : 'bg-zinc-900 hover:bg-gray-800/80 border-transparent'
                 }`}
                 onMouseEnter={() => setSelectedStack('backend')}
                 onMouseLeave={() => setSelectedStack(null)}
@@ -93,19 +93,19 @@ export default function HeroSection() {
                 <h3 className="text-lg md:text-xl font-semibold mb-3 md:mb-4 text-purple-400">Data Pipelines & Processing</h3>
                 <ul className="space-y-1.5 md:space-y-2 text-xs md:text-sm text-gray-400">
                   <li className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 bg-purple-500 rounded-full" />
+                    <div className="w-1.5 h-1.5 bg-purple-500" />
                     Apache Spark (PySpark) for distributed processing
                   </li>
                   <li className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 bg-purple-500 rounded-full" />
+                    <div className="w-1.5 h-1.5 bg-purple-500" />
                     Apache Airflow for workflow orchestration
                   </li>
                   <li className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 bg-purple-500 rounded-full" />
+                    <div className="w-1.5 h-1.5 bg-purple-500" />
                     ETL pipelines for data extraction & transformation
                   </li>
                   <li className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 bg-purple-500 rounded-full" />
+                    <div className="w-1.5 h-1.5 bg-purple-500" />
                     Real-time data ingestion & batch processing
                     </li>
                 </ul>
@@ -114,7 +114,7 @@ export default function HeroSection() {
               {/* Data Infrastructure Layer */}
               <div
                 className={`p-4 md:p-6 rounded-lg transition-colors border-2 ${
-                  selectedStack === 'frontend' ? 'bg-blue-500/20 border-blue-500/50' : 'bg-gray-800/50 hover:bg-gray-800/80 border-transparent'
+                  selectedStack === 'frontend' ? 'bg-blue-500/20 border-blue-500/50' : 'bg-zinc-900 hover:bg-gray-800/80 border-transparent'
                 }`}
                 onMouseEnter={() => setSelectedStack('frontend')}
                 onMouseLeave={() => setSelectedStack(null)}
@@ -122,23 +122,23 @@ export default function HeroSection() {
                 <h3 className="text-lg md:text-xl font-semibold mb-3 md:mb-4 text-blue-400">Data Storage & APIs</h3>
                 <ul className="space-y-1.5 md:space-y-2 text-xs md:text-sm text-gray-400">
                     <li className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 bg-blue-500 rounded-full" />
+                    <div className="w-1.5 h-1.5 bg-blue-500" />
                     PostgreSQL with advanced SQL & query optimization
                     </li>
                   <li className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 bg-blue-500 rounded-full" />
+                    <div className="w-1.5 h-1.5 bg-blue-500" />
                     Vector databases (pgvector) for embeddings
                   </li>
                   <li className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 bg-blue-500 rounded-full" />
+                    <div className="w-1.5 h-1.5 bg-blue-500" />
                     FastAPI for data service APIs & microservices
                   </li>
                   <li className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 bg-blue-500 rounded-full" />
+                    <div className="w-1.5 h-1.5 bg-blue-500" />
                     Redis for caching & message queuing
                   </li>
                   <li className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 bg-blue-500 rounded-full" />
+                    <div className="w-1.5 h-1.5 bg-blue-500" />
                     Apache Kafka for event streaming & data pipelines
                   </li>
                 </ul>
@@ -147,7 +147,7 @@ export default function HeroSection() {
               {/* Analytics & DevOps Layer */}
               <div
                 className={`p-4 md:p-6 rounded-lg transition-colors border-2 ${
-                  selectedStack === 'devops' ? 'bg-teal-500/20 border-teal-500/50' : 'bg-gray-800/50 hover:bg-gray-800/80 border-transparent'
+                  selectedStack === 'devops' ? 'bg-teal-500/20 border-teal-500/50' : 'bg-zinc-900 hover:bg-gray-800/80 border-transparent'
                 }`}
                 onMouseEnter={() => setSelectedStack('devops')}
                 onMouseLeave={() => setSelectedStack(null)}
@@ -155,19 +155,19 @@ export default function HeroSection() {
                 <h3 className="text-lg md:text-xl font-semibold mb-3 md:mb-4 text-teal-400">Analytics & Infrastructure</h3>
                 <ul className="space-y-1.5 md:space-y-2 text-xs md:text-sm text-gray-400">
                   <li className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 bg-teal-500 rounded-full" />
+                    <div className="w-1.5 h-1.5 bg-teal-500" />
                     Business intelligence with Metabase dashboards
                   </li>
                   <li className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 bg-teal-500 rounded-full" />
+                    <div className="w-1.5 h-1.5 bg-teal-500" />
                     Data quality monitoring & validation
                   </li>
                   <li className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 bg-teal-500 rounded-full" />
+                    <div className="w-1.5 h-1.5 bg-teal-500" />
                     Containerized pipelines with Docker
                   </li>
                   <li className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 bg-teal-500 rounded-full" />
+                    <div className="w-1.5 h-1.5 bg-teal-500" />
                     CI/CD for data pipeline deployments
                   </li>
                 </ul>

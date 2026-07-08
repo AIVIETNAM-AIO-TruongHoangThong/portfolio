@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Inter, Space_Grotesk, JetBrains_Mono } from 'next/font/google';
+import { Inter, Newsreader, JetBrains_Mono } from 'next/font/google';
 import './globals.css';
 import { LanguageProvider } from './components/LanguageProvider';
 
@@ -10,8 +10,8 @@ const inter = Inter({
   display: 'swap',
 });
 
-const spaceGrotesk = Space_Grotesk({
-  variable: '--font-space-grotesk',
+const newsreader = Newsreader({
+  variable: '--font-newsreader',
   subsets: ['latin'],
   weight: ['400', '500', '700'],
   display: 'swap',
@@ -25,30 +25,31 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Thong Truong - Project Manager | Agile Delivery & Cross-functional Coordination',
+  title: 'Thong Truong - AI/ML Engineer | Machine Learning & Backend Development',
   description:
-    'Project Manager and Associate Founder with hands-on experience leading early-stage SaaS products from MVP to first customer. Proven ability to manage cross-functional teams, define goals and scope, conduct cost-benefit analysis, and deliver features iteratively using Agile frameworks. Bilingual (Japanese/English) technical leader with dual degrees in IT and Japanese Studies.',
+    'AI/ML Engineer and Backend Developer specializing in Machine Learning, Deep Learning, and backend systems. Bilingual (Japanese/English) developer with dual degrees in IT and Japanese Studies.',
 
   keywords: [
-    'Project Manager',
-    'Agile Project Management',
-    'Cross-functional Team Leadership',
-    'Stakeholder Management',
-    'Bilingual Project Manager',
-    'AI SaaS',
-    'Scrum',
-    'Iterative Delivery',
-    'Japanese Business Communication',
-    'Cost-Benefit Analysis',
-    'MVP to Market',
+    'AI/ML Engineer',
+    'Backend Developer',
+    'Machine Learning',
+    'Deep Learning',
+    'Backend Development',
+    'Data Pipelines',
+    'LLM Systems',
+    'Python',
+    'FastAPI',
+    'PyTorch',
+    'Bilingual Developer',
+    'Japanese/English',
     'Thong Truong'
   ],
   authors: [{ name: 'Thong Truong' }],
   creator: 'Thong Truong',
   openGraph: {
-    title: 'Thong Truong - Project Manager | Agile Delivery & Cross-functional Coordination',
+    title: 'Thong Truong - AI/ML Engineer | Machine Learning & Backend Development',
     description:
-      'Project Manager and Associate Founder with hands-on experience leading early-stage SaaS products from MVP to first customer. Proven ability to manage cross-functional teams, define goals and scope, conduct cost-benefit analysis, and deliver features iteratively using Agile frameworks. Bilingual (Japanese/English) technical leader with dual degrees in IT and Japanese Studies.',
+      'AI/ML Engineer and Backend Developer specializing in Machine Learning, Deep Learning, and backend systems. Bilingual (Japanese/English) developer with dual degrees in IT and Japanese Studies.',
     url: 'https://thongtruong.com',
     siteName: 'Thong Truong - Portfolio',
     images: [
@@ -56,7 +57,7 @@ export const metadata: Metadata = {
         url: 'https://thongtruong.com/profile.jpg',
         width: 400,
         height: 533,
-        alt: 'Thong Truong - Project Manager',
+        alt: 'Thong Truong - AI Engineer',
       },
     ],
     locale: 'en_US',
@@ -82,36 +83,35 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Person",
               "name": "Thong Truong",
-              "jobTitle": "Project Manager | Agile Delivery & Cross-functional Coordination",
-              "description": "Project Manager and Associate Founder with hands-on experience leading early-stage SaaS products from MVP to first customer. Proven ability to manage cross-functional teams, define goals and scope, conduct cost-benefit analysis, and deliver features iteratively using Agile frameworks. Bilingual (Japanese/English) with dual degrees in IT and Japanese Studies.",
+              "jobTitle": "AI/ML Engineer | Machine Learning & Backend Development",
+              "description": "AI/ML Engineer and Backend Developer specializing in Machine Learning, Deep Learning, and backend systems. Bilingual (Japanese/English) developer with dual degrees in IT and Japanese Studies.",
               "url": "https://thongtruong.com",
               "sameAs": [
                 "https://github.com/thongtr-dev",
                 "https://www.linkedin.com/in/thongtr/"
               ],
                 "knowsAbout": [
-                "Project Management",
-                "Agile & Scrum Methodologies",
-                "Cross-functional Team Leadership",
-                "Bilingual Communication",
-                "AI SaaS Delivery",
-                "Stakeholder Management",
-                "Cost-Benefit Analysis",
-                "Sprint Planning",
-                "Iterative Delivery",
-                "MVP Development",
-                "Japanese Business Practices"
+                "Machine Learning",
+                "Backend Development",
+                "Data Pipelines",
+                "LLM Systems",
+                "Python",
+                "FastAPI",
+                "PyTorch",
+                "Vector Search",
+                "Generative AI",
+                "Japanese/English Bilingual"
               ],
               "hasOccupation": {
                 "@type": "Occupation",
-                "name": "Project Manager",
-                "occupationalCategory": "Project Management"
+                "name": "AI Engineer",
+                "occupationalCategory": "Engineering"
               }
             })
           }}
         />
       </head>
-      <body className={`${inter.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable} font-sans`}>
+      <body className={`${inter.variable} ${newsreader.variable} ${jetbrainsMono.variable} font-sans`}>
         <LanguageProvider>
           {children}
         </LanguageProvider>

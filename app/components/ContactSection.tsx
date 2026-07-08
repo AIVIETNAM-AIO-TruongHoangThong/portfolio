@@ -11,7 +11,7 @@ export default function ContactSection() {
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a
               href="mailto:contact@thongtruong.com"
-              className="px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg font-medium hover:opacity-90 transition-opacity inline-flex items-center justify-center gap-2"
+              className="px-8 py-3 font-medium hover:opacity-90 transition-opacity inline-flex items-center justify-center gap-2"
             >
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
@@ -27,7 +27,7 @@ export default function ContactSection() {
 							href="https://github.com/thongtr-dev"
 							target="_blank"
 							rel="noopener noreferrer"
-							className="text-gray-400 hover:text-white transition-colors p-2 hover:bg-gray-800 rounded-lg"
+							className="text-gray-400 hover:text-white transition-colors p-2 hover:bg-gray-800"
 							aria-label="GitHub Profile"
 						>
 							<svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -38,7 +38,7 @@ export default function ContactSection() {
 							href="https://www.linkedin.com/in/thongtr/"
 							target="_blank"
 							rel="noopener noreferrer"
-							className="text-gray-400 hover:text-white transition-colors p-2 hover:bg-gray-800 rounded-lg"
+							className="text-gray-400 hover:text-white transition-colors p-2 hover:bg-gray-800"
 							aria-label="LinkedIn Profile"
 						>
 							<svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
