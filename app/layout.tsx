@@ -62,6 +62,13 @@ export const metadata: Metadata = {
     ],
     locale: 'en_US',
     type: 'website'
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Thong Truong - Software Engineer | AI & Data Focus',
+    description:
+      'Software Engineer focused on AI & Data with a strong background in web applications, data-intensive systems, traditional machine learning, deep learning models, and RAG pipelines.',
+    images: ['https://thongtruong.com/profile.jpg'],
   }
 };
 
