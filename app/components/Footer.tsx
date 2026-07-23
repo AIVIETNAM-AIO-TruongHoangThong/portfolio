@@ -44,7 +44,7 @@ export default function Footer() {
                 <span className="text-xs font-bold font-mono">IN</span>
               </a>
               <a
-                href="https://github.com/thongtr-dev"
+                href="https://github.com/AIVIETNAM-AIO-TruongHoangThong"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 border border-gray-700 hover:border-primary hover:bg-primary/20 hover:text-primary flex items-center justify-center transition duration-300"

@@ -59,7 +59,7 @@ export default function HomePage() {
                 </Link>
                 
                 <Link 
-                  href="/about"
+                  href="/cv"
                   className="group inline-flex items-center justify-center px-8 py-3.5 text-base font-bold text-zinc-700 dark:text-zinc-200 bg-transparent border-2 border-zinc-300 dark:border-zinc-700 hover:border-primary dark:hover:border-primary transition-all font-mono"
                 >
                   <span className="mr-2 opacity-0 -ml-4 group-hover:opacity-100 group-hover:ml-0 transition-all duration-300 text-primary">&gt;</span>
@@ -273,10 +273,10 @@ export default function HomePage() {
 
                 <div className="group block border border-zinc-300 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-950 transition overflow-hidden">
                   <div className="aspect-w-16 aspect-h-9 relative overflow-hidden border-b border-zinc-300 dark:border-zinc-700">
-                    <div className="absolute top-2 right-2 z-20 bg-black/80 text-white text-[10px] font-mono px-2 py-1">University</div>
+                    <div className="absolute top-2 right-2 z-20 bg-black/80 text-white text-[10px] font-mono px-2 py-1">AIO Module 2</div>
                     <Image
                       src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800"
-                      alt="Customer 360 Risk Scoring System"
+                      alt="Machine Learning Foundations"
                       width={600}
                       height={400}
                       className="object-cover w-full h-full transform group-hover:scale-105 transition duration-700 filter grayscale group-hover:grayscale-0"
@@ -284,18 +284,18 @@ export default function HomePage() {
                   </div>
                   <div className="p-4 flex flex-col justify-between">
                     <div>
-                      <h5 className="font-display font-medium text-lg">Customer 360 Risk Scoring</h5>
-                      <p className="text-sm text-zinc-600 dark:text-zinc-400 mt-2 line-clamp-2">{t('projectCustomer360Description')}</p>
+                      <h5 className="font-display font-medium text-lg">ML Foundations (KMeans & KNN)</h5>
+                      <p className="text-sm text-zinc-600 dark:text-zinc-400 mt-2 line-clamp-2">{t('projectMLFoundationsDescription')}</p>
                     </div>
                     <div className="flex flex-wrap gap-3 mt-4 pt-4 border-t border-gray-100 dark:border-zinc-800">
                       <a 
-                        href="https://github.com/23210287thongtruong/customer360-risk" 
+                        href="https://gist.github.com/AIVIETNAM-AIO-TruongHoangThong" 
                         target="_blank" 
                         rel="noopener noreferrer" 
                         className="inline-flex items-center gap-1.5 px-3 py-1.5 border border-zinc-300 dark:border-zinc-700 hover:border-primary text-xs font-mono text-zinc-700 dark:text-zinc-300 hover:text-primary transition duration-200"
                       >
                         <span className="material-icons text-sm">code</span>
-                        GitHub
+                        Gist
                       </a>
                     </div>
                   </div>

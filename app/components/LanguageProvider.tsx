@@ -53,25 +53,25 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
     // Navigation
     home: { en: './home', ja: './ホーム' },
     projects: { en: './projects', ja: './プロジェクト' },
-    about: { en: './about', ja: './私について' },
+    learning: { en: './learning', ja: './学習' },
     cv: { en: './cv', ja: './履歴書' },
     contact: { en: './contact', ja: './連絡先' },
 
-    // Hero Section (project/product/bridge-focused)
-    founderEngineer: { en: 'AI Engineer', ja: 'AIエンジニア' },
-    building: { en: 'Building', ja: '構築する' },
-    dataDriven: { en: 'Scalable AI', ja: 'スケーラブルなAI' },
-    solutionsAt: { en: '& Backend', ja: '& バックエンド' },
-    scale: { en: 'Systems', ja: 'システム' },
+    // Hero Section (data-focused)
+    founderEngineer: { en: 'Software Engineer | AI & Data Focus', ja: 'ソフトウェアエンジニア | AI & データフォーカス' },
+    building: { en: 'Uncovering', ja: '発見する' },
+    dataDriven: { en: 'Insights through', ja: 'インサイトを' },
+    solutionsAt: { en: 'Data Science', ja: 'データサイエンス' },
+    scale: { en: '& AI', ja: '& AI' },
     heroBio: {
-      en: "AI/ML Engineer and Backend Developer with hands-on experience designing and scaling production-grade intelligent systems and data pipelines.",
-      ja: '本番環境向けのインテリジェントシステムやデータパイプラインの設計・スケーリングに実務経験を持つ、AI/MLエンジニア兼バックエンド開発者。'
+      en: "Software Engineer focused on AI & Data, with hands-on experience analyzing datasets, building predictive models, and applying machine learning and deep learning algorithms to uncover actionable insights.",
+      ja: 'AIとデータ分野に焦点を当てたソフトウェアエンジニア。データセットの分析、予測モデルの構築、機械学習およびディープラーニングアルゴリズムの適用により、実用的なインサイトを発見する実務経験を持つ。'
     },
     viewProjects: { en: 'View_Projects', ja: 'プロジェクトを見る' },
     downloadCV: { en: 'Download CV', ja: '履歴書ダウンロード' },
-    dataEngineering: { en: 'AI/ML & Data Engineering', ja: 'AI/ML & データエンジニアリング' },
+    dataEngineering: { en: 'Machine Learning', ja: '機械学習' },
     aiMlIntegration: { en: 'Data Ingestion & Scraping', ja: 'データ収集 & スクレイピング' },
-    fullStack: { en: 'Full-Stack Backend', ja: 'フルスタック・バックエンド' },
+    fullStack: { en: 'Data Analysis & Visualization', ja: 'データ分析と可視化' },
 
     // About Page
     beforeDownloadCV: { en: 'Before You Download My CV', ja: '履歴書をダウンロードする前に' },
@@ -158,8 +158,8 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
       ja: 'コンピュータサイエンスの学術的背景は、実践的な開発スキルを補完します。日本語学の学位と組み合わせることで、技術チームと国際的なパートナーを繋ぐバイリンガルエンジニアとして貢献できます。'
     },
     futureGoalsContent3: {
-      en: 'I am seeking a full-time role as an AI/ML Engineer or Backend Developer, where I can build and deploy machine learning models, computer vision/NLP pipelines, and scalable backend systems.',
-      ja: 'AI/MLモデルのデプロイ、CV/NLPパイプライン構築、そしてバックエンドシステム開発に貢献できる、AI/MLエンジニアまたはバックエンド開発者としてのフルタイムの機会を探しています。'
+      en: 'I am seeking a full-time role as a Software Engineer (AI & Data Focus) or Machine Learning Practitioner, where I can utilize Python, Pandas, scikit-learn, deep learning frameworks, and advanced AI models to drive data-centric decisions.',
+      ja: 'Python、Pandas、scikit-learn、ディープラーニングフレームワーク、高度なAIモデルを活用し、データ中心の意思決定を推進するソフトウェアエンジニア（AI・データフォーカス）としてのフルタイムの機会を探しています。'
     },
 
     // Call to Action
@@ -182,12 +182,12 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
     viewAllProjects: { en: 'view_all_projects()', ja: 'view_all_projects()' },
     productionBadge: { en: 'Production', ja: '本番環境' },
     nexusSelectedDescription: {
-      en: 'Co-Founder & Lead AI Engineer - Leading AI system architecture, RAG pipelines development, and backend scaling for SaaS solutions.',
-      ja: '共同創業者・リードAIエンジニアとして、SaaSソリューションのAIシステム設計、RAG開発、バックエンドのスケーリングを主導。'
+      en: 'Lead AI Engineer - Applied NLP and RAG methodologies to extract actionable intelligence from unstructured enterprise data.',
+      ja: 'リードAIエンジニア - NLPとRAG手法を適用し、構造化されていないエンタープライズデータから実用的なインテリジェンスを抽出。'
     },
     siteboticSelectedDescription: {
-      en: 'Lead AI Engineer — designed and implemented RAG pipelines, scraping architecture, and background task workers.',
-      ja: 'リードAIエンジニア — RAGパイプライン、スクレイピングアーキテクチャ、バックグラウンド処理の実装を担当。'
+      en: 'Lead AI Engineer — Designed data extraction pipelines and evaluated large language models for domain-specific chatbot generation.',
+      ja: 'リードAIエンジニア — データ抽出パイプラインを設計し、ドメイン特化型チャットボット生成のための大規模言語モデルを評価。'
     },
     tagAiPlatforms: { en: 'AI Platforms', ja: 'AIプラットフォーム' },
     tagEtlPipelines: { en: 'ETL Pipelines', ja: 'ETLパイプライン' },
@@ -197,19 +197,19 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
     visitLiveSite: { en: 'Visit live site', ja: '本番サイトを見る' },
 
     // Projects Page
-    projectsHeroTitleLine1: { en: 'From AI Platforms to', ja: 'AIプラットフォームから' },
-    projectsHeroTitleLine2: { en: 'Data Pipelines.', ja: 'データパイプラインまで。' },
+    projectsHeroTitleLine1: { en: 'From Machine Learning Models to', ja: '機械学習モデルから' },
+    projectsHeroTitleLine2: { en: 'AI & Data Products.', ja: 'AI & データプロダクトまで。' },
     projectsHeroDescription: {
-      en: 'AI system design, RAG pipeline implementation, and backend architecture for production platforms. From parsing pipelines to model optimization, I help teams build robust, intelligent solutions.',
-      ja: 'AIシステム設計、RAGパイプラインの実装、本番環境向けバックエンドアーキテクチャ。パース処理からモデル最適化まで、信頼性が高くインテリジェントなソリューションの構築をサポートします。'
+      en: 'Applied machine learning, RAG pipelines, and data-centric software solutions. From data analysis and model training to intelligent feature integration, I build robust, data-focused software.',
+      ja: '応用機械学習、RAGパイプライン、データ中心のソフトウェアソリューション。データ分析やモデル学習からインテリジェントな機能の統合まで、データに焦点を当てた堅牢なソフトウェアを構築します。'
     },
     statsCompanyFounded: { en: 'Company Founded', ja: '設立した会社' },
     statsProjectsBuilt: { en: 'Projects Built', ja: '構築したプロジェクト' },
     statsSaaSPlatform: { en: 'SaaS Platform', ja: 'SaaSプラットフォーム' },
-    projectsCTAHeading: { en: 'Need an AI/ML Engineer or Backend Developer?', ja: 'AI/MLエンジニア、またはバックエンド開発者をお探しですか？' },
+    projectsCTAHeading: { en: 'Looking for a Software Engineer focused on AI & Data?', ja: 'AIとデータに特化したソフトウェアエンジニアをお探しですか？' },
     projectsCTADescription: {
-      en: 'I build machine learning models, scale data pipelines, and develop robust backend systems.',
-      ja: '機械学習モデルの構築、データパイプラインの拡張、および堅牢なバックエンドシステムの開発を担当します。'
+      en: 'I develop machine learning models, analyze complex datasets, and build intelligent data-driven software solutions.',
+      ja: '機械学習モデルの開発、複雑なデータセットの分析、インテリジェントなデータ駆動型ソフトウェアソリューションの構築を担当します。'
     },
     projectsCTAButton: { en: "Let's_Talk()", ja: '話しましょう()' },
     visitLiveApp: { en: 'Visit live app', ja: '本番アプリを見る' },
@@ -231,8 +231,8 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
       ja: 'AI搭載チャットボットプラットフォーム。ノーコードSaaSとして、ウェブサイトコンテンツで学習したインテリジェントチャットボットを簡単に導入可能。'
     },
     projectSiteboticLongDescription: {
-      en: 'Dev Lead for SiteBotic at Nexus Tech Global. Built and scaled a production SaaS platform that crawls websites, trains AI chatbots on content, and deploys with a one-click embed. Features a pgvector RAG pipeline, single persistent AsyncIO event loop for Dramatiq background task workers to resolve database and lazy loading bottlenecks, and a Crawl4AI-based scraping system replacing Playwright to support SPAs and eliminate container crashes. Integrated GPT-5-mini with a 400k context window, upgraded the frontend to React 19.2.7 and Vercel AI SDK v7.0.0, and migrated cookies to session-only storage to prevent cross-session chat retention.',
-      ja: 'Nexus Tech GlobalにてSiteBoticの開発リードを担当。ウェブサイトを自動クロールし、コンテンツでAIチャットボットを学習させ、ワンクリックで埋め込み配信できる本番運用SaaSプラットフォームを構築・スケール。pgvectorを用いたRAGパイプライン、DB接続や遅延ロードのボトルネックを解消するDramatiqワーカー用の単一持続的AsyncIOイベントループ、Playwrightから移行してSPA対応とコンテナクラッシュ回避を実現したCrawl4AIスクレイピングシステムを実装。400kコンテキストウィンドウのGPT-5-miniを統合し、フロントエンドをReact 19.2.7およびVercel AI SDK v7.0.0へアップグレード、クロスセッションの履歴保持を防ぐためセッション専用クッキー管理へ移行。'
+      en: 'Lead AI Engineer for SiteBotic at Nexus Tech Global. Analyzed web structures to build an automated data extraction pipeline replacing Playwright with Crawl4AI. Designed and evaluated a pgvector-based RAG architecture, utilizing GPT-5-mini with a 400k context window to synthesize insights from scraped website content. Focused heavily on data preprocessing, embedding generation, and prompt optimization for accurate AI responses.',
+      ja: 'Nexus Tech GlobalにてSiteBoticのリードAIエンジニアを担当。ウェブ構造を分析し、PlaywrightをCrawl4AIに置き換える自動データ抽出パイプラインを構築。収集したウェブサイトコンテンツからインサイトを合成するため、400kコンテキストウィンドウを持つGPT-5-miniを活用し、pgvectorベースのRAGアーキテクチャを設計・評価。正確なAI応答のためのデータ前処理、埋め込み生成、プロンプト最適化に注力。'
     },
     projectPALTechDescription: {
       en: 'Software Engineer specializing in data-intensive systems, bridging frontend and data platform teams for high-traffic applications.',
@@ -309,6 +309,16 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
     projectSimilarityLongDescription: {
       en: 'Led a five-member research team (Trang Giay Trang Team) to implement and benchmark multiple image–text similarity matching approaches, including a baseline (ResNet50 + TF-IDF), a Least-Squares-based linear projection model (W), and OpenAI\'s CLIP contrastive embedding framework.',
       ja: '5人の研究チーム（Trang Giay Trangチーム）のリーダーとして、ResNet50 + TF-IDFを用いたベースライン、最小二乗法に基づく線形投影モデル（W）、およびOpenAIのCLIP対照学習埋め込みフレームワークを含む、複数の画像・テキスト類似度マッチング手法の実装とベンチマークを主導しました。'
+    },
+    
+    // Project ML Foundations
+    projectMLFoundationsDescription: {
+      en: 'Implementation of fundamental clustering and regression algorithms including KMeans and KNN.',
+      ja: 'KMeansおよびKNNを含む、基礎的なクラスタリングと回帰アルゴリズムの実装。'
+    },
+    projectMLFoundationsLongDescription: {
+      en: 'Developed predictive models using K-Nearest Neighbors (KNN) for diabetes progression and implemented KMeans clustering for customer segmentation (Mall Customers dataset) utilizing the Elbow Method and Silhouette Scores. Built algorithms from scratch and using scikit-learn.',
+      ja: '糖尿病進行度の予測にK最近傍法（KNN）を使用し、エルボー法とシルエットスコアを活用して顧客セグメンテーション（Mall Customersデータセット）にKMeansクラスタリングを実装。スクラッチおよびscikit-learnの両方でアルゴリズムを構築。'
     },
     tag_PySpark: { en: 'PySpark', ja: 'PySpark' },
     tag_ApacheAirflow: { en: 'Apache Airflow', ja: 'Apache Airflow' },
@@ -388,8 +398,8 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
     contactHeroTitleLine1: { en: "Let's build something", ja: '一緒に何かを' },
     contactHeroTitleHighlight: { en: 'future-proof.', ja: '将来に強いものに。' },
     contactHeroDescription: {
-      en: "AI/ML Engineer and Backend Developer experienced in building machine learning models, deep learning systems, data pipelines, and scalable backend architectures. Let's discuss how I can help you implement or optimize your intelligent solutions.",
-      ja: '機械学習モデル、ディープラーニングシステム、データパイプライン、スケーラブルなバックエンドアーキテクチャの構築経験を持つAI/MLエンジニア兼バックエンド開発者。インテリジェントなソリューションの実装や最適化について、ぜひお話しましょう。'
+      en: "Software Engineer (AI & Data Focus) experienced in building machine learning models, deep learning systems, and intelligent data pipelines. Let's discuss how I can help you extract insights and optimize your data solutions.",
+      ja: '機械学習モデル、ディープラーニングシステム、インテリジェントなデータパイプラインの構築経験を持つソフトウェアエンジニア（AI・データフォーカス）。インサイトの抽出やデータソリューションの最適化について、ぜひお話しましょう。'
     },
     contactDirectLine: { en: 'Direct Line', ja: 'ダイレクトライン' },
     contactSyncUp: { en: 'Sync Up', ja: '打ち合わせ' },
@@ -447,6 +457,15 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
       ja: 'ご依頼を受け取り、履歴書をお送りしました。以下から直接ダウンロードすることもできます。'
     },
     backToHome: { en: 'Back to Home', ja: 'ホームに戻る' },
+
+    // Learning Page
+    learningHeroTitle: { en: 'Live Learning Log', ja: 'ライブ学習ログ' },
+    learningHeroDesc: { en: 'A chronological terminal of my journey through the AIO 2026 Intensive AI/ML Program.', ja: 'AIO 2026 AI/ML集中プログラムの学習プロセスを記録したクロノロジカル・ターミナル。' },
+    learningStatusCurrent: { en: 'Current Module: 02 (Shot Zone Clustering)', ja: '現在のモジュール: 02 (ショットゾーンのクラスタリング)' },
+    module02Title: { en: '[MODULE_02] Shot Zone & Quality Clustering (Research Stream)', ja: '[MODULE_02] ショットゾーンと品質クラスタリング (リサーチストリーム)' },
+    module02Desc: { en: 'Analyzing feature scaling effects on K-Means clustering using a World Cup soccer dataset. Validating clusters against actual goal rates and xG.', ja: 'ワールドカップサッカーデータセットを使用し、K-Meansクラスタリングに対する特徴量スケーリングの影響を分析。実際のゴール率とxGに対してクラスターを検証。' },
+    module01Title: { en: '[MODULE_01] Multimodal Similarity Matching (Research Stream)', ja: '[MODULE_01] マルチモーダル類似度マッチング (リサーチストリーム)' },
+    module01Desc: { en: 'Implementing and benchmarking multiple image-text similarity matching approaches using ResNet50, TF-IDF, and CLIP contrastive embeddings.', ja: 'ResNet50、TF-IDF、CLIP対照学習埋め込みを用いた複数の画像-テキスト類似度マッチング手法の実装とベンチマーク。' },
   };
 
   const t = (key: string): string => {

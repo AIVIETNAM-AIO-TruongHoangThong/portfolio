@@ -24,7 +24,7 @@ export default function ContactSection() {
 					{/* Social Links */}
 					<div className="flex justify-center gap-6 pt-2">
 						<a
-							href="https://github.com/thongtr-dev"
+							href="https://github.com/AIVIETNAM-AIO-TruongHoangThong"
 							target="_blank"
 							rel="noopener noreferrer"
 							className="text-gray-400 hover:text-white transition-colors p-2 hover:bg-gray-800"

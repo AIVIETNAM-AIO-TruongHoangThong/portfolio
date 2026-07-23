@@ -50,6 +50,9 @@ export default function Navigation() {
               <Link href="/projects" className={getLinkClass('/projects')}>
                 {t('projects')}
               </Link>
+              <Link href="/learning" className={getLinkClass('/learning')}>
+                {t('learning')}
+              </Link>
               <Link href="/cv" className={getLinkClass('/cv')}>
                 {t('cv')}
               </Link>
@@ -90,6 +93,9 @@ export default function Navigation() {
               </Link>
               <Link href="/projects" onClick={() => setIsMenuOpen(false)} className={getMobileLinkClass('/projects')}>
                 {t('projects')}
+              </Link>
+              <Link href="/learning" onClick={() => setIsMenuOpen(false)} className={getMobileLinkClass('/learning')}>
+                {t('learning')}
               </Link>
               <Link href="/cv" onClick={() => setIsMenuOpen(false)} className={getMobileLinkClass('/cv')}>
                 {t('cv')}

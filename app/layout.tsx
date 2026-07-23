@@ -25,9 +25,9 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Thong Truong - AI/ML Engineer | Machine Learning & Backend Development',
+  title: 'Thong Truong - Software Engineer | AI & Data Focus',
   description:
-    'AI/ML Engineer and Backend Developer specializing in Machine Learning, Deep Learning, and backend systems. Bilingual (Japanese/English) developer with dual degrees in IT and Japanese Studies.',
+    'Software Engineer focused on AI & Data with a strong background in web applications, data-intensive systems, traditional machine learning, deep learning models, and RAG pipelines.',
 
   keywords: [
     'AI/ML Engineer',
@@ -47,9 +47,9 @@ export const metadata: Metadata = {
   authors: [{ name: 'Thong Truong' }],
   creator: 'Thong Truong',
   openGraph: {
-    title: 'Thong Truong - AI/ML Engineer | Machine Learning & Backend Development',
+    title: 'Thong Truong - Software Engineer | AI & Data Focus',
     description:
-      'AI/ML Engineer and Backend Developer specializing in Machine Learning, Deep Learning, and backend systems. Bilingual (Japanese/English) developer with dual degrees in IT and Japanese Studies.',
+      'Software Engineer focused on AI & Data with a strong background in web applications, data-intensive systems, traditional machine learning, deep learning models, and RAG pipelines.',
     url: 'https://thongtruong.com',
     siteName: 'Thong Truong - Portfolio',
     images: [
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
         url: 'https://thongtruong.com/profile.jpg',
         width: 400,
         height: 533,
-        alt: 'Thong Truong - AI Engineer',
+        alt: 'Thong Truong - Software Engineer | AI & Data Focus',
       },
     ],
     locale: 'en_US',
@@ -83,11 +83,11 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Person",
               "name": "Thong Truong",
-              "jobTitle": "AI/ML Engineer | Machine Learning & Backend Development",
-              "description": "AI/ML Engineer and Backend Developer specializing in Machine Learning, Deep Learning, and backend systems. Bilingual (Japanese/English) developer with dual degrees in IT and Japanese Studies.",
+              "jobTitle": "Software Engineer | AI & Data Focus",
+              "description": "Software Engineer focused on AI & Data with a strong background in web applications, data-intensive systems, traditional machine learning, deep learning models, and RAG pipelines.",
               "url": "https://thongtruong.com",
               "sameAs": [
-                "https://github.com/thongtr-dev",
+                "https://github.com/AIVIETNAM-AIO-TruongHoangThong",
                 "https://www.linkedin.com/in/thongtr/"
               ],
                 "knowsAbout": [
