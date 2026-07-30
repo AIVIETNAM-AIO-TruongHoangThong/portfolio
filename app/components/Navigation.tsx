@@ -3,12 +3,12 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { usePathname } from 'next/navigation';
-import LanguageToggle from './LanguageToggle';
-import { useLanguage } from './LanguageProvider';
+
+
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { t } = useLanguage();
+  
   const pathname = usePathname();
 
   const getLinkClass = (path: string) => {
@@ -45,26 +45,26 @@ export default function Navigation() {
           <div className="hidden md:flex items-center gap-4">
             <div className="flex space-x-1 items-center bg-zinc-100 dark:bg-zinc-900/50 p-1 border border-zinc-300 dark:border-zinc-700">
               <Link href="/" className={getLinkClass('/')}>
-                {t('home')}
+                {"./home"}
               </Link>
               <Link href="/projects" className={getLinkClass('/projects')}>
-                {t('projects')}
+                {"./projects"}
               </Link>
               <Link href="/blog" className={getLinkClass('/blog')}>
-                {t('blog')}
+                {"./blog"}
               </Link>
               <Link href="/learning" className={getLinkClass('/learning')}>
-                {t('learning')}
+                {"./learning"}
               </Link>
               <Link href="/cv" className={getLinkClass('/cv')}>
-                {t('cv')}
+                {"./cv"}
               </Link>
               <Link href="/contact" className={getLinkClass('/contact')}>
-                {t('contact')}
+                {"./contact"}
               </Link>
             </div>
 
-            <LanguageToggle />
+            
           </div>
 
           <div className="hidden md:flex">
@@ -77,7 +77,7 @@ export default function Navigation() {
           </div>
 
           <div className="md:hidden flex items-center gap-2">
-            <LanguageToggle />
+            
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="text-zinc-700 dark:text-zinc-300 hover:text-primary focus:outline-none p-2"
@@ -92,22 +92,22 @@ export default function Navigation() {
           <div className="md:hidden py-4 border-t border-zinc-300 dark:border-zinc-800">
             <div className="flex flex-col space-y-2">
               <Link href="/" onClick={() => setIsMenuOpen(false)} className={getMobileLinkClass('/')}>
-                {t('home')}
+                {"./home"}
               </Link>
               <Link href="/projects" onClick={() => setIsMenuOpen(false)} className={getMobileLinkClass('/projects')}>
-                {t('projects')}
+                {"./projects"}
               </Link>
               <Link href="/blog" onClick={() => setIsMenuOpen(false)} className={getMobileLinkClass('/blog')}>
-                {t('blog')}
+                {"./blog"}
               </Link>
               <Link href="/learning" onClick={() => setIsMenuOpen(false)} className={getMobileLinkClass('/learning')}>
-                {t('learning')}
+                {"./learning"}
               </Link>
               <Link href="/cv" onClick={() => setIsMenuOpen(false)} className={getMobileLinkClass('/cv')}>
-                {t('cv')}
+                {"./cv"}
               </Link>
               <Link href="/contact" onClick={() => setIsMenuOpen(false)} className={getMobileLinkClass('/contact')}>
-                {t('contact')}
+                {"./contact"}
               </Link>
             </div>
           </div>

@@ -2,11 +2,9 @@
 
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
-import { useLanguage } from '../components/LanguageProvider';
 
 export default function CVPage() {
-  const { t } = useLanguage();
-  const pdfUrl = "https://drive.google.com/file/d/16IbuylI_uXwdOkehW1z9VreA2TzUjITN/view?usp=sharing";
+    const pdfUrl = "https://drive.google.com/file/d/16IbuylI_uXwdOkehW1z9VreA2TzUjITN/view?usp=sharing";
 
   return (
     <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 flex flex-col justify-between">
@@ -208,7 +206,7 @@ export default function CVPage() {
                 </li>
                 <li>
                   <strong className="text-zinc-900 dark:text-zinc-100">Bachelor of Information Technology</strong> | University of Information Technology (VNU-HCM)<br />
-                  <span className="text-xs text-zinc-500 font-mono">Graduated with "Very Good" classification (2026) • GPA: 3.5 / 4.0</span>
+                  <span className="text-xs text-zinc-500 font-mono">Graduated with &quot;Very Good&quot; classification (2026) • GPA: 3.5 / 4.0</span>
                 </li>
                 <li>
                   <strong className="text-zinc-900 dark:text-zinc-100">Bachelor of Arts in Japanese Studies</strong> | University of Social Sciences and Humanities (VNU-HCM)<br />
