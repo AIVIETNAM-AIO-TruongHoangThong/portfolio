@@ -1,10 +1,10 @@
 'use client';
 
 import Link from "next/link";
-import { useLanguage } from "./LanguageProvider";
+
 
 export default function Footer() {
-  const { t } = useLanguage();
+  
   return (
     <footer className="bg-background-dark text-white pt-20 pb-10 border-t border-zinc-800 relative overflow-hidden">
       <div
@@ -28,10 +28,10 @@ export default function Footer() {
             </div>
 
             <h3 className="text-2xl font-bold mb-4 font-display">
-              {t('initializeCollaboration')}
+              {"Ready to Collaborate?"}
             </h3>
             <p className="text-gray-400 max-w-sm mb-8 font-light text-sm">
-              {t('availableForFreelance')}
+              {"Specializing in machine learning, deep learning, and scalable backend systems. Actively seeking full-time opportunities."}
             </p>
 
             <div className="flex gap-4">
@@ -80,7 +80,7 @@ export default function Footer() {
 
           <div>
             <h4 className="text-sm font-bold font-mono mb-6 text-primary uppercase tracking-widest">
-              {t('sitemap')}
+              {"Sitemap"}
             </h4>
             <ul className="space-y-3 text-gray-400 font-mono text-xs">
               <li>
@@ -88,7 +88,7 @@ export default function Footer() {
                   href="/"
                   className="hover:text-white transition flex items-center gap-2"
                 >
-                  <span className="text-primary">&gt;</span> {t('home')}
+                  <span className="text-primary">&gt;</span> {"./home"}
                 </Link>
               </li>
               <li>
@@ -96,7 +96,7 @@ export default function Footer() {
                   href="/projects"
                   className="hover:text-white transition flex items-center gap-2"
                 >
-                  <span className="text-primary">&gt;</span> {t('projects')}
+                  <span className="text-primary">&gt;</span> {"./projects"}
                 </Link>
               </li>
               <li>
@@ -104,7 +104,7 @@ export default function Footer() {
                   href="/blog"
                   className="hover:text-white transition flex items-center gap-2"
                 >
-                  <span className="text-primary">&gt;</span> {t('blog')}
+                  <span className="text-primary">&gt;</span> {"./blog"}
                 </Link>
               </li>
               <li>
@@ -112,7 +112,7 @@ export default function Footer() {
                   href="/cv"
                   className="hover:text-white transition flex items-center gap-2"
                 >
-                  <span className="text-primary">&gt;</span> {t('cv')}
+                  <span className="text-primary">&gt;</span> {"./cv"}
                 </Link>
               </li>
               <li>
@@ -120,7 +120,7 @@ export default function Footer() {
                   href="/contact"
                   className="hover:text-white transition flex items-center gap-2"
                 >
-                  <span className="text-primary">&gt;</span> {t('contact')}
+                  <span className="text-primary">&gt;</span> {"./contact"}
                 </Link>
               </li>
             </ul>
@@ -128,7 +128,7 @@ export default function Footer() {
 
           <div>
             <h4 className="text-sm font-bold font-mono mb-6 text-primary uppercase tracking-widest">
-              {t('contactInfo')}
+              {"Contact_Info"}
             </h4>
             <ul className="space-y-4 text-gray-400 text-sm">
               <li className="flex items-start gap-3 group cursor-pointer">
@@ -157,7 +157,7 @@ export default function Footer() {
                 <span className="material-icons text-primary text-sm mt-1">
                   place
                 </span>
-                <span className="font-mono text-xs">{t('location')}</span>
+                <span className="font-mono text-xs">{"Ho Chi Minh City, VN"}</span>
               </li>
             </ul>
           </div>
@@ -165,10 +165,10 @@ export default function Footer() {
 
         <div className="pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-600 font-mono">
           <p>
-            © {new Date().getFullYear()} Thong Truong. {t('systemRightsReserved')}
+            © {new Date().getFullYear()} Thong Truong. {"System_All_Rights_Reserved."}
           </p>
           <p>
-            {t('executedWith')}
+            {"Executed with Logic & Caffeine"}
           </p>
         </div>
       </div>

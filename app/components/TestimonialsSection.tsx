@@ -1,10 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import { useLanguage } from "./LanguageProvider";
+
 
 export default function TestimonialsSection() {
-  const { t } = useLanguage();
+  
 
   return (
     <section className="py-24 bg-white dark:bg-zinc-900 relative border-t border-zinc-300 dark:border-zinc-800">
@@ -15,12 +15,12 @@ export default function TestimonialsSection() {
           <div className="flex items-center gap-2 mb-2">
             <span className="h-px w-8 bg-primary"></span>
             <h2 className="text-sm font-mono text-primary font-bold uppercase tracking-widest">
-              {t("testimonialsLabel")}
+              {"Testimonials"}
             </h2>
             <span className="h-px w-8 bg-primary"></span>
           </div>
           <h3 className="text-3xl md:text-4xl font-display font-medium text-zinc-900 dark:text-white">
-            {t("testimonialsHeading")}
+            {"What People Say"}
           </h3>
         </div>
 
@@ -39,7 +39,7 @@ export default function TestimonialsSection() {
               <div className="flex-1">
                 {/* Testimonial Content */}
                 <p className="text-lg md:text-xl text-zinc-700 dark:text-zinc-300 leading-relaxed mb-8 italic">
-                  &ldquo;{t("testimonialContent")}&rdquo;
+                  &ldquo;{"Thong is a talented AI Engineer and technical leader with strong execution and system architecture skills. While our company is moving in a different strategic and cultural direction, I genuinely believe his strengths will be an excellent fit in the right environment. He brings technical clarity, database performance, and robust system designs to teams, and any organization looking for a capable AI Engineer would benefit from his contributions."}&rdquo;
                 </p>
 
                 {/* Author Info */}
@@ -56,10 +56,10 @@ export default function TestimonialsSection() {
 
                   <div>
                     <h4 className="font-display font-medium text-zinc-900 dark:text-white">
-                      {t("testimonialAuthorName")}
+                      {"Bryan Hoang"}
                     </h4>
                     <p className="text-sm text-zinc-600 dark:text-zinc-400 font-mono">
-                      {t("testimonialAuthorTitle")}
+                      {"Founder & CEO, Nexus Tech Global"}
                     </p>
                   </div>
                 </div>

@@ -5,10 +5,10 @@ import Image from 'next/image';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 import TestimonialsSection from './components/TestimonialsSection';
-import { useLanguage } from './components/LanguageProvider';
+
 
 export default function HomePage() {
-  const { t } = useLanguage();
+  
   return (
     <>
       <Navigation />
@@ -28,22 +28,22 @@ export default function HomePage() {
                     <span className="relative inline-flex h-2 w-2 bg-green-500"></span>
                   </span>
                   <span className="font-mono text-primary text-xs font-bold tracking-wide uppercase">
-                      {t('founderEngineer')}
+                      {"Software Engineer | AI & Data Focus"}
                   </span>
                 </div>
                 
                 <h1 className="text-6xl lg:text-8xl font-display font-medium text-zinc-900 dark:text-white leading-[1.05] tracking-tight border-l-8 border-primary pl-6">
-                  {t('building')} <br />
-                  <span className="text-primary italic">{t('dataDriven')}</span><br />
-                  {t('solutionsAt')} <br />
-                  {t('scale')}
+                  {"Uncovering"} <br />
+                  <span className="text-primary italic">{"Insights through"}</span><br />
+                  {"Data Science"} <br />
+                  {"& AI"}
                 </h1>
               </div>
               
               <div className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-6 max-w-2xl shadow-none">
                 <p className="font-mono text-sm text-zinc-500 dark:text-zinc-400 mb-2 uppercase tracking-widest">{/* SYSTEM.LOG_BIO_LOADED */}</p>
                 <p className="text-lg text-zinc-700 dark:text-zinc-300 leading-relaxed font-sans">
-                  {t('heroBio')}
+                  {"Software Engineer focused on AI & Data, with hands-on experience analyzing datasets, building predictive models, and applying machine learning and deep learning algorithms to uncover actionable insights."}
                 </p>
               </div>
               
@@ -54,7 +54,7 @@ export default function HomePage() {
                 >
                   <div className="absolute inset-0 w-full h-full bg-blue-600 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out"></div>
                   <span className="relative flex items-center gap-2">
-                    {t('viewProjects')} <span className="material-icons text-sm">arrow_forward</span>
+                    {"View_Projects"} <span className="material-icons text-sm">arrow_forward</span>
                   </span>
                 </Link>
                 
@@ -63,18 +63,18 @@ export default function HomePage() {
                   className="group inline-flex items-center justify-center px-8 py-3.5 text-base font-bold text-zinc-700 dark:text-zinc-200 bg-transparent border-2 border-zinc-300 dark:border-zinc-700 hover:border-primary dark:hover:border-primary transition-all font-mono"
                 >
                   <span className="mr-2 opacity-0 -ml-4 group-hover:opacity-100 group-hover:ml-0 transition-all duration-300 text-primary">&gt;</span>
-                  {t('downloadCV')}
+                  {"Download CV"}
                 </Link>
               </div>
               
               <div className="pt-8 flex flex-wrap gap-8 text-xs font-mono text-gray-500 dark:text-gray-400 uppercase tracking-widest border-t border-zinc-300 dark:border-zinc-800 mt-8">
                 <div className="flex items-center gap-2">
                   <span className="material-icons text-lg text-primary">storage</span>
-                  {t('dataEngineering')}
+                  {"Machine Learning"}
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="material-icons text-lg text-blue-400">code</span>
-                  {t('fullStack')}
+                  {"Data Analysis & Visualization"}
                 </div>
               </div>
             </div>
@@ -152,24 +152,24 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-8 flex items-center justify-between">
             <div>
-              <h2 className="text-3xl md:text-4xl font-display font-medium text-zinc-900 dark:text-white mb-2">{t('selectedWorksHeading')}</h2>
+              <h2 className="text-3xl md:text-4xl font-display font-medium text-zinc-900 dark:text-white mb-2">{"Selected Works"}</h2>
               <p className="text-zinc-600 dark:text-zinc-400 font-mono text-sm">{/* Executed_Projects_List */}</p>
             </div>
             <Link 
               href="/projects"
               className="text-primary font-medium font-mono text-sm hover:text-blue-700 transition flex items-center gap-2 group border-b border-transparent hover:border-primary pb-0.5"
             >
-              {t('viewAllProjects')} <span className="material-icons text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+              {"view_all_projects()"} <span className="material-icons text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
             </Link>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             <div>
-              <h4 className="text-xl font-bold mb-4">{t('productLeadershipHeading')}</h4>
+              <h4 className="text-xl font-bold mb-4">{"Production AI Platforms"}</h4>
               <div className="grid grid-cols-1 gap-6">
                 <div className="group block border border-zinc-300 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-950 transition overflow-hidden">
                   <div className="aspect-w-16 aspect-h-9 relative overflow-hidden border-b border-zinc-300 dark:border-zinc-700">
-                    <div className="absolute top-2 right-2 z-20 bg-black/80 text-white text-[10px] font-mono px-2 py-1">{t('productionBadge')}</div>
+                    <div className="absolute top-2 right-2 z-20 bg-black/80 text-white text-[10px] font-mono px-2 py-1">{"Production"}</div>
                     <Image
                       src="/nexus-tech-global-thumbnail.png"
                       alt="Nexus Tech Global"
@@ -181,7 +181,7 @@ export default function HomePage() {
                   <div className="p-4 flex flex-col justify-between">
                     <div>
                       <h5 className="font-display font-medium text-lg">Nexus Tech Global</h5>
-                      <p className="text-sm text-zinc-600 dark:text-zinc-400 mt-2 line-clamp-2">{t('nexusSelectedDescription')}</p>
+                      <p className="text-sm text-zinc-600 dark:text-zinc-400 mt-2 line-clamp-2">{"Lead AI Engineer - Applied NLP and RAG methodologies to extract actionable intelligence from unstructured enterprise data."}</p>
                     </div>
                     <div className="flex flex-wrap gap-3 mt-4 pt-4 border-t border-gray-100 dark:border-zinc-800">
                       <a 
@@ -199,7 +199,7 @@ export default function HomePage() {
 
                 <div className="group block border border-zinc-300 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-950 transition overflow-hidden">
                   <div className="aspect-w-16 aspect-h-9 relative overflow-hidden border-b border-zinc-300 dark:border-zinc-700">
-                    <div className="absolute top-2 right-2 z-20 bg-black/80 text-white text-[10px] font-mono px-2 py-1">{t('productionBadge')}</div>
+                    <div className="absolute top-2 right-2 z-20 bg-black/80 text-white text-[10px] font-mono px-2 py-1">{"Production"}</div>
                     <Image
                       src="/sitebotic-thumbnail.png"
                       alt="SiteBotic AI Chatbot Platform"
@@ -211,7 +211,7 @@ export default function HomePage() {
                   <div className="p-4 flex flex-col justify-between">
                     <div>
                       <h5 className="font-display font-medium text-lg">SiteBotic</h5>
-                      <p className="text-sm text-zinc-600 dark:text-zinc-400 mt-2 line-clamp-2">{t('siteboticSelectedDescription')}</p>
+                      <p className="text-sm text-zinc-600 dark:text-zinc-400 mt-2 line-clamp-2">{"Lead AI Engineer — Designed data extraction pipelines and evaluated large language models for domain-specific chatbot generation."}</p>
                     </div>
                     <div className="flex flex-wrap gap-3 mt-4 pt-4 border-t border-gray-100 dark:border-zinc-800">
                       <a 
@@ -230,7 +230,7 @@ export default function HomePage() {
             </div>
 
             <div>
-              <h4 className="text-xl font-bold mb-4">{t('handsOnTechnicalHeading')}</h4>
+              <h4 className="text-xl font-bold mb-4">{"AI & Data Engineering"}</h4>
               <div className="grid grid-cols-1 gap-6">
                 <div className="group block border border-zinc-300 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-950 transition overflow-hidden">
                   <div className="aspect-w-16 aspect-h-9 relative overflow-hidden border-b border-zinc-300 dark:border-zinc-700">
@@ -246,7 +246,7 @@ export default function HomePage() {
                   <div className="p-4 flex flex-col justify-between">
                     <div>
                       <h5 className="font-display font-medium text-lg">Similarity Matching (CLIP & PyTorch)</h5>
-                      <p className="text-sm text-zinc-600 dark:text-zinc-400 mt-2 line-clamp-2">{t('projectSimilarityDescription')}</p>
+                      <p className="text-sm text-zinc-600 dark:text-zinc-400 mt-2 line-clamp-2">{"Research project benchmarking image-text similarity models, including ResNet50, Least-Squares projection, and CLIP."}</p>
                     </div>
                     <div className="flex flex-wrap gap-3 mt-4 pt-4 border-t border-gray-100 dark:border-zinc-800">
                       <a 
@@ -285,7 +285,7 @@ export default function HomePage() {
                   <div className="p-4 flex flex-col justify-between">
                     <div>
                       <h5 className="font-display font-medium text-lg">ML Foundations (KMeans & KNN)</h5>
-                      <p className="text-sm text-zinc-600 dark:text-zinc-400 mt-2 line-clamp-2">{t('projectMLFoundationsDescription')}</p>
+                      <p className="text-sm text-zinc-600 dark:text-zinc-400 mt-2 line-clamp-2">{"Implementation of fundamental clustering and regression algorithms including KMeans and KNN."}</p>
                     </div>
                     <div className="flex flex-wrap gap-3 mt-4 pt-4 border-t border-gray-100 dark:border-zinc-800">
                       <a 
@@ -315,7 +315,7 @@ export default function HomePage() {
                   <div className="p-4 flex flex-col justify-between">
                     <div>
                       <h5 className="font-display font-medium text-lg">Book Recommendation System</h5>
-                      <p className="text-sm text-zinc-600 dark:text-zinc-400 mt-2 line-clamp-2">{t('projectBookRecDescription')}</p>
+                      <p className="text-sm text-zinc-600 dark:text-zinc-400 mt-2 line-clamp-2">{"Full-stack ML platform implementing collaborative filtering, content-based filtering, and hybrid algorithms."}</p>
                     </div>
                     <div className="flex flex-wrap gap-3 mt-4 pt-4 border-t border-gray-100 dark:border-zinc-800">
                       <a 
@@ -345,9 +345,9 @@ export default function HomePage() {
             <div className="max-w-2xl">
               <div className="flex items-center gap-2 mb-2">
                 <span className="h-px w-8 bg-primary"></span>
-                <h2 className="text-sm font-mono text-primary font-bold uppercase tracking-widest">{t('certificationsLabel')}</h2>
+                <h2 className="text-sm font-mono text-primary font-bold uppercase tracking-widest">{"Education"}</h2>
               </div>
-              <h3 className="text-3xl md:text-4xl font-display font-medium text-zinc-900 dark:text-white">{t('certificationsHeading')}</h3>
+              <h3 className="text-3xl md:text-4xl font-display font-medium text-zinc-900 dark:text-white">{"Certifications & Degrees"}</h3>
             </div>
           </div>
           
@@ -360,10 +360,10 @@ export default function HomePage() {
                     <div className="w-12 h-12 bg-primary/10 flex items-center justify-center text-primary border border-primary/20">
                       <span className="material-icons text-2xl">cloud</span>
                     </div>
-                    <span className="text-[10px] font-mono text-gray-400 uppercase tracking-wider">{t('cert1Issuer')}</span>
+                    <span className="text-[10px] font-mono text-gray-400 uppercase tracking-wider">{"Google Cloud | Coursera"}</span>
                   </div>
-                  <h3 className="text-xl font-display font-medium text-zinc-900 dark:text-white mb-3">{t('cert1Title')}</h3>
-                  <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">{t('cert1Desc')}</p>
+                  <h3 className="text-xl font-display font-medium text-zinc-900 dark:text-white mb-3">{"Google Cloud Data Engineer Specialization"}</h3>
+                  <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">{"Comprehensive specialization covering Google Cloud infrastructure, deployment, and highly scalable architectures."}</p>
                 </div>
                 <a 
                   href="https://www.coursera.org/account/accomplishments/specialization/LYM33YOBPSG0" 
@@ -371,7 +371,7 @@ export default function HomePage() {
                   rel="noopener noreferrer" 
                   className="inline-flex items-center gap-1.5 text-xs font-mono text-primary hover:text-blue-700 font-bold mt-6 pt-4 border-t border-gray-100 dark:border-zinc-800 w-full group/btn"
                 >
-                  {t('verifyCredential')}
+                  {"Verify Credential"}
                   <span className="material-icons text-xs group-hover/btn:translate-x-0.5 transition-transform">arrow_forward</span>
                 </a>
               </div>
@@ -385,10 +385,10 @@ export default function HomePage() {
                     <div className="w-12 h-12 bg-blue-500/10 flex items-center justify-center text-blue-500 border border-blue-500/20">
                       <span className="material-icons text-2xl">code</span>
                     </div>
-                    <span className="text-[10px] font-mono text-gray-400 uppercase tracking-wider">{t('cert2Issuer')}</span>
+                    <span className="text-[10px] font-mono text-gray-400 uppercase tracking-wider">{"Duke University | Coursera"}</span>
                   </div>
-                  <h3 className="text-xl font-display font-medium text-zinc-900 dark:text-white mb-3">{t('cert2Title')}</h3>
-                  <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">{t('cert2Desc')}</p>
+                  <h3 className="text-xl font-display font-medium text-zinc-900 dark:text-white mb-3">{"Java Programming Fundamentals Specialization"}</h3>
+                  <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">{"Foundational training in core programming concepts, software engineering, and object-oriented design using Java."}</p>
                 </div>
                 <a 
                   href="https://www.coursera.org/account/accomplishments/specialization/FHEWGD14O2HV" 
@@ -396,7 +396,7 @@ export default function HomePage() {
                   rel="noopener noreferrer" 
                   className="inline-flex items-center gap-1.5 text-xs font-mono text-primary hover:text-blue-700 font-bold mt-6 pt-4 border-t border-gray-100 dark:border-zinc-800 w-full group/btn"
                 >
-                  {t('verifyCredential')}
+                  {"Verify Credential"}
                   <span className="material-icons text-xs group-hover/btn:translate-x-0.5 transition-transform">arrow_forward</span>
                 </a>
               </div>
@@ -410,10 +410,10 @@ export default function HomePage() {
                     <div className="w-12 h-12 bg-accent/10 flex items-center justify-center text-accent border border-accent/20">
                       <span className="material-icons text-2xl">psychology</span>
                     </div>
-                    <span className="text-[10px] font-mono text-gray-400 uppercase tracking-wider">{t('cert3Issuer')}</span>
+                    <span className="text-[10px] font-mono text-gray-400 uppercase tracking-wider">{"AIO | AI VIET NAM"}</span>
                   </div>
-                  <h3 className="text-xl font-display font-medium text-zinc-900 dark:text-white mb-3">{t('cert3Title')}</h3>
-                  <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">{t('cert3Desc')}</p>
+                  <h3 className="text-xl font-display font-medium text-zinc-900 dark:text-white mb-3">{"AI VIET NAM - AIO 2026 (Module 01)"}</h3>
+                  <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">{"Intensive academic program focusing on machine learning, deep learning, computer vision, and NLP."}</p>
                 </div>
                 <a 
                   href="https://lms.aivietnam.edu.vn/verification/accomplishments/78243493" 
@@ -421,7 +421,7 @@ export default function HomePage() {
                   rel="noopener noreferrer" 
                   className="inline-flex items-center gap-1.5 text-xs font-mono text-primary hover:text-blue-700 font-bold mt-6 pt-4 border-t border-gray-100 dark:border-zinc-800 w-full group/btn"
                 >
-                  {t('verifyCredential')}
+                  {"Verify Credential"}
                   <span className="material-icons text-xs group-hover/btn:translate-x-0.5 transition-transform">arrow_forward</span>
                 </a>
               </div>
@@ -435,14 +435,14 @@ export default function HomePage() {
                     <div className="w-12 h-12 bg-green-500/10 flex items-center justify-center text-green-500 border border-green-500/20">
                       <span className="material-icons text-2xl">school</span>
                     </div>
-                    <span className="text-[10px] font-mono text-gray-400 uppercase tracking-wider">{t('cert4Issuer')}</span>
+                    <span className="text-[10px] font-mono text-gray-400 uppercase tracking-wider">{"UIT - VNUHCM"}</span>
                   </div>
-                  <h3 className="text-xl font-display font-medium text-zinc-900 dark:text-white mb-3">{t('cert4Title')}</h3>
-                  <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">{t('cert4Desc')}</p>
+                  <h3 className="text-xl font-display font-medium text-zinc-900 dark:text-white mb-3">{"B.S. Information Technology"}</h3>
+                  <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">{"Rigorous computer science curriculum covering data structures, algorithms, databases, and software engineering. Graduated with a \"Very Good\" classification."}</p>
                 </div>
                 <div className="inline-flex items-center gap-1.5 text-xs font-mono text-gray-400 mt-6 pt-4 border-t border-gray-100 dark:border-zinc-800 w-full cursor-default">
                   <span className="material-icons text-xs text-green-500">workspace_premium</span>
-                  {t('academicDegree')}
+                  {"Academic Degree"}
                 </div>
               </div>
             </div>
@@ -455,14 +455,14 @@ export default function HomePage() {
                     <div className="w-12 h-12 bg-purple-500/10 flex items-center justify-center text-purple-500 border border-purple-500/20">
                       <span className="material-icons text-2xl">translate</span>
                     </div>
-                    <span className="text-[10px] font-mono text-gray-400 uppercase tracking-wider">{t('cert5Issuer')}</span>
+                    <span className="text-[10px] font-mono text-gray-400 uppercase tracking-wider">{"USSH - VNUHCM"}</span>
                   </div>
-                  <h3 className="text-xl font-display font-medium text-zinc-900 dark:text-white mb-3">{t('cert5Title')}</h3>
-                  <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">{t('cert5Desc')}</p>
+                  <h3 className="text-xl font-display font-medium text-zinc-900 dark:text-white mb-3">{"B.A. Japanese Studies"}</h3>
+                  <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">{"In-depth study of Japanese language, culture, society, and cross-cultural communication."}</p>
                 </div>
                 <div className="inline-flex items-center gap-1.5 text-xs font-mono text-gray-400 mt-6 pt-4 border-t border-gray-100 dark:border-zinc-800 w-full cursor-default">
                   <span className="material-icons text-xs text-purple-500">workspace_premium</span>
-                  {t('academicDegree')}
+                  {"Academic Degree"}
                 </div>
               </div>
             </div>
@@ -477,17 +477,17 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-display font-medium text-zinc-900 dark:text-white mb-6">
-              {t('projectsCTAHeading')}
+              {"Looking for a Software Engineer focused on AI & Data?"}
             </h2>
             <p className="text-lg text-zinc-600 dark:text-zinc-300 mb-10">
-              {t('projectsCTADescription')}
+              {"I develop machine learning models, analyze complex datasets, and build intelligent data-driven software solutions."}
             </p>
             
             <a
               href="/contact"
               className="inline-flex items-center justify-center px-8 py-3.5 text-base font-bold text-white bg-primary hover:bg-blue-600 font-mono transition-all duration-300 hover:-[0_0_20px_rgba(59,130,246,0.4)]"
             >
-              {t('projectsCTAButton')}
+              {"Let's_Talk()"}
             </a>
           </div>
         </div>

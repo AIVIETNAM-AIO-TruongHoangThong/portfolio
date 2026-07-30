@@ -4,14 +4,14 @@ import Image from 'next/image';
 
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
-import { useLanguage } from '../components/LanguageProvider';
+
 
 const projects = [
   {
     id: 3,
     title: "Similarity Matching Methods for Images and Texts",
-    descriptionKey: "projectSimilarityDescription",
-    longDescriptionKey: "projectSimilarityLongDescription",
+    description: "Research project benchmarking image-text similarity models, including ResNet50, Least-Squares projection, and CLIP.",
+    longDescription: "Led a five-member research team (Trang Giay Trang Team) to implement and benchmark multiple image–text similarity matching approaches, including a baseline (ResNet50 + TF-IDF), a Least-Squares-based linear projection model (W), and OpenAI's CLIP contrastive embedding framework.",
     image: "https://images.unsplash.com/photo-1544256718-3bcf237f3974?w=800",
     tags: [
       "ResNet50",
@@ -29,8 +29,8 @@ const projects = [
   {
     id: 1,
     title: "Nexus Tech Global",
-    descriptionKey: "projectNexusDescription",
-    longDescriptionKey: "projectNexusLongDescription",
+    description: "Enterprise-grade AI chatbot platform and custom RAG solutions.",
+    longDescription: "Co-Founder and Lead AI Engineer at Nexus Tech Global, building enterprise-grade chatbot systems, custom RAG solutions, and distributed scraping pipelines. Leading AI development and backend architectures for all products.",
     image: "/nexus-tech-global-thumbnail.png",
     tags: ["RAG Platforms", "System Architecture", "Backend Engineering"],
     version: "Production",
@@ -41,8 +41,8 @@ const projects = [
   {
     id: 2,
     title: "SiteBotic",
-    descriptionKey: "projectSiteboticDescription",
-    longDescriptionKey: "projectSiteboticLongDescription",
+    description: "AI-Powered Chatbot Platform - No-code SaaS enabling websites to deploy intelligent chatbots trained on their content.",
+    longDescription: "Lead AI Engineer for SiteBotic at Nexus Tech Global. Analyzed web structures to build an automated data extraction pipeline replacing Playwright with Crawl4AI. Designed and evaluated a pgvector-based RAG architecture, utilizing GPT-5-mini with a 400k context window to synthesize insights from scraped website content. Focused heavily on data preprocessing, embedding generation, and prompt optimization for accurate AI responses.",
     image: "/sitebotic-thumbnail.png",
     tags: [
       "FastAPI",
@@ -62,8 +62,8 @@ const projects = [
   {
     id: 4,
     title: "Customer 360 Risk Scoring System",
-    descriptionKey: "projectCustomer360Description",
-    longDescriptionKey: "projectCustomer360LongDescription",
+    description: "End-to-end data engineering solution building Customer 360 views and risk analytics with ETL pipelines.",
+    longDescription: "Data engineering platform with ETL pipelines for data extraction & transformation, Apache Spark for distributed analytics, Airflow for workflow orchestration, and Metabase BI dashboards.",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800",
     tags: [
       "Apache Spark",
@@ -80,8 +80,8 @@ const projects = [
   {
     id: 5,
     title: "Book Recommendation System",
-    descriptionKey: "projectBookRecDescription",
-    longDescriptionKey: "projectBookRecLongDescription",
+    description: "Full-stack ML platform implementing collaborative filtering, content-based filtering, and hybrid algorithms.",
+    longDescription: "Machine learning recommendation system with collaborative filtering (SVD), content-based filtering (TF-IDF), hybrid engine combining algorithms, and FastAPI REST API with React frontend.",
     image: "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=800",
     tags: ["Scikit-learn", "FastAPI", "React", "TypeScript", "Vite"],
     version: "University",
@@ -92,8 +92,8 @@ const projects = [
   {
     id: 6,
     title: "Pet Clinic Management System",
-    descriptionKey: "projectPetClinicDescription",
-    longDescriptionKey: "projectPetClinicLongDescription",
+    description: "Java desktop application with complete CRUD operations for veterinary clinic management using DAO pattern.",
+    longDescription: "Desktop application implementing DAO pattern for clean architecture, event-driven GUI with Java Swing, CRUD operations for clinic management, and MySQL database integration.",
     image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800",
     tags: ["Java", "Java Swing", "MySQL", "JDBC", "DAO Pattern"],
     version: "University",
@@ -105,8 +105,8 @@ const projects = [
   {
     id: 7,
     title: "Real-Time Price Tracker (BGU118)",
-    descriptionKey: "projectPriceTrackerDescription",
-    longDescriptionKey: "projectPriceTrackerLongDescription",
+    description: "Real-time data ingestion platform tracking Bitcoin, gold, and USD-VND rates with automated ETL pipeline.",
+    longDescription: "Data pipeline with async API calls using httpx for concurrent data fetching, SQLite with SQLModel ORM for time-series data, React + Chart.js for visualizations, and integration with multiple external APIs.",
     image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800",
     tags: ["Python", "httpx", "SQLite", "SQLModel", "React", "Chart.js"],
     version: "University",
@@ -117,7 +117,7 @@ const projects = [
 ];
 
 export default function ProjectsPage() {
-  const { t } = useLanguage();
+  
   return (
     <>
       <Navigation />
@@ -135,11 +135,11 @@ export default function ProjectsPage() {
               </div>
               
               <h1 className="text-4xl md:text-6xl font-display font-medium text-zinc-900 dark:text-white mb-8 leading-tight">
-                {t('projectsHeroTitleLine1')} <br />{t('projectsHeroTitleLine2')}
+                {"From Machine Learning Models to"} <br />{"AI & Data Products."}
               </h1>
               
               <p className="text-lg text-zinc-600 dark:text-zinc-300 leading-relaxed max-w-3xl">
-                {t('projectsHeroDescription')}
+                {"Applied machine learning, RAG pipelines, and data-centric software solutions. From data analysis and model training to intelligent feature integration, I build robust, data-focused software."}
               </p>
             </div>
           </div>
@@ -186,19 +186,18 @@ export default function ProjectsPage() {
                       </h3>
                       
                       <p className="text-zinc-600 dark:text-zinc-400 text-sm mb-6 line-clamp-3">
-                        {project.descriptionKey ? t(project.descriptionKey) : ''}
+                        {project.description}
                       </p>
                       
                       {/* Tags */}
                       <div className="flex flex-wrap gap-2 mb-6">
                         {project.tags.map((tag) => {
-                          const normalized = tag.replace(/[^A-Za-z0-9]/g, '');
                           return (
                             <span
                               key={tag}
                               className="px-2 py-1 bg-white dark:bg-gray-800 text-[10px] font-mono font-bold text-primary border border-zinc-300 dark:border-zinc-700 uppercase"
                             >
-                              {t(`tag_${normalized}`)}
+                              {tag}
                             </span>
                           );
                         })}
@@ -256,17 +255,17 @@ export default function ProjectsPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div className="max-w-3xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-display font-medium text-zinc-900 dark:text-white mb-6">
-                {t('projectsCTAHeading')}
+                {"Looking for a Software Engineer focused on AI & Data?"}
               </h2>
               <p className="text-lg text-zinc-600 dark:text-zinc-300 mb-10">
-                {t('projectsCTADescription')}
+                {"I develop machine learning models, analyze complex datasets, and build intelligent data-driven software solutions."}
               </p>
               
               <a
                 href="/contact"
                 className="inline-flex items-center justify-center px-8 py-3.5 text-base font-bold text-white bg-primary hover:bg-blue-600 font-mono transition-all duration-300 hover:-[0_0_20px_rgba(59,130,246,0.4)]"
               >
-                {t('projectsCTAButton')}
+                {"Let's_Talk()"}
               </a>
             </div>
           </div>

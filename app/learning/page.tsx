@@ -2,11 +2,9 @@
 
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
-import { useLanguage } from '../components/LanguageProvider';
 
 export default function LearningPage() {
-  const { t } = useLanguage();
-
+  
   return (
     <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 flex flex-col justify-between">
       <Navigation />
@@ -22,11 +20,11 @@ export default function LearningPage() {
                 <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
               </div>
               <span className="font-mono text-sm font-semibold text-green-600 dark:text-green-400">
-                {t('learningStatusCurrent')}
+                {"Current Module: 02 (Shot Zone Clustering)"}
               </span>
             </div>
             <h1 className="text-4xl md:text-5xl font-display font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
-              {t('learningHeroTitle')}
+              {"Live Learning Log"}
             </h1>
             <p className="text-lg text-zinc-600 dark:text-zinc-400 font-mono">
               A chronological terminal of my journey through the{' '}
@@ -56,9 +54,9 @@ export default function LearningPage() {
                   <span className="font-mono text-xs font-bold text-green-600 dark:text-green-400 bg-green-100 dark:bg-green-900/30 px-2 py-1">IN PROGRESS</span>
                   <span className="font-mono text-xs text-zinc-400">07/2026 - 08/2026 (Month 2)</span>
                 </div>
-                <h3 className="font-display text-xl font-bold mb-3">{t('module02Title')}</h3>
+                <h3 className="font-display text-xl font-bold mb-3">{"[MODULE_02] Shot Zone & Quality Clustering (Research Stream)"}</h3>
                 <p className="text-sm text-zinc-600 dark:text-zinc-400 font-mono leading-relaxed mb-6">
-                  {t('module02Desc')}
+                  {"Analyzing feature scaling effects on K-Means clustering using a World Cup soccer dataset. Validating clusters against actual goal rates and xG."}
                 </p>
                 
                 <div className="bg-zinc-100 dark:bg-zinc-950 p-4 border border-zinc-200 dark:border-zinc-800 font-mono text-xs text-zinc-500 dark:text-zinc-400 space-y-2 mb-4">
@@ -112,9 +110,9 @@ export default function LearningPage() {
                   <span className="font-mono text-xs font-bold text-zinc-500 dark:text-zinc-400 bg-zinc-100 dark:bg-zinc-800 px-2 py-1">COMPLETED</span>
                   <span className="font-mono text-xs text-zinc-400">06/2026 - 07/2026 (Month 1)</span>
                 </div>
-                <h3 className="font-display text-xl font-bold mb-3">{t('module01Title')}</h3>
+                <h3 className="font-display text-xl font-bold mb-3">{"[MODULE_01] Multimodal Similarity Matching (Research Stream)"}</h3>
                 <p className="text-sm text-zinc-600 dark:text-zinc-400 font-mono leading-relaxed mb-6">
-                  {t('module01Desc')}
+                  {"Implementing and benchmarking multiple image-text similarity matching approaches using ResNet50, TF-IDF, and CLIP contrastive embeddings."}
                 </p>
                 
                 <div className="aspect-w-16 aspect-h-9 relative bg-zinc-100 dark:bg-black border border-zinc-200 dark:border-zinc-800 overflow-hidden group-hover:border-primary/50 transition-colors mb-4">
