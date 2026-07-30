@@ -53,6 +53,7 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
     // Navigation
     home: { en: './home', ja: './ホーム' },
     projects: { en: './projects', ja: './プロジェクト' },
+    blog: { en: './blog', ja: './ブログ' },
     learning: { en: './learning', ja: './学習' },
     cv: { en: './cv', ja: './履歴書' },
     contact: { en: './contact', ja: './連絡先' },

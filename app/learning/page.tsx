@@ -29,7 +29,16 @@ export default function LearningPage() {
               {t('learningHeroTitle')}
             </h1>
             <p className="text-lg text-zinc-600 dark:text-zinc-400 font-mono">
-              {t('learningHeroDesc')}
+              A chronological terminal of my journey through the{' '}
+              <a
+                href="https://aivietnam.edu.vn/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary underline hover:opacity-80 transition-opacity font-semibold"
+              >
+                AI VIET NAM (AIO 2026)
+              </a>{' '}
+              Intensive AI/ML Program.
             </p>
           </div>
 
@@ -69,15 +78,26 @@ export default function LearningPage() {
                   <div className="flex gap-2"><span className="text-primary">&gt;</span> <span className="animate-pulse">Status: Training Models...</span></div>
                 </div>
 
-                <a 
-                  href="https://github.com/hudl/open-data" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="inline-flex items-center gap-1.5 px-3 py-1.5 border border-zinc-300 dark:border-zinc-700 hover:border-primary text-xs font-mono text-zinc-700 dark:text-zinc-300 hover:text-primary transition duration-200"
-                >
-                  <span className="material-icons text-sm">dataset</span>
-                  View Dataset Repo
-                </a>
+                <div className="flex flex-wrap gap-3">
+                  <a 
+                    href="https://github.com/hudl/open-data" 
+                    target="_blank" 
+                      rel="noopener noreferrer" 
+                    className="inline-flex items-center gap-1.5 px-3 py-1.5 border border-zinc-300 dark:border-zinc-700 hover:border-primary text-xs font-mono text-zinc-700 dark:text-zinc-300 hover:text-primary transition duration-200"
+                  >
+                    <span className="material-icons text-sm">dataset</span>
+                    View Dataset Repo
+                  </a>
+                  <a 
+                    href="https://aivietnam.edu.vn/" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="inline-flex items-center gap-1.5 px-3 py-1.5 border border-zinc-300 dark:border-zinc-700 hover:border-primary text-xs font-mono text-zinc-700 dark:text-zinc-300 hover:text-primary transition duration-200"
+                  >
+                    <span className="material-icons text-sm">open_in_new</span>
+                    AI VIET NAM Program
+                  </a>
+                </div>
               </div>
             </div>
 
@@ -125,6 +145,15 @@ export default function LearningPage() {
                   >
                     <span className="material-icons text-sm text-green-500">verified</span>
                     Verify Certificate
+                  </a>
+                  <a 
+                    href="https://aivietnam.edu.vn/" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="inline-flex items-center gap-1.5 px-3 py-1.5 border border-zinc-300 dark:border-zinc-700 hover:border-primary text-xs font-mono text-zinc-700 dark:text-zinc-300 hover:text-primary transition duration-200"
+                  >
+                    <span className="material-icons text-sm">open_in_new</span>
+                    aivietnam.edu.vn
                   </a>
                 </div>
               </div>

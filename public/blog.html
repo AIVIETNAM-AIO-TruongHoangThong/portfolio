@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Is AI Engineering Just API Plumbing? (Or: Where Does the Real CS Live?) - Thong Truong</title>
+  <meta name="description" content="A personal journey through confusion, abstraction layers, and trying to figure out where a software engineer actually belongs in the age of LLMs.">
+  <meta name="author" content="Thong Truong">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#FF3366',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Newsreader', 'serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    ::selection { background-color: #FF3366; color: #ffffff; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-100 font-sans antialiased min-h-screen flex flex-col justify-between selection:bg-primary selection:text-white">
+
+  <!-- Header Navigation -->
+  <nav class="fixed w-full z-50 bg-zinc-950/90 border-b border-zinc-800 backdrop-blur-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <a href="/" class="flex items-center gap-3 hover:opacity-80 transition-opacity">
+          <div class="h-10 w-10 bg-primary/10 flex items-center justify-center border border-primary/20">
+            <span class="font-mono font-bold text-xl text-primary">&gt;_</span>
+          </div>
+          <span class="font-display font-medium text-xl tracking-tight hidden sm:block">
+            Thong Truong<span class="text-primary">.py</span>
+          </span>
+        </a>
+        <div class="flex items-center gap-4 font-mono text-sm">
+          <a href="/" class="text-zinc-400 hover:text-primary transition-colors">./home</a>
+          <a href="/projects" class="text-zinc-400 hover:text-primary transition-colors">./projects</a>
+          <a href="/blog" class="text-primary font-bold">./blog</a>
+          <a href="/learning" class="text-zinc-400 hover:text-primary transition-colors">./learning</a>
+          <a href="/cv" class="text-zinc-400 hover:text-primary transition-colors">./cv</a>
+          <a href="/contact" class="text-zinc-400 hover:text-primary transition-colors">./contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="flex-grow pt-32 pb-24">
+    <article class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Meta Bar -->
+      <div class="mb-8 flex items-center justify-between">
+        <a href="/" class="inline-flex items-center gap-2 font-mono text-xs text-zinc-400 hover:text-primary transition-colors">
+          <span class="material-icons text-sm">arrow_back</span>
+          <span>cd ../home</span>
+        </a>
+        <div class="flex items-center gap-2 font-mono text-xs text-zinc-500">
+          <span class="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          <span>THINKING_OUT_LOUD // IS_AI_ENGINEERING_JUST_API_PLUMBING</span>
+        </div>
+      </div>
+
+      <!-- Article Header -->
+      <header class="mb-12 border-b border-zinc-800 pb-10">
+        <div class="flex flex-wrap items-center gap-3 mb-4">
+          <span class="px-3 py-1 font-mono text-xs font-semibold bg-primary/10 text-primary border border-primary/20">
+            AI & Systems Architecture
+          </span>
+          <span class="font-mono text-xs text-zinc-400">July 30, 2026</span>
+          <span class="text-zinc-700">•</span>
+          <span class="font-mono text-xs text-zinc-400">8 min read</span>
+          <span class="text-zinc-700">•</span>
+          <span class="font-mono text-xs text-zinc-400">By Thong Truong</span>
+        </div>
+
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-display font-bold tracking-tight text-zinc-50 mb-6 leading-tight">
+          Is AI Engineering Just API Plumbing? (Or: Where Does the Real CS Live?)
+        </h1>
+        
+        <p class="text-lg sm:text-xl font-display italic text-zinc-300 leading-relaxed max-w-3xl">
+          A personal journey through confusion, abstraction layers, and trying to figure out where a software engineer actually belongs in the age of LLMs.
+        </p>
+      </header>
+
+      <!-- Blog Cover Image -->
+      <div class="my-8 w-full">
+        <img
+          src="/ai_engineering_blog_cover_v2.jpg"
+          alt="AI Engineering Cover"
+          width="1200"
+          height="675"
+          class="w-full h-auto rounded-xl object-cover shadow-xl border border-zinc-200 dark:border-zinc-800"
+        />
+      </div>
+
+      <!-- Abstract Callout -->
+      <div class="my-8 p-6 bg-zinc-900/60 border-l-4 border-primary border-y border-r border-zinc-800 font-mono text-sm leading-relaxed text-zinc-300">
+        <div class="flex items-center gap-2 mb-2 font-bold text-primary">
+          <span class="material-icons text-base">terminal</span>
+          <span>THE_STARTING_QUESTION</span>
+        </div>
+        <p>
+          To be completely honest, I spent months feeling skeptical about the AI hype. Aren't we all just calling external APIs and gluing JSON strings together? Here is how peeling back the abstraction layers changed my perspective.
+        </p>
+      </div>
+
+      <!-- Post Body -->
+      <div class="space-y-12 text-zinc-200 text-base sm:text-lg leading-relaxed">
+
+        <!-- SECTION 1 -->
+        <section id="honest-confusion" class="space-y-6">
+          <div class="flex items-center gap-3 border-b border-zinc-800 pb-3">
+            <span class="font-mono text-sm text-primary font-bold">01.</span>
+            <h2 class="text-2xl sm:text-3xl font-display font-bold text-zinc-100 m-0">
+              The Core Dilemma: Is This Just API Plumbing?
+            </h2>
+          </div>
+
+          <p>
+            To be completely honest, I spent the last few months feeling pretty confused about where I fit in this whole AI shift.
+          </p>
+
+          <p>
+            Every morning on my feed, everyone is talking about &quot;AI Engineers,&quot; autonomous agent frameworks, and multi-step reasoning loops. But when I actually looked at the code inside a lot of these hyped repositories, I couldn&apos;t stop asking myself a skeptical question:
+          </p>
+
+          <blockquote class="border-l-4 border-primary pl-6 py-2 italic font-display text-xl text-zinc-300 my-6 bg-primary/5">
+            &ldquo;Isn&apos;t all of this still just calling OpenAI or Anthropic endpoints under the hood? Aren&apos;t we just stringing together prompt templates, parsing JSON strings, and pretending it&apos;s new systems engineering? Where does the real AI live?&rdquo;
+          </blockquote>
+
+          <p>
+            For a long time, my knee-jerk instinct was: if you want true AI, you have to go down to the metal. You have to be the person working on the raw physics and math of code—implementing Transformer attention blocks from scratch in <strong>PyTorch</strong>, writing custom <strong>CUDA / Triton</strong> kernels for matrix multiplication, optimizing GPU memory consumption, and running post-training alignment through <strong>RLHF, DPO, or GRPO</strong>.
+          </p>
+
+          <p>
+            To me, that felt like where the true AI lived. Anything higher up the stack felt like superficial wrapper scripting around someone else&apos;s model—writing 500 lines of glue code just to parse a 5-word response, or spending half an afternoon engineering a prompt that politely begs the LLM not to make up fake SQL tables.
+          </p>
+        </section>
+
+        <!-- SECTION 2 -->
+        <section id="challenging-assumptions" class="space-y-6">
+          <div class="flex items-center gap-3 border-b border-zinc-800 pb-3">
+            <span class="font-mono text-sm text-primary font-bold">02.</span>
+            <h2 class="text-2xl sm:text-3xl font-display font-bold text-zinc-100 m-0">
+              Challenging My Own Assumption: LLMs as Cognitive CPUs
+            </h2>
+          </div>
+
+          <p>
+            Then I had an architectural discussion with a senior engineer that made me stop and re-examine my entire mental model.
+          </p>
+
+          <p>
+            He asked me a simple question about systems design:
+          </p>
+
+          <blockquote class="border-l-4 border-primary pl-6 py-2 italic font-display text-xl text-zinc-300 my-6 bg-primary/5">
+            &ldquo;When you build a distributed database, do you care more about how silicon gates inside the CPU flip bits, or do you care about consensus protocols, write-ahead logs, page caches, and memory barriers built on top of it?&rdquo;
+          </blockquote>
+
+          <p>
+            That hit me.
+          </p>
+
+          <p>
+            If we treat a Large Language Model not as a magic text generator, but as a non-deterministic, probabilistic <strong>&quot;Cognitive CPU,&quot;</strong> the entire equation changes.
+          </p>
+
+          <p>
+            A raw physical CPU needs a deterministic operating system around it to manage memory, schedule tasks, isolate processes, and handle peripheral I/O. In the exact same way, a probabilistic LLM requires a deterministic software runtime around it to guarantee correctness.
+          </p>
+
+          <p>
+            Calling an API isn&apos;t the hard part—anyone can <code class="font-mono text-sm px-1.5 py-0.5 bg-zinc-800">pip install</code> an SDK and burn through $50 in API credits in five minutes. The hard part is building software that produces predictable, type-safe telemetry out of an inherently stochastic model that might randomly decide to return JSON wrapped in markdown code blocks.
+          </p>
+
+          <!-- Side-by-side comparative box -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+            <div class="p-6 bg-zinc-900 border border-zinc-800 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between mb-3 border-b border-zinc-800 pb-2">
+                  <span class="font-mono text-xs text-primary font-bold tracking-wider uppercase">
+                    [ Model-Centric ]
+                  </span>
+                  <span class="font-mono text-[10px] text-zinc-500 uppercase">Tensor Physics</span>
+                </div>
+                <h3 class="font-display font-bold text-lg text-zinc-100 mb-2">Low-Level Model Mechanics</h3>
+                <p class="text-xs font-mono text-zinc-400 leading-relaxed mb-4">
+                  Optimizing token log-probabilities, loss curves, gradient norms, attention heads, and GPU memory bandwidth.
+                </p>
+              </div>
+
+              <div class="border border-zinc-800 bg-zinc-950 font-mono text-xs overflow-hidden">
+                <div class="flex items-center gap-1.5 px-3 py-2 bg-zinc-900/90 border-b border-zinc-800">
+                  <span class="w-2.5 h-2.5 rounded-full bg-zinc-700"></span>
+                  <span class="w-2.5 h-2.5 rounded-full bg-zinc-700"></span>
+                  <span class="w-2.5 h-2.5 rounded-full bg-zinc-700"></span>
+                  <span class="ml-2 text-[10px] text-zinc-400">attention_kernel.py</span>
+                </div>
+                <pre class="p-4 text-zinc-300 overflow-x-auto whitespace-pre leading-relaxed font-mono text-[11px]"><span class="text-zinc-500"># PyTorch Attention Kernel</span>
+attn_weights = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(d_k)
+attn_probs = F.softmax(attn_weights, dim=-1)
+output = torch.matmul(attn_probs, v)</pre>
+              </div>
+            </div>
+
+            <div class="p-6 bg-zinc-900 border border-zinc-800 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between mb-3 border-b border-zinc-800 pb-2">
+                  <span class="font-mono text-xs text-emerald-400 font-bold tracking-wider uppercase">
+                    [ System-Centric ]
+                  </span>
+                  <span class="font-mono text-[10px] text-zinc-500 uppercase">Control Level</span>
+                </div>
+                <h3 class="font-display font-bold text-lg text-zinc-100 mb-2">Systems-Level Orchestration</h3>
+                <p class="text-xs font-mono text-zinc-400 leading-relaxed mb-4">
+                  Structuring schemas, state transitions, tool execution registries, fallbacks, and static type bounds.
+                </p>
+              </div>
+
+              <div class="border border-zinc-800 bg-zinc-950 font-mono text-xs overflow-hidden">
+                <div class="flex items-center gap-1.5 px-3 py-2 bg-zinc-900/90 border-b border-zinc-800">
+                  <span class="w-2.5 h-2.5 rounded-full bg-zinc-700"></span>
+                  <span class="w-2.5 h-2.5 rounded-full bg-zinc-700"></span>
+                  <span class="w-2.5 h-2.5 rounded-full bg-zinc-700"></span>
+                  <span class="ml-2 text-[10px] text-zinc-400">type_safe_agent.py</span>
+                </div>
+                <pre class="p-4 text-zinc-300 overflow-x-auto whitespace-pre leading-relaxed font-mono text-[11px]"><span class="text-zinc-500"># Pydantic AI Type-Safe Agent</span>
+<span class="text-emerald-400">@agent.tool</span>
+<span class="text-primary font-semibold">async def</span> query_db(ctx: RunContext, sql: SQLQuery) -> QueryResult:
+    validated = ctx.deps.verifier.check(sql)
+    <span class="text-primary font-semibold">return await</span> ctx.deps.db.execute(validated)</pre>
+              </div>
+            </div>
+          </div>
+
+          <p>
+            Frameworks like <strong>Pydantic AI, LangGraph, DSPy, and LlamaIndex</strong> aren&apos;t just convenient wrappers. They are static typing systems, stateful graph controllers, and compiled signature runtimes engineered specifically to bring deterministic guarantees to non-deterministic model outputs.
+          </p>
+        </section>
+
+        <!-- SECTION 3 -->
+        <section id="mechanism-breakdown" class="space-y-6">
+          <div class="flex items-center gap-3 border-b border-zinc-800 pb-3">
+            <span class="font-mono text-sm text-primary font-bold">03.</span>
+            <h2 class="text-2xl sm:text-3xl font-display font-bold text-zinc-100 m-0">
+              Peeling Back the Abstraction Layers
+            </h2>
+          </div>
+
+          <p>
+            When you compare traditional web software with real agentic AI systems from first principles, three distinct mechanisms stand out:
+          </p>
+
+          <!-- Mechanism 1 -->
+          <div class="space-y-3 p-6 bg-zinc-900/40 border border-zinc-800">
+            <div class="font-mono text-xs text-primary font-bold tracking-widest uppercase">
+              MECHANISM 01 // CONTROL FLOW
+            </div>
+            <h3 class="text-xl font-display font-bold text-zinc-100 m-0">
+              Agents vs. Traditional Web Code
+            </h3>
+            <p class="text-base text-zinc-300">
+              Traditional web applications execute static decision trees: an incoming HTTP request hits an endpoint, runs nested <code class="font-mono text-sm px-1.5 py-0.5 bg-zinc-800">if/else</code> checks, and calls hard-coded API chains.
+            </p>
+            <p class="text-base text-zinc-300">
+              Agentic architectures shift decision-making into semantic space. Instead of static branches, agents ingest context, evaluate intent, autonomously select tools from a registry, assess their own intermediate execution results, and attempt self-correction when an API throws an error. That isn&apos;t simple scripting—it&apos;s dynamic control flow.
+            </p>
+          </div>
+
+          <!-- Mechanism 2 -->
+          <div class="space-y-3 p-6 bg-zinc-900/40 border border-zinc-800">
+            <div class="font-mono text-xs text-primary font-bold tracking-widest uppercase">
+              MECHANISM 02 // DATA ARCHITECTURE
+            </div>
+            <h3 class="text-xl font-display font-bold text-zinc-100 m-0">
+              Agents as Intelligent Controllers Over Databases
+            </h3>
+            <p class="text-base text-zinc-300">
+              There&apos;s a popular myth that AI agents will somehow make relational SQL databases or vector indices obsolete. But why would they? You don&apos;t use an LLM to replace fast B-tree index lookups or ACID-compliant joins.
+            </p>
+            <p class="text-base text-zinc-300">
+              We use agents as an <strong>intelligent controller</strong> positioned above relational and vector databases to handle human chaos. Human intent is messy and ambiguous; relational databases demand crisp SQL. The agent acts as a cognitive buffer—interpreting messy Text-to-SQL intent, resolving entity ambiguities, enriching dirty text, and reasoning through business edge cases before committing state to storage.
+            </p>
+          </div>
+
+          <!-- Mechanism 3 -->
+          <div class="space-y-3 p-6 bg-zinc-900/40 border border-zinc-800">
+            <div class="font-mono text-xs text-primary font-bold tracking-widest uppercase">
+              MECHANISM 03 // COMPETITIVE ARENAS
+            </div>
+            <h3 class="text-xl font-display font-bold text-zinc-100 m-0">
+              Lessons from the <a href="https://aichallenge.hochiminhcity.gov.vn/" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors underline">Ho Chi Minh City AI Challenge (HCMC AIC)</a>
+            </h3>
+            <p class="text-base text-zinc-300">
+              I&apos;m seeing this firsthand right now—as of writing this post, I&apos;m actively preparing and competing in the <a href="https://aichallenge.hochiminhcity.gov.vn/" target="_blank" rel="noopener noreferrer" class="text-primary underline hover:opacity-80 transition-opacity font-semibold">Ho Chi Minh City AI Challenge (HCMC AIC)</a>.
+            </p>
+            <p class="text-base text-zinc-300">
+              In these high-pressure settings, winning is never about training a 70-billion parameter model from scratch in a limited time frame. Victory comes down to system orchestration: multi-agent query expansion pipelines, indexing visual vectors across temporal keyframes, routing queries dynamically based on modality confidence, and executing sub-second hybrid searches across vector indices. System design beats brute-force training every single time.
+            </p>
+          </div>
+        </section>
+
+        <!-- SECTION 4 -->
+        <section id="conclusion" class="space-y-6">
+          <div class="flex items-center gap-3 border-b border-zinc-800 pb-3">
+            <span class="font-mono text-sm text-primary font-bold">04.</span>
+            <h2 class="text-2xl sm:text-3xl font-display font-bold text-zinc-100 m-0">
+              My Strategic Path Forward: The Hybrid Engineer
+            </h2>
+          </div>
+
+          <p>
+            So where does this leave me?
+          </p>
+
+          <p>
+            Through this reflection, I realized I don&apos;t have to choose between being &quot;the low-level model trainer&quot; or &quot;the high-level systems architect.&quot; They aren&apos;t opposing paths—they are complementary layers of the same stack.
+          </p>
+
+          <p>
+            That&apos;s why I&apos;ve been systematically grounding myself in traditional AI fundamentals—working through the mathematics, linear algebra, and classical deep learning architectures in the <a href="https://aivietnam.edu.vn/" target="_blank" rel="noopener noreferrer" class="text-primary underline hover:opacity-80 transition-opacity">AI Viet Nam (AIO)</a> program—while keeping my primary identity and focus as a production software engineer.
+          </p>
+
+          <p>
+            The strongest agent developers are those who deeply understand token mechanics, attention saturation, and quantization degradation under the hood. And the best model engineers are those who understand how downstream production systems consume their weights in real-world infrastructure.
+          </p>
+
+          <div class="p-8 bg-zinc-900 text-zinc-100 border border-primary/40 my-8 shadow-2xl space-y-6">
+            <div class="flex items-center gap-3 border-b border-zinc-800 pb-4">
+              <span class="material-icons text-primary text-xl">flag</span>
+              <h3 class="font-mono text-sm font-bold text-primary tracking-wider uppercase m-0">
+                MY_PATH_FORWARD // THE_HYBRID_ENGINEER
+              </h3>
+            </div>
+
+            <p class="font-display text-lg text-zinc-200 leading-relaxed italic">
+              &ldquo;My path forward to bridge both worlds is mastering deep learning fundamentals under the hood, while using my backend engineering foundation to build type-safe, production-grade AI systems.&rdquo;
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+              <div class="p-4 bg-zinc-950 border border-zinc-800">
+                <div class="font-mono text-xs text-primary font-bold mb-1">STEP 1: THE FOUNDATION</div>
+                <div class="font-bold text-sm text-white mb-2">Deep Learning &amp; Model Mechanics</div>
+                <p class="text-xs font-mono text-zinc-400">
+                  Understanding vector space math, attention mechanisms, embeddings, and token behavior from first principles.
+                </p>
+              </div>
+
+              <div class="p-4 bg-zinc-950 border border-zinc-800">
+                <div class="font-mono text-xs text-emerald-400 font-bold mb-1">STEP 2: THE SYSTEMS</div>
+                <div class="font-bold text-sm text-white mb-2">Type-Safe Agent Orchestration</div>
+                <p class="text-xs font-mono text-zinc-400">
+                  Building deterministic, production-grade agent runtimes using <strong>Pydantic AI</strong>, <strong>FastAPI</strong>, and structured tool registries.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <p>
+            By mastering traditional AI model mechanics while keeping my software engineering discipline at the core, I can build systems that are both mathematically sound and enterprise-ready.
+          </p>
+
+          <p class="pt-4 font-display italic text-zinc-400 text-lg">
+            That is the engineer I am building myself to be.
+          </p>
+        </section>
+      </div>
+
+      <!-- Author Bio -->
+      <footer class="mt-16 pt-10 border-t border-zinc-800">
+        <div class="p-6 bg-zinc-900 border border-zinc-800 flex flex-col sm:flex-row items-center gap-6">
+          <div class="h-16 w-16 bg-primary/10 border border-primary flex items-center justify-center shrink-0">
+            <span class="font-mono font-bold text-2xl text-primary">&gt;_</span>
+          </div>
+          <div class="space-y-1 text-center sm:text-left">
+            <h3 class="font-display font-bold text-lg text-zinc-100">Thong Truong</h3>
+            <p class="font-mono text-xs text-zinc-400">
+              Software Engineer | Focused on AI Systems, Deep Learning &amp; Data Engineering
+            </p>
+            <div class="pt-2 flex justify-center sm:justify-start gap-4 font-mono text-xs">
+              <a href="https://github.com/AIVIETNAM-AIO-TruongHoangThong" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">GitHub</a>
+              <span class="text-zinc-600">•</span>
+              <a href="https://www.linkedin.com/in/thongtr/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">LinkedIn</a>
+              <span class="text-zinc-600">•</span>
+              <a href="/blog" class="text-primary hover:underline">View All Posts</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    </article>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="bg-zinc-950 border-t border-zinc-800 py-8 text-center text-xs text-zinc-500 font-mono">
+    <p>© 2026 Thong Truong. All rights reserved.</p>
+  </footer>
+</body>
+</html>

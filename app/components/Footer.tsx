@@ -101,6 +101,14 @@ export default function Footer() {
               </li>
               <li>
                 <Link
+                  href="/blog"
+                  className="hover:text-white transition flex items-center gap-2"
+                >
+                  <span className="text-primary">&gt;</span> {t('blog')}
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/cv"
                   className="hover:text-white transition flex items-center gap-2"
                 >
