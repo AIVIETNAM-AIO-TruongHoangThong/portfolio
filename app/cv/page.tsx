@@ -169,16 +169,19 @@ export default function CVPage() {
                 </div>
               </div>
 
-              {/* Shot Zone */}
+              {/* Player Style Clustering */}
               <div className="space-y-1">
                 <div className="flex items-center justify-between">
                   <h3 className="font-bold text-sm text-zinc-900 dark:text-zinc-100">
-                    Shot Zone & Quality Clustering <span className="font-normal text-zinc-400">| AI VIET NAM - AIO 2026</span>
+                    Player Style Clustering from Football Event Data <span className="font-normal text-zinc-400">| AI VIET NAM - AIO 2026</span>
                   </h3>
-                  <span className="font-mono text-xs text-zinc-400">AI Engineer (Model)</span>
+                  <span className="font-mono text-xs text-zinc-400">ML & Evaluation Engineer</span>
                 </div>
-                <p className="text-xs text-zinc-600 dark:text-zinc-400">Analyzing feature scaling impact on K-Means clustering and KNN classification using a World Cup soccer dataset (Hudl Open Data), validating clusters against goal rates and xG.</p>
-                <a href="https://github.com/hudl/open-data" target="_blank" rel="noopener noreferrer" className="text-xs font-mono text-primary underline block">Dataset Repo (Hudl Open Data)</a>
+                <p className="text-xs text-zinc-600 dark:text-zinc-400">Engineered 29 per-90 behavioral and spatial features from 1,140 matches across Premier League, La Liga, and Serie A (StatsBomb Open Data). Benchmarked feature scaling methods, demonstrating RobustScaler superiority for skewed sports metrics. Modeled tactical player archetypes with K-Means (k=5), verified cluster boundary stability via KNN 5-fold CV (96.6% accuracy), conducted hierarchical role sub-clustering, and co-authored the technical LaTeX report.</p>
+                <div className="flex flex-wrap gap-3 text-xs font-mono pt-1">
+                  <a href="https://github.com/AIVIETNAM-AIO-Kaisye/football-shot-clustering" target="_blank" rel="noopener noreferrer" className="text-primary underline">GitHub Repo</a>
+                  <a href="https://github.com/statsbomb/open-data" target="_blank" rel="noopener noreferrer" className="text-primary underline">StatsBomb Open Data</a>
+                </div>
               </div>
 
               {/* Customer 360 */}

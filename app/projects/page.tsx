@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from 'react';
 import Image from 'next/image';
 
 import Navigation from '../components/Navigation';
@@ -7,6 +8,26 @@ import Footer from '../components/Footer';
 
 
 const projects = [
+  {
+    id: 8,
+    title: "Player Style Clustering from Football Event Data",
+    description: "Unsupervised machine learning study profiling tactical player styles across 1,140 European matches using K-Means and RobustScaler.",
+    longDescription: "Engineered 29 per-90 rate and spatial features from StatsBomb Open Data (1,140 matches, 1,016 players across Premier League, La Liga, and Serie A). Demonstrated the resilience of RobustScaler over StandardScaler for handling skewed sports metrics. Clustered tactical archetypes using K-Means (k=5), verified boundary stability with KNN 5-fold CV (96.6% accuracy), and conducted hierarchical tactical sub-clustering on Strikers, Midfielders, Wingers, and CenterBacks.",
+    image: "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=800",
+    tags: [
+      "K-Means",
+      "RobustScaler",
+      "Scikit-learn",
+      "StatsBomb",
+      "Python",
+      "KNN Stability",
+      "PCA",
+    ],
+    version: "AIO Research",
+    year: "2026",
+    category: "AI & Research",
+    github: "https://github.com/AIVIETNAM-AIO-Kaisye/football-shot-clustering",
+  },
   {
     id: 3,
     title: "Similarity Matching Methods for Images and Texts",
@@ -25,18 +46,6 @@ const projects = [
     category: "AI & Research",
     website: "https://www.youtube.com/watch?v=CljX-IhiE7w&t=1432s",
     github: "https://github.com/AIVIETNAM-AIO-TruongHoangThong/AIO2026-Conquer-Module-01",
-  },
-  {
-    id: 1,
-    title: "Nexus Tech Global",
-    description: "Enterprise-grade AI chatbot platform and custom RAG solutions.",
-    longDescription: "Co-Founder and Lead AI Engineer at Nexus Tech Global, building enterprise-grade chatbot systems, custom RAG solutions, and distributed scraping pipelines. Leading AI development and backend architectures for all products.",
-    image: "/nexus-tech-global-thumbnail.png",
-    tags: ["RAG Platforms", "System Architecture", "Backend Engineering"],
-    version: "Production",
-    year: "2025",
-    category: "Company",
-    website: "https://nexustechglobal.com",
   },
   {
     id: 2,
@@ -116,135 +125,223 @@ const projects = [
   },
 ];
 
+const categories = [
+  { label: "All Projects", value: "ALL" },
+  { label: "AI & Research", value: "AI & Research" },
+  { label: "AI & SaaS", value: "AI & SaaS" },
+  { label: "Data Engineering", value: "Data Engineering" },
+  { label: "Machine Learning & Systems", value: "Machine Learning & Systems" },
+];
+
 export default function ProjectsPage() {
-  
+  const [activeCategory, setActiveCategory] = useState("ALL");
+
+  const filteredProjects = projects.filter((project) => {
+    if (activeCategory === "ALL") return true;
+    if (activeCategory === "Machine Learning & Systems") {
+      return ["Machine Learning", "Desktop App", "Data Pipeline"].includes(project.category);
+    }
+    return project.category === activeCategory;
+  });
+
   return (
     <>
       <Navigation />
       
       <main className="pt-20 min-h-screen">
         {/* Hero Section */}
-        <section className="relative py-24 lg:py-32 overflow-hidden tech-grid">
+        <section className="relative py-20 lg:py-28 overflow-hidden tech-grid">
           <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-primary/5 pointer-events-none"></div>
           
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="max-w-4xl">
               <div className="flex items-center gap-2 mb-6">
                 <span className="h-px w-8 bg-primary"></span>
-                <h2 className="text-sm font-mono text-primary font-bold uppercase tracking-widest">{/* Portfolio */}</h2>
+                <h2 className="text-sm font-mono text-primary font-bold uppercase tracking-widest">{"// Portfolio & Works"}</h2>
               </div>
               
-              <h1 className="text-4xl md:text-6xl font-display font-medium text-zinc-900 dark:text-white mb-8 leading-tight">
+              <h1 className="text-4xl md:text-6xl font-display font-medium text-zinc-900 dark:text-white mb-6 leading-tight">
                 {"From Machine Learning Models to"} <br />{"AI & Data Products."}
               </h1>
               
               <p className="text-lg text-zinc-600 dark:text-zinc-300 leading-relaxed max-w-3xl">
-                {"Applied machine learning, RAG pipelines, and data-centric software solutions. From data analysis and model training to intelligent feature integration, I build robust, data-focused software."}
+                {"Applied machine learning research, automated data extraction, RAG pipelines, and enterprise-grade software. Explore production platforms, academic research, and engineering systems."}
               </p>
             </div>
           </div>
         </section>
         
-        {/* Projects Grid */}
-        <section className="py-24 bg-white dark:bg-zinc-900 relative border-t border-zinc-300 dark:border-zinc-800">
+        {/* Filter & Projects Bento Grid */}
+        <section className="py-16 bg-white dark:bg-zinc-900 relative border-t border-zinc-300 dark:border-zinc-800">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {projects.map((project) => {
+            
+            {/* Category Filter Tabs */}
+            <div className="flex items-center justify-between flex-wrap gap-4 mb-12 pb-6 border-b border-zinc-200 dark:border-zinc-800">
+              <div className="flex flex-wrap gap-2">
+                {categories.map((cat) => {
+                  const isActive = activeCategory === cat.value;
+                  const count = cat.value === "ALL" 
+                    ? projects.length 
+                    : cat.value === "Machine Learning & Systems"
+                    ? projects.filter(p => ["Machine Learning", "Desktop App", "Data Pipeline"].includes(p.category)).length
+                    : projects.filter(p => p.category === cat.value).length;
+
+                  return (
+                    <button
+                      key={cat.value}
+                      onClick={() => setActiveCategory(cat.value)}
+                      className={`inline-flex items-center gap-2 px-3.5 py-1.5 text-xs font-mono font-medium transition-all duration-200 ${
+                        isActive
+                          ? "bg-primary text-white border border-primary shadow-sm"
+                          : "bg-zinc-100 dark:bg-zinc-950 text-zinc-700 dark:text-zinc-300 border border-zinc-300 dark:border-zinc-800 hover:border-primary/50"
+                      }`}
+                    >
+                      <span>{cat.label}</span>
+                      <span className={`text-[10px] px-1.5 py-0.2 rounded-full ${
+                        isActive ? "bg-white/20 text-white" : "bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400"
+                      }`}>
+                        {count}
+                      </span>
+                    </button>
+                  );
+                })}
+              </div>
+              <div className="font-mono text-xs text-zinc-500">
+                <span>Displaying: </span>
+                <span className="text-zinc-900 dark:text-white font-bold">{filteredProjects.length}</span> projects
+              </div>
+            </div>
+
+            {/* Bento Mosaic Grid */}
+            <div className={`grid grid-cols-1 md:grid-cols-2 ${activeCategory === "ALL" ? "lg:grid-cols-12" : "lg:grid-cols-3"} gap-6`}>
+              {filteredProjects.map((project) => {
+                const isHero = activeCategory === "ALL" && project.id === 2; // SiteBotic Hero
+                const isSpotlight = activeCategory === "ALL" && project.id === 8; // Player Style Clustering
+                const isPair = activeCategory === "ALL" && (project.id === 3 || project.id === 4); // Research & Data Eng
+                
+                const colSpanClass = activeCategory === "ALL"
+                  ? isHero
+                    ? "lg:col-span-8 md:col-span-2"
+                    : isSpotlight
+                    ? "lg:col-span-4 md:col-span-2"
+                    : isPair
+                    ? "lg:col-span-6 md:col-span-1"
+                    : "lg:col-span-4 md:col-span-1"
+                  : "";
+
                 return (
                   <div
                     key={project.id}
                     id={project.title.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')}
-                    className="group relative bg-zinc-50 dark:bg-zinc-950 border border-zinc-300 dark:border-zinc-700 hover:border-primary/50 transition duration-300 flex flex-col h-full"
+                    className={`group relative bg-zinc-50 dark:bg-zinc-950 border border-zinc-300 dark:border-zinc-800 hover:border-primary/60 transition duration-300 flex flex-col justify-between overflow-hidden ${colSpanClass}`}
                   >
-                  {/* Project Image */}
-                  <div className="aspect-w-16 aspect-h-9 relative overflow-hidden border-b border-zinc-300 dark:border-zinc-700">
-                    <div className="absolute top-2 right-2 z-20 bg-black/80 text-white text-[10px] font-mono px-2 py-1">
-                      {project.version}
-                    </div>
-                    <div className="absolute top-2 left-2 z-20 bg-primary/80 text-white text-[10px] font-mono px-2 py-1">
-                      {project.category}
-                    </div>
-                    <div className="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition duration-500 z-10"></div>
-                    <Image
-                      src={project.image}
-                      alt={project.title}
-                      width={600}
-                      height={400}
-                      className="object-cover w-full h-full transform group-hover:scale-105 transition duration-700 filter grayscale group-hover:grayscale-0"
-                    />
-                  </div>
-                  
-                  {/* Project Info */}
-                  <div className="p-6 flex-1 flex flex-col justify-between">
-                    <div>
-                      <div className="flex items-center justify-between mb-3">
-                        <span className="text-xs font-mono text-gray-500">{project.year}</span>
+                    {/* Visual Preview */}
+                    <div className={`relative overflow-hidden border-b border-zinc-300 dark:border-zinc-800 bg-zinc-100 dark:bg-zinc-900 ${
+                      isHero ? "aspect-w-16 aspect-h-8" : "aspect-w-16 aspect-h-9"
+                    }`}>
+                      <div className="absolute top-3 left-3 z-20 flex gap-1.5 flex-wrap">
+                        <span className="bg-primary text-white text-[10px] font-mono font-bold px-2 py-0.5 uppercase tracking-wider">
+                          {project.category}
+                        </span>
+                        {project.version === "Production" && (
+                          <span className="bg-green-600 text-white text-[10px] font-mono font-bold px-2 py-0.5 uppercase tracking-wider flex items-center gap-1">
+                            <span className="h-1.5 w-1.5 rounded-full bg-white animate-pulse"></span>
+                            Production
+                          </span>
+                        )}
+                        {project.version === "AIO Research" && (
+                          <span className="bg-amber-600 text-white text-[10px] font-mono font-bold px-2 py-0.5 uppercase tracking-wider">
+                            AIO Research
+                          </span>
+                        )}
                       </div>
-                      
-                      <h3 className="text-xl font-display font-medium text-zinc-900 dark:text-white mb-3 group-hover:text-primary transition-colors">
-                        {project.title}
-                      </h3>
-                      
-                      <p className="text-zinc-600 dark:text-zinc-400 text-sm mb-6 line-clamp-3">
-                        {project.description}
-                      </p>
-                      
-                      {/* Tags */}
-                      <div className="flex flex-wrap gap-2 mb-6">
-                        {project.tags.map((tag) => {
-                          return (
+                      <div className="absolute top-3 right-3 z-20 bg-black/80 text-zinc-300 text-[10px] font-mono px-2 py-0.5">
+                        {project.year}
+                      </div>
+                      <div className="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition duration-500 z-10 pointer-events-none"></div>
+                      <Image
+                        src={project.image}
+                        alt={project.title}
+                        width={800}
+                        height={500}
+                        className="object-cover w-full h-full transform group-hover:scale-105 transition duration-700 filter grayscale group-hover:grayscale-0"
+                      />
+                    </div>
+                    
+                    {/* Content Details */}
+                    <div className="p-6 flex-1 flex flex-col justify-between">
+                      <div>
+                        <h3 className="text-xl font-display font-medium text-zinc-900 dark:text-white mb-2 group-hover:text-primary transition-colors">
+                          {project.title}
+                        </h3>
+                        
+                        <p className="text-zinc-600 dark:text-zinc-400 font-mono text-sm leading-relaxed mb-4">
+                          {isHero || isSpotlight ? project.longDescription : project.description}
+                        </p>
+                        
+                        {/* Tech Tags */}
+                        <div className="flex flex-wrap gap-1.5 mb-6">
+                          {project.tags.map((tag) => (
                             <span
                               key={tag}
-                              className="px-2 py-1 bg-white dark:bg-gray-800 text-[10px] font-mono font-bold text-primary border border-zinc-300 dark:border-zinc-700 uppercase"
+                              className="px-2 py-0.5 bg-white dark:bg-zinc-900 text-[10px] font-mono text-zinc-700 dark:text-zinc-300 border border-zinc-300 dark:border-zinc-700"
                             >
                               {tag}
                             </span>
-                          );
-                        })}
+                          ))}
+                        </div>
+                      </div>
+                      
+                      {/* Action Links */}
+                      <div className="flex flex-wrap gap-3 pt-4 border-t border-zinc-200 dark:border-zinc-800">
+                        {project.github && (
+                          <a 
+                            href={project.github}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1.5 px-3 py-1.5 border border-zinc-300 dark:border-zinc-700 hover:border-primary text-xs font-mono text-zinc-700 dark:text-zinc-300 hover:text-primary transition duration-200"
+                          >
+                            <span className="material-icons text-sm">code</span>
+                            GitHub
+                          </a>
+                        )}
+                        {project.website && (
+                          <a 
+                            href={project.website}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1.5 px-3 py-1.5 border border-zinc-300 dark:border-zinc-700 hover:border-primary text-xs font-mono text-zinc-700 dark:text-zinc-300 hover:text-primary transition duration-200"
+                          >
+                            <span className="material-icons text-sm">
+                              {project.website.includes('youtube.com') || project.website.includes('youtu.be') ? 'play_circle' : 'language'}
+                            </span>
+                            {project.website.includes('youtube.com') || project.website.includes('youtu.be') ? 'YouTube' : 'Website'}
+                          </a>
+                        )}
+                        {project.liveApp && project.liveApp !== project.website && (
+                          <a 
+                            href={project.liveApp}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-primary text-white hover:bg-primary/90 text-xs font-mono transition duration-200 font-semibold"
+                          >
+                            <span className="material-icons text-sm">open_in_new</span>
+                            Live App
+                          </a>
+                        )}
+                        {project.id === 8 && (
+                          <a 
+                            href="/learning"
+                            className="inline-flex items-center gap-1.5 px-3 py-1.5 border border-zinc-300 dark:border-zinc-700 hover:border-primary text-xs font-mono text-zinc-700 dark:text-zinc-300 hover:text-primary transition duration-200"
+                          >
+                            <span className="material-icons text-sm">terminal</span>
+                            Learning Log
+                          </a>
+                        )}
                       </div>
                     </div>
-                    
-                    {/* Action Links */}
-                    <div className="flex flex-wrap gap-3 pt-4 border-t border-gray-100 dark:border-zinc-800">
-                      {project.github && (
-                        <a 
-                          href={project.github}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center gap-1.5 px-3 py-1.5 border border-zinc-300 dark:border-zinc-700 hover:border-primary text-xs font-mono text-zinc-700 dark:text-zinc-300 hover:text-primary transition duration-200"
-                        >
-                          <span className="material-icons text-sm">code</span>
-                          GitHub
-                        </a>
-                      )}
-                      {project.website && (
-                        <a 
-                          href={project.website}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center gap-1.5 px-3 py-1.5 border border-zinc-300 dark:border-zinc-700 hover:border-primary text-xs font-mono text-zinc-700 dark:text-zinc-300 hover:text-primary transition duration-200"
-                        >
-                          <span className="material-icons text-sm">
-                            {project.website.includes('youtube.com') || project.website.includes('youtu.be') ? 'play_circle' : 'language'}
-                          </span>
-                          {project.website.includes('youtube.com') || project.website.includes('youtu.be') ? 'YouTube' : 'Website'}
-                        </a>
-                      )}
-                      {project.liveApp && project.liveApp !== project.website && (
-                        <a 
-                          href={project.liveApp}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center gap-1.5 px-3 py-1.5 border border-zinc-300 dark:border-zinc-700 hover:border-primary text-xs font-mono text-zinc-700 dark:text-zinc-300 hover:text-primary transition duration-200"
-                        >
-                          <span className="material-icons text-sm">open_in_new</span>
-                          Live App
-                        </a>
-                      )}
-                    </div>
                   </div>
-                </div>
-              );
+                );
               })}
             </div>
           </div>

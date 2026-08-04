@@ -163,172 +163,267 @@ export default function HomePage() {
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-            <div>
-              <h4 className="text-xl font-bold mb-4">{"Production AI Platforms"}</h4>
-              <div className="grid grid-cols-1 gap-6">
-                <div className="group block border border-zinc-300 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-950 transition overflow-hidden">
-                  <div className="aspect-w-16 aspect-h-9 relative overflow-hidden border-b border-zinc-300 dark:border-zinc-700">
-                    <div className="absolute top-2 right-2 z-20 bg-black/80 text-white text-[10px] font-mono px-2 py-1">{"Production"}</div>
-                    <Image
-                      src="/nexus-tech-global-thumbnail.png"
-                      alt="Nexus Tech Global"
-                      width={600}
-                      height={400}
-                      className="object-cover w-full h-full transform group-hover:scale-105 transition duration-700 filter grayscale group-hover:grayscale-0"
-                    />
+          {/* Bento Mosaic Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6">
+            {/* Card 1: SiteBotic (Hero / Flagship Production SaaS - lg:col-span-7) */}
+            <div className="lg:col-span-7 md:col-span-2 group relative bg-zinc-50 dark:bg-zinc-950 border border-zinc-300 dark:border-zinc-800 hover:border-primary/60 transition duration-300 flex flex-col justify-between overflow-hidden">
+              <div className="relative aspect-w-16 aspect-h-8 sm:aspect-h-7 overflow-hidden border-b border-zinc-300 dark:border-zinc-800 bg-zinc-100 dark:bg-zinc-900">
+                <div className="absolute top-3 left-3 z-20 flex gap-2">
+                  <span className="bg-primary text-white text-[10px] font-mono font-bold px-2 py-0.5 uppercase tracking-wider">AI SaaS</span>
+                  <span className="bg-green-600 text-white text-[10px] font-mono font-bold px-2 py-0.5 uppercase tracking-wider flex items-center gap-1">
+                    <span className="h-1.5 w-1.5 rounded-full bg-white animate-pulse"></span>
+                    Production
+                  </span>
+                </div>
+                <div className="absolute top-3 right-3 z-20 bg-black/80 text-zinc-300 text-[10px] font-mono px-2 py-0.5">2025</div>
+                <div className="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition duration-500 z-10 pointer-events-none"></div>
+                <Image
+                  src="/sitebotic-thumbnail.png"
+                  alt="SiteBotic AI Chatbot Platform"
+                  width={800}
+                  height={450}
+                  className="object-cover w-full h-full transform group-hover:scale-105 transition duration-700 filter grayscale group-hover:grayscale-0"
+                />
+              </div>
+              <div className="p-6 flex-1 flex flex-col justify-between">
+                <div>
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="text-xs font-mono text-primary font-semibold tracking-wider uppercase">Flagship Production Platform</span>
                   </div>
-                  <div className="p-4 flex flex-col justify-between">
-                    <div>
-                      <h5 className="font-display font-medium text-lg">Nexus Tech Global</h5>
-                      <p className="text-sm text-zinc-600 dark:text-zinc-400 mt-2 line-clamp-2">{"Lead AI Engineer - Applied NLP and RAG methodologies to extract actionable intelligence from unstructured enterprise data."}</p>
-                    </div>
-                    <div className="flex flex-wrap gap-3 mt-4 pt-4 border-t border-gray-100 dark:border-zinc-800">
-                      <a 
-                        href="https://nexustechglobal.com" 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        className="inline-flex items-center gap-1.5 px-3 py-1.5 border border-zinc-300 dark:border-zinc-700 hover:border-primary text-xs font-mono text-zinc-700 dark:text-zinc-300 hover:text-primary transition duration-200"
-                      >
-                        <span className="material-icons text-sm">language</span>
-                        Website
-                      </a>
-                    </div>
+                  <h3 className="text-2xl font-display font-medium text-zinc-900 dark:text-white mb-2 group-hover:text-primary transition-colors">SiteBotic</h3>
+                  <p className="text-sm text-zinc-600 dark:text-zinc-400 font-mono leading-relaxed mb-4">
+                    {"Lead AI Engineer — Architected an automated Crawl4AI web extraction pipeline and pgvector RAG engine with GPT-5-mini for domain-specific chatbot generation."}
+                  </p>
+                  <div className="flex flex-wrap gap-1.5 mb-6">
+                    {["FastAPI", "React", "TypeScript", "pgvector", "Dramatiq", "Redis", "Docker"].map((tech) => (
+                      <span key={tech} className="px-2 py-0.5 bg-white dark:bg-zinc-900 text-[10px] font-mono text-zinc-700 dark:text-zinc-300 border border-zinc-300 dark:border-zinc-700">
+                        {tech}
+                      </span>
+                    ))}
                   </div>
                 </div>
-
-                <div className="group block border border-zinc-300 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-950 transition overflow-hidden">
-                  <div className="aspect-w-16 aspect-h-9 relative overflow-hidden border-b border-zinc-300 dark:border-zinc-700">
-                    <div className="absolute top-2 right-2 z-20 bg-black/80 text-white text-[10px] font-mono px-2 py-1">{"Production"}</div>
-                    <Image
-                      src="/sitebotic-thumbnail.png"
-                      alt="SiteBotic AI Chatbot Platform"
-                      width={600}
-                      height={400}
-                      className="object-cover w-full h-full transform group-hover:scale-105 transition duration-700 filter grayscale group-hover:grayscale-0"
-                    />
-                  </div>
-                  <div className="p-4 flex flex-col justify-between">
-                    <div>
-                      <h5 className="font-display font-medium text-lg">SiteBotic</h5>
-                      <p className="text-sm text-zinc-600 dark:text-zinc-400 mt-2 line-clamp-2">{"Lead AI Engineer — Designed data extraction pipelines and evaluated large language models for domain-specific chatbot generation."}</p>
-                    </div>
-                    <div className="flex flex-wrap gap-3 mt-4 pt-4 border-t border-gray-100 dark:border-zinc-800">
-                      <a 
-                        href="https://sitebotic.com" 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        className="inline-flex items-center gap-1.5 px-3 py-1.5 border border-zinc-300 dark:border-zinc-700 hover:border-primary text-xs font-mono text-zinc-700 dark:text-zinc-300 hover:text-primary transition duration-200"
-                      >
-                        <span className="material-icons text-sm">language</span>
-                        Website
-                      </a>
-                    </div>
-                  </div>
+                <div className="flex flex-wrap gap-3 pt-4 border-t border-zinc-200 dark:border-zinc-800">
+                  <a 
+                    href="https://sitebotic.com" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="inline-flex items-center gap-1.5 px-3 py-1.5 border border-zinc-300 dark:border-zinc-700 hover:border-primary text-xs font-mono text-zinc-700 dark:text-zinc-300 hover:text-primary transition duration-200"
+                  >
+                    <span className="material-icons text-sm">language</span>
+                    Website
+                  </a>
+                  <a 
+                    href="https://sitebotic.com" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-primary text-white hover:bg-primary/90 text-xs font-mono transition duration-200 font-semibold"
+                  >
+                    <span className="material-icons text-sm">open_in_new</span>
+                    Launch App
+                  </a>
                 </div>
               </div>
             </div>
 
-            <div>
-              <h4 className="text-xl font-bold mb-4">{"AI & Data Engineering"}</h4>
-              <div className="grid grid-cols-1 gap-6">
-                <div className="group block border border-zinc-300 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-950 transition overflow-hidden">
-                  <div className="aspect-w-16 aspect-h-9 relative overflow-hidden border-b border-zinc-300 dark:border-zinc-700">
-                    <div className="absolute top-2 right-2 z-20 bg-black/80 text-white text-[10px] font-mono px-2 py-1">AIO Research</div>
-                    <Image
-                      src="https://images.unsplash.com/photo-1544256718-3bcf237f3974?w=800"
-                      alt="Similarity Matching for Images and Texts"
-                      width={600}
-                      height={400}
-                      className="object-cover w-full h-full transform group-hover:scale-105 transition duration-700 filter grayscale group-hover:grayscale-0"
-                    />
+            {/* Card 2: Player Style Clustering (Spotlight Research - lg:col-span-5) */}
+            <div className="lg:col-span-5 md:col-span-2 group relative bg-zinc-50 dark:bg-zinc-950 border border-zinc-300 dark:border-zinc-800 hover:border-primary/60 transition duration-300 flex flex-col justify-between overflow-hidden">
+              <div className="relative aspect-w-16 aspect-h-8 sm:aspect-h-7 overflow-hidden border-b border-zinc-300 dark:border-zinc-800 bg-zinc-100 dark:bg-zinc-900">
+                <div className="absolute top-3 left-3 z-20 flex gap-2">
+                  <span className="bg-amber-600 text-white text-[10px] font-mono font-bold px-2 py-0.5 uppercase tracking-wider">AIO Research</span>
+                </div>
+                <div className="absolute top-3 right-3 z-20 bg-black/80 text-zinc-300 text-[10px] font-mono px-2 py-0.5">2026</div>
+                <div className="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition duration-500 z-10 pointer-events-none"></div>
+                <Image
+                  src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=800"
+                  alt="Player Style Clustering from Football Event Data"
+                  width={600}
+                  height={400}
+                  className="object-cover w-full h-full transform group-hover:scale-105 transition duration-700 filter grayscale group-hover:grayscale-0"
+                />
+              </div>
+              <div className="p-6 flex-1 flex flex-col justify-between">
+                <div>
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="text-xs font-mono text-amber-600 dark:text-amber-400 font-semibold tracking-wider uppercase">Module 02 Research Paper</span>
                   </div>
-                  <div className="p-4 flex flex-col justify-between">
-                    <div>
-                      <h5 className="font-display font-medium text-lg">Similarity Matching (CLIP & PyTorch)</h5>
-                      <p className="text-sm text-zinc-600 dark:text-zinc-400 mt-2 line-clamp-2">{"Research project benchmarking image-text similarity models, including ResNet50, Least-Squares projection, and CLIP."}</p>
-                    </div>
-                    <div className="flex flex-wrap gap-3 mt-4 pt-4 border-t border-gray-100 dark:border-zinc-800">
-                      <a 
-                        href="https://github.com/AIVIETNAM-AIO-TruongHoangThong/AIO2026-Conquer-Module-01" 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        className="inline-flex items-center gap-1.5 px-3 py-1.5 border border-zinc-300 dark:border-zinc-700 hover:border-primary text-xs font-mono text-zinc-700 dark:text-zinc-300 hover:text-primary transition duration-200"
-                      >
-                        <span className="material-icons text-sm">code</span>
-                        GitHub
-                      </a>
-                      <a 
-                        href="https://www.youtube.com/watch?v=CljX-IhiE7w&t=1432s" 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        className="inline-flex items-center gap-1.5 px-3 py-1.5 border border-zinc-300 dark:border-zinc-700 hover:border-primary text-xs font-mono text-zinc-700 dark:text-zinc-300 hover:text-primary transition duration-200"
-                      >
-                        <span className="material-icons text-sm">play_circle</span>
-                        YouTube
-                      </a>
-                    </div>
+                  <h3 className="text-xl font-display font-medium text-zinc-900 dark:text-white mb-2 group-hover:text-primary transition-colors">
+                    Player Style Clustering
+                  </h3>
+                  <p className="text-sm text-zinc-600 dark:text-zinc-400 font-mono leading-relaxed mb-4">
+                    {"Tactical behavioral profiling across 1,140 European matches (StatsBomb Open Data). RobustScaler K-Means (k=5) with 96.6% KNN stability."}
+                  </p>
+                  <div className="flex flex-wrap gap-1.5 mb-6">
+                    {["K-Means", "RobustScaler", "StatsBomb", "KNN Stability", "PCA"].map((tech) => (
+                      <span key={tech} className="px-2 py-0.5 bg-white dark:bg-zinc-900 text-[10px] font-mono text-zinc-700 dark:text-zinc-300 border border-zinc-300 dark:border-zinc-700">
+                        {tech}
+                      </span>
+                    ))}
                   </div>
                 </div>
+                <div className="flex flex-wrap gap-3 pt-4 border-t border-zinc-200 dark:border-zinc-800">
+                  <a 
+                    href="https://github.com/AIVIETNAM-AIO-Kaisye/football-shot-clustering" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="inline-flex items-center gap-1.5 px-3 py-1.5 border border-zinc-300 dark:border-zinc-700 hover:border-primary text-xs font-mono text-zinc-700 dark:text-zinc-300 hover:text-primary transition duration-200"
+                  >
+                    <span className="material-icons text-sm">code</span>
+                    GitHub
+                  </a>
+                  <a 
+                    href="/learning" 
+                    className="inline-flex items-center gap-1.5 px-3 py-1.5 border border-zinc-300 dark:border-zinc-700 hover:border-primary text-xs font-mono text-zinc-700 dark:text-zinc-300 hover:text-primary transition duration-200"
+                  >
+                    <span className="material-icons text-sm">terminal</span>
+                    Learning Log
+                  </a>
+                </div>
+              </div>
+            </div>
 
-                <div className="group block border border-zinc-300 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-950 transition overflow-hidden">
-                  <div className="aspect-w-16 aspect-h-9 relative overflow-hidden border-b border-zinc-300 dark:border-zinc-700">
-                    <div className="absolute top-2 right-2 z-20 bg-black/80 text-white text-[10px] font-mono px-2 py-1">AIO Module 2</div>
-                    <Image
-                      src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800"
-                      alt="Machine Learning Foundations"
-                      width={600}
-                      height={400}
-                      className="object-cover w-full h-full transform group-hover:scale-105 transition duration-700 filter grayscale group-hover:grayscale-0"
-                    />
-                  </div>
-                  <div className="p-4 flex flex-col justify-between">
-                    <div>
-                      <h5 className="font-display font-medium text-lg">ML Foundations (KMeans & KNN)</h5>
-                      <p className="text-sm text-zinc-600 dark:text-zinc-400 mt-2 line-clamp-2">{"Implementation of fundamental clustering and regression algorithms including KMeans and KNN."}</p>
-                    </div>
-                    <div className="flex flex-wrap gap-3 mt-4 pt-4 border-t border-gray-100 dark:border-zinc-800">
-                      <a 
-                        href="https://gist.github.com/AIVIETNAM-AIO-TruongHoangThong" 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        className="inline-flex items-center gap-1.5 px-3 py-1.5 border border-zinc-300 dark:border-zinc-700 hover:border-primary text-xs font-mono text-zinc-700 dark:text-zinc-300 hover:text-primary transition duration-200"
-                      >
-                        <span className="material-icons text-sm">code</span>
-                        Gist
-                      </a>
-                    </div>
+            {/* Card 3: Multimodal Similarity Matching (lg:col-span-4) */}
+            <div className="lg:col-span-4 md:col-span-1 group relative bg-zinc-50 dark:bg-zinc-950 border border-zinc-300 dark:border-zinc-800 hover:border-primary/60 transition duration-300 flex flex-col justify-between overflow-hidden">
+              <div className="relative aspect-w-16 aspect-h-9 overflow-hidden border-b border-zinc-300 dark:border-zinc-800 bg-zinc-100 dark:bg-zinc-900">
+                <div className="absolute top-3 left-3 z-20">
+                  <span className="bg-purple-600 text-white text-[10px] font-mono font-bold px-2 py-0.5 uppercase tracking-wider">AIO Research</span>
+                </div>
+                <div className="absolute top-3 right-3 z-20 bg-black/80 text-zinc-300 text-[10px] font-mono px-2 py-0.5">2026</div>
+                <div className="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition duration-500 z-10 pointer-events-none"></div>
+                <Image
+                  src="https://images.unsplash.com/photo-1544256718-3bcf237f3974?w=800"
+                  alt="Similarity Matching for Images and Texts"
+                  width={600}
+                  height={400}
+                  className="object-cover w-full h-full transform group-hover:scale-105 transition duration-700 filter grayscale group-hover:grayscale-0"
+                />
+              </div>
+              <div className="p-5 flex-1 flex flex-col justify-between">
+                <div>
+                  <h4 className="text-lg font-display font-medium text-zinc-900 dark:text-white mb-2 group-hover:text-primary transition-colors">
+                    Similarity Matching (CLIP)
+                  </h4>
+                  <p className="text-xs text-zinc-600 dark:text-zinc-400 font-mono leading-relaxed mb-3">
+                    {"Benchmarking image-text similarity models with ResNet50 baseline, Least-Squares projection, and OpenAI CLIP."}
+                  </p>
+                  <div className="flex flex-wrap gap-1 mb-4">
+                    {["ResNet50", "CLIP", "PyTorch"].map((tech) => (
+                      <span key={tech} className="px-1.5 py-0.5 bg-white dark:bg-zinc-900 text-[9px] font-mono text-zinc-600 dark:text-zinc-400 border border-zinc-300 dark:border-zinc-700">
+                        {tech}
+                      </span>
+                    ))}
                   </div>
                 </div>
+                <div className="flex flex-wrap gap-2 pt-3 border-t border-zinc-200 dark:border-zinc-800">
+                  <a 
+                    href="https://github.com/AIVIETNAM-AIO-TruongHoangThong/AIO2026-Conquer-Module-01" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="inline-flex items-center gap-1 px-2.5 py-1 border border-zinc-300 dark:border-zinc-700 hover:border-primary text-xs font-mono text-zinc-700 dark:text-zinc-300 hover:text-primary transition duration-200"
+                  >
+                    <span className="material-icons text-xs">code</span>
+                    GitHub
+                  </a>
+                  <a 
+                    href="https://www.youtube.com/watch?v=CljX-IhiE7w&t=1432s" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="inline-flex items-center gap-1 px-2.5 py-1 border border-zinc-300 dark:border-zinc-700 hover:border-primary text-xs font-mono text-zinc-700 dark:text-zinc-300 hover:text-primary transition duration-200"
+                  >
+                    <span className="material-icons text-xs">play_circle</span>
+                    YouTube
+                  </a>
+                </div>
+              </div>
+            </div>
 
-                <div className="group block border border-zinc-300 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-950 transition overflow-hidden">
-                  <div className="aspect-w-16 aspect-h-9 relative overflow-hidden border-b border-zinc-300 dark:border-zinc-700">
-                    <div className="absolute top-2 right-2 z-20 bg-black/80 text-white text-[10px] font-mono px-2 py-1">University</div>
-                    <Image
-                      src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=800"
-                      alt="Book Recommendation System"
-                      width={600}
-                      height={400}
-                      className="object-cover w-full h-full transform group-hover:scale-105 transition duration-700 filter grayscale group-hover:grayscale-0"
-                    />
+            {/* Card 4: Customer 360 Risk Scoring (lg:col-span-4) */}
+            <div className="lg:col-span-4 md:col-span-1 group relative bg-zinc-50 dark:bg-zinc-950 border border-zinc-300 dark:border-zinc-800 hover:border-primary/60 transition duration-300 flex flex-col justify-between overflow-hidden">
+              <div className="relative aspect-w-16 aspect-h-9 overflow-hidden border-b border-zinc-300 dark:border-zinc-800 bg-zinc-100 dark:bg-zinc-900">
+                <div className="absolute top-3 left-3 z-20">
+                  <span className="bg-blue-600 text-white text-[10px] font-mono font-bold px-2 py-0.5 uppercase tracking-wider">Data Engineering</span>
+                </div>
+                <div className="absolute top-3 right-3 z-20 bg-black/80 text-zinc-300 text-[10px] font-mono px-2 py-0.5">2025</div>
+                <div className="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition duration-500 z-10 pointer-events-none"></div>
+                <Image
+                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800"
+                  alt="Customer 360 Risk Scoring System"
+                  width={600}
+                  height={400}
+                  className="object-cover w-full h-full transform group-hover:scale-105 transition duration-700 filter grayscale group-hover:grayscale-0"
+                />
+              </div>
+              <div className="p-5 flex-1 flex flex-col justify-between">
+                <div>
+                  <h4 className="text-lg font-display font-medium text-zinc-900 dark:text-white mb-2 group-hover:text-primary transition-colors">
+                    Customer 360 Risk Scoring
+                  </h4>
+                  <p className="text-xs text-zinc-600 dark:text-zinc-400 font-mono leading-relaxed mb-3">
+                    {"End-to-end data pipeline building 360-degree customer views and risk analytics with PySpark, Airflow, and Metabase."}
+                  </p>
+                  <div className="flex flex-wrap gap-1 mb-4">
+                    {["PySpark", "Airflow", "PostgreSQL"].map((tech) => (
+                      <span key={tech} className="px-1.5 py-0.5 bg-white dark:bg-zinc-900 text-[9px] font-mono text-zinc-600 dark:text-zinc-400 border border-zinc-300 dark:border-zinc-700">
+                        {tech}
+                      </span>
+                    ))}
                   </div>
-                  <div className="p-4 flex flex-col justify-between">
-                    <div>
-                      <h5 className="font-display font-medium text-lg">Book Recommendation System</h5>
-                      <p className="text-sm text-zinc-600 dark:text-zinc-400 mt-2 line-clamp-2">{"Full-stack ML platform implementing collaborative filtering, content-based filtering, and hybrid algorithms."}</p>
-                    </div>
-                    <div className="flex flex-wrap gap-3 mt-4 pt-4 border-t border-gray-100 dark:border-zinc-800">
-                      <a 
-                        href="https://github.com/23210287thongtruong/recommendation-system" 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        className="inline-flex items-center gap-1.5 px-3 py-1.5 border border-zinc-300 dark:border-zinc-700 hover:border-primary text-xs font-mono text-zinc-700 dark:text-zinc-300 hover:text-primary transition duration-200"
-                      >
-                        <span className="material-icons text-sm">code</span>
-                        GitHub
-                      </a>
-                    </div>
+                </div>
+                <div className="flex flex-wrap gap-2 pt-3 border-t border-zinc-200 dark:border-zinc-800">
+                  <a 
+                    href="https://github.com/23210287thongtruong/customer360-risk" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="inline-flex items-center gap-1 px-2.5 py-1 border border-zinc-300 dark:border-zinc-700 hover:border-primary text-xs font-mono text-zinc-700 dark:text-zinc-300 hover:text-primary transition duration-200"
+                  >
+                    <span className="material-icons text-xs">code</span>
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Card 5: Book Recommendation System (lg:col-span-4) */}
+            <div className="lg:col-span-4 md:col-span-2 lg:col-span-4 group relative bg-zinc-50 dark:bg-zinc-950 border border-zinc-300 dark:border-zinc-800 hover:border-primary/60 transition duration-300 flex flex-col justify-between overflow-hidden">
+              <div className="relative aspect-w-16 aspect-h-9 overflow-hidden border-b border-zinc-300 dark:border-zinc-800 bg-zinc-100 dark:bg-zinc-900">
+                <div className="absolute top-3 left-3 z-20">
+                  <span className="bg-emerald-600 text-white text-[10px] font-mono font-bold px-2 py-0.5 uppercase tracking-wider">ML &amp; Web</span>
+                </div>
+                <div className="absolute top-3 right-3 z-20 bg-black/80 text-zinc-300 text-[10px] font-mono px-2 py-0.5">2025</div>
+                <div className="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition duration-500 z-10 pointer-events-none"></div>
+                <Image
+                  src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=800"
+                  alt="Book Recommendation System"
+                  width={600}
+                  height={400}
+                  className="object-cover w-full h-full transform group-hover:scale-105 transition duration-700 filter grayscale group-hover:grayscale-0"
+                />
+              </div>
+              <div className="p-5 flex-1 flex flex-col justify-between">
+                <div>
+                  <h4 className="text-lg font-display font-medium text-zinc-900 dark:text-white mb-2 group-hover:text-primary transition-colors">
+                    Book Recommendation System
+                  </h4>
+                  <p className="text-xs text-zinc-600 dark:text-zinc-400 font-mono leading-relaxed mb-3">
+                    {"Hybrid recommendation engine combining collaborative filtering (SVD) and content-based filtering (TF-IDF) with React UI."}
+                  </p>
+                  <div className="flex flex-wrap gap-1 mb-4">
+                    {["Scikit-learn", "FastAPI", "React"].map((tech) => (
+                      <span key={tech} className="px-1.5 py-0.5 bg-white dark:bg-zinc-900 text-[9px] font-mono text-zinc-600 dark:text-zinc-400 border border-zinc-300 dark:border-zinc-700">
+                        {tech}
+                      </span>
+                    ))}
                   </div>
+                </div>
+                <div className="flex flex-wrap gap-2 pt-3 border-t border-zinc-200 dark:border-zinc-800">
+                  <a 
+                    href="https://github.com/23210287thongtruong/recommendation-system" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="inline-flex items-center gap-1 px-2.5 py-1 border border-zinc-300 dark:border-zinc-700 hover:border-primary text-xs font-mono text-zinc-700 dark:text-zinc-300 hover:text-primary transition duration-200"
+                  >
+                    <span className="material-icons text-xs">code</span>
+                    GitHub
+                  </a>
                 </div>
               </div>
             </div>
