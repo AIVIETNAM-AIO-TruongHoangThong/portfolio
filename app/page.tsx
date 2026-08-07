@@ -192,7 +192,7 @@ export default function HomePage() {
                   </div>
                   <h3 className="text-2xl font-display font-medium text-zinc-900 dark:text-white mb-2 group-hover:text-primary transition-colors">SiteBotic</h3>
                   <p className="text-sm text-zinc-600 dark:text-zinc-400 font-mono leading-relaxed mb-4">
-                    {"Lead AI Engineer — Architected an automated Crawl4AI web extraction pipeline and pgvector RAG engine with GPT-5-mini for domain-specific chatbot generation."}
+                    {"Multi-tenant AI chatbot SaaS platform featuring automated Crawl4AI web extraction, pgvector semantic search, and customizable embeddable widgets."}
                   </p>
                   <div className="flex flex-wrap gap-1.5 mb-6">
                     {["FastAPI", "React", "TypeScript", "pgvector", "Dramatiq", "Redis", "Docker"].map((tech) => (
@@ -260,22 +260,33 @@ export default function HomePage() {
                     ))}
                   </div>
                 </div>
-                <div className="flex flex-wrap gap-3 pt-4 border-t border-zinc-200 dark:border-zinc-800">
+                <div className="flex flex-wrap gap-2.5 pt-4 border-t border-zinc-200 dark:border-zinc-800">
                   <a 
-                    href="https://github.com/AIVIETNAM-AIO-Kaisye/football-shot-clustering" 
+                    href="/reports/interactive/all_players_clustering.html" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-primary/10 border border-primary/30 hover:border-primary text-xs font-mono text-primary font-semibold transition duration-200"
+                  >
+                    <span className="material-icons text-sm">bubble_chart</span>
+                    Interactive Demo
+                  </a>
+                  <a 
+                    href="https://youtu.be/x0ZeIlDp7_4" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="inline-flex items-center gap-1.5 px-3 py-1.5 border border-zinc-300 dark:border-zinc-700 hover:border-primary text-xs font-mono text-zinc-700 dark:text-zinc-300 hover:text-primary transition duration-200"
+                  >
+                    <span className="material-icons text-sm">play_circle</span>
+                    YouTube Demo
+                  </a>
+                  <a 
+                    href="https://github.com/AIVIETNAM-AIO-Kaisye/player-style-clustering" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="inline-flex items-center gap-1.5 px-3 py-1.5 border border-zinc-300 dark:border-zinc-700 hover:border-primary text-xs font-mono text-zinc-700 dark:text-zinc-300 hover:text-primary transition duration-200"
                   >
                     <span className="material-icons text-sm">code</span>
                     GitHub
-                  </a>
-                  <a 
-                    href="/learning" 
-                    className="inline-flex items-center gap-1.5 px-3 py-1.5 border border-zinc-300 dark:border-zinc-700 hover:border-primary text-xs font-mono text-zinc-700 dark:text-zinc-300 hover:text-primary transition duration-200"
-                  >
-                    <span className="material-icons text-sm">terminal</span>
-                    Learning Log
                   </a>
                 </div>
               </div>

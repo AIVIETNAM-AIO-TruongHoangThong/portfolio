@@ -179,8 +179,10 @@ export default function CVPage() {
                 </div>
                 <p className="text-xs text-zinc-600 dark:text-zinc-400">Engineered 29 per-90 behavioral and spatial features from 1,140 matches across Premier League, La Liga, and Serie A (StatsBomb Open Data). Benchmarked feature scaling methods, demonstrating RobustScaler superiority for skewed sports metrics. Modeled tactical player archetypes with K-Means (k=5), verified cluster boundary stability via KNN 5-fold CV (96.6% accuracy), conducted hierarchical role sub-clustering, and co-authored the technical LaTeX report.</p>
                 <div className="flex flex-wrap gap-3 text-xs font-mono pt-1">
-                  <a href="https://github.com/AIVIETNAM-AIO-Kaisye/football-shot-clustering" target="_blank" rel="noopener noreferrer" className="text-primary underline">GitHub Repo</a>
-                  <a href="https://github.com/statsbomb/open-data" target="_blank" rel="noopener noreferrer" className="text-primary underline">StatsBomb Open Data</a>
+                  <a href="/reports/interactive/all_players_clustering.html" target="_blank" rel="noopener noreferrer" className="text-primary underline font-medium">Interactive Archetypes</a>
+                  <a href="/reports/interactive/forwards_clustering.html" target="_blank" rel="noopener noreferrer" className="text-primary underline font-medium">Forwards Sub-Clusters</a>
+                  <a href="https://github.com/AIVIETNAM-AIO-Kaisye/player-style-clustering" target="_blank" rel="noopener noreferrer" className="text-primary underline">GitHub Repo</a>
+                  <a href="https://youtu.be/x0ZeIlDp7_4" target="_blank" rel="noopener noreferrer" className="text-primary underline">Demo Video</a>
                 </div>
               </div>
 

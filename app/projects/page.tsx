@@ -11,8 +11,8 @@ const projects = [
   {
     id: 8,
     title: "Player Style Clustering from Football Event Data",
-    description: "Unsupervised machine learning study profiling tactical player styles across 1,140 European matches using K-Means and RobustScaler.",
-    longDescription: "Engineered 29 per-90 rate and spatial features from StatsBomb Open Data (1,140 matches, 1,016 players across Premier League, La Liga, and Serie A). Demonstrated the resilience of RobustScaler over StandardScaler for handling skewed sports metrics. Clustered tactical archetypes using K-Means (k=5), verified boundary stability with KNN 5-fold CV (96.6% accuracy), and conducted hierarchical tactical sub-clustering on Strikers, Midfielders, Wingers, and CenterBacks.",
+    description: "Unsupervised machine learning study discovering tactical player archetypes from StatsBomb event data across 1,140 matches.",
+    longDescription: "Unsupervised behavioral profiling of 1,016 players across top European leagues using StatsBomb event data. Discovered distinct tactical playing archetypes and position sub-clusters with verified cluster stability.",
     image: "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=800",
     tags: [
       "K-Means",
@@ -26,7 +26,12 @@ const projects = [
     version: "AIO Research",
     year: "2026",
     category: "AI & Research",
-    github: "https://github.com/AIVIETNAM-AIO-Kaisye/football-shot-clustering",
+    website: "https://youtu.be/x0ZeIlDp7_4",
+    github: "https://github.com/AIVIETNAM-AIO-Kaisye/player-style-clustering",
+    demos: [
+      { label: "5 Archetypes Map", href: "/reports/interactive/all_players_clustering.html", icon: "bubble_chart" },
+      { label: "Forwards Sub-Clusters", href: "/reports/interactive/forwards_clustering.html", icon: "scatter_plot" },
+    ],
   },
   {
     id: 3,
@@ -50,8 +55,8 @@ const projects = [
   {
     id: 2,
     title: "SiteBotic",
-    description: "AI-Powered Chatbot Platform - No-code SaaS enabling websites to deploy intelligent chatbots trained on their content.",
-    longDescription: "Lead AI Engineer for SiteBotic at Nexus Tech Global. Analyzed web structures to build an automated data extraction pipeline replacing Playwright with Crawl4AI. Designed and evaluated a pgvector-based RAG architecture, utilizing GPT-5-mini with a 400k context window to synthesize insights from scraped website content. Focused heavily on data preprocessing, embedding generation, and prompt optimization for accurate AI responses.",
+    description: "Multi-tenant AI chatbot SaaS platform that crawls websites, builds vector search knowledge bases, and deploys embeddable widgets.",
+    longDescription: "Production multi-tenant SaaS platform enabling websites to deploy custom AI chatbots. Engineered automated Crawl4AI ingestion pipelines, PostgreSQL/pgvector semantic search, and Dramatiq/Redis background workers for reliable knowledge base retrieval.",
     image: "/sitebotic-thumbnail.png",
     tags: [
       "FastAPI",
@@ -293,7 +298,19 @@ export default function ProjectsPage() {
                       </div>
                       
                       {/* Action Links */}
-                      <div className="flex flex-wrap gap-3 pt-4 border-t border-zinc-200 dark:border-zinc-800">
+                      <div className="flex flex-wrap gap-2.5 pt-4 border-t border-zinc-200 dark:border-zinc-800">
+                        {project.demos && project.demos.map((demo) => (
+                          <a
+                            key={demo.href}
+                            href={demo.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-primary/10 border border-primary/30 hover:border-primary text-xs font-mono text-primary font-semibold transition duration-200"
+                          >
+                            <span className="material-icons text-sm">{demo.icon || 'open_in_new'}</span>
+                            {demo.label}
+                          </a>
+                        ))}
                         {project.github && (
                           <a 
                             href={project.github}
@@ -327,15 +344,6 @@ export default function ProjectsPage() {
                           >
                             <span className="material-icons text-sm">open_in_new</span>
                             Live App
-                          </a>
-                        )}
-                        {project.id === 8 && (
-                          <a 
-                            href="/learning"
-                            className="inline-flex items-center gap-1.5 px-3 py-1.5 border border-zinc-300 dark:border-zinc-700 hover:border-primary text-xs font-mono text-zinc-700 dark:text-zinc-300 hover:text-primary transition duration-200"
-                          >
-                            <span className="material-icons text-sm">terminal</span>
-                            Learning Log
                           </a>
                         )}
                       </div>
