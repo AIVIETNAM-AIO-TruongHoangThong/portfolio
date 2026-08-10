@@ -24,21 +24,21 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Thong Truong - Software Engineer | AI & Data Focus',
+  title: 'Thong Truong - Machine Learning Engineer',
   description:
-    'Software Engineer focused on AI & Data with a strong background in web applications, data-intensive systems, traditional machine learning, deep learning models, and RAG pipelines.',
+    'Machine Learning Engineer specializing in Deep Learning, Computer Vision, and NLP. Focused on building, productionizing, and optimizing end-to-end AI systems with robust MLOps pipelines.',
 
   keywords: [
-    'AI/ML Engineer',
-    'Backend Developer',
-    'Machine Learning',
+    'Machine Learning Engineer',
     'Deep Learning',
-    'Backend Development',
-    'Data Pipelines',
-    'LLM Systems',
+    'Computer Vision',
+    'NLP',
+    'MLOps',
+    'AI Systems',
+    'LLM',
     'Python',
-    'FastAPI',
     'PyTorch',
+    'FastAPI',
     'Bilingual Developer',
     'Japanese/English',
     'Thong Truong'
@@ -46,9 +46,9 @@ export const metadata: Metadata = {
   authors: [{ name: 'Thong Truong' }],
   creator: 'Thong Truong',
   openGraph: {
-    title: 'Thong Truong - Software Engineer | AI & Data Focus',
+    title: 'Thong Truong - Machine Learning Engineer',
     description:
-      'Software Engineer focused on AI & Data with a strong background in web applications, data-intensive systems, traditional machine learning, deep learning models, and RAG pipelines.',
+      'Machine Learning Engineer specializing in Deep Learning, Computer Vision, and NLP. Focused on building, productionizing, and optimizing end-to-end AI systems with robust MLOps pipelines.',
     url: 'https://thongtruong.com',
     siteName: 'Thong Truong - Portfolio',
     images: [
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
         url: 'https://thongtruong.com/profile.jpg',
         width: 400,
         height: 533,
-        alt: 'Thong Truong - Software Engineer | AI & Data Focus',
+        alt: 'Thong Truong - Machine Learning Engineer',
       },
     ],
     locale: 'en_US',
@@ -64,9 +64,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Thong Truong - Software Engineer | AI & Data Focus',
+    title: 'Thong Truong - Machine Learning Engineer',
     description:
-      'Software Engineer focused on AI & Data with a strong background in web applications, data-intensive systems, traditional machine learning, deep learning models, and RAG pipelines.',
+      'Machine Learning Engineer specializing in Deep Learning, Computer Vision, and NLP. Focused on building, productionizing, and optimizing end-to-end AI systems with robust MLOps pipelines.',
     images: ['https://thongtruong.com/profile.jpg'],
   }
 };
@@ -89,8 +89,8 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Person",
               "name": "Thong Truong",
-              "jobTitle": "Software Engineer | AI & Data Focus",
-              "description": "Software Engineer focused on AI & Data with a strong background in web applications, data-intensive systems, traditional machine learning, deep learning models, and RAG pipelines.",
+              "jobTitle": "Machine Learning Engineer",
+              "description": "Machine Learning Engineer specializing in Deep Learning, Computer Vision, and NLP. Focused on building, productionizing, and optimizing end-to-end AI systems with robust MLOps pipelines.",
               "url": "https://thongtruong.com",
               "sameAs": [
                 "https://github.com/AIVIETNAM-AIO-TruongHoangThong",
@@ -98,19 +98,19 @@ export default function RootLayout({
               ],
                 "knowsAbout": [
                 "Machine Learning",
-                "Backend Development",
-                "Data Pipelines",
-                "LLM Systems",
+                "Deep Learning",
+                "Computer Vision",
+                "NLP",
+                "MLOps",
                 "Python",
-                "FastAPI",
                 "PyTorch",
-                "Vector Search",
+                "FastAPI",
                 "Generative AI",
                 "Japanese/English Bilingual"
               ],
               "hasOccupation": {
                 "@type": "Occupation",
-                "name": "AI Engineer",
+                "name": "Machine Learning Engineer",
                 "occupationalCategory": "Engineering"
               }
             })
