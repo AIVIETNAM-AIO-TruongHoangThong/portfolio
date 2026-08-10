@@ -28,22 +28,22 @@ export default function HomePage() {
                     <span className="relative inline-flex h-2 w-2 bg-green-500"></span>
                   </span>
                   <span className="font-mono text-primary text-xs font-bold tracking-wide uppercase">
-                      {"Software Engineer | AI & Data Focus"}
+                      {"Machine Learning Engineer"}
                   </span>
                 </div>
                 
                 <h1 className="text-6xl lg:text-8xl font-display font-medium text-zinc-900 dark:text-white leading-[1.05] tracking-tight border-l-8 border-primary pl-6">
-                  {"Uncovering"} <br />
-                  <span className="text-primary italic">{"Insights through"}</span><br />
-                  {"Data Science"} <br />
-                  {"& AI"}
+                  {"Building"} <br />
+                  <span className="text-primary italic">{"Production-Grade"}</span><br />
+                  {"Machine Learning"} <br />
+                  {"Systems"}
                 </h1>
               </div>
               
               <div className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-6 max-w-2xl shadow-none">
                 <p className="font-mono text-sm text-zinc-500 dark:text-zinc-400 mb-2 uppercase tracking-widest">{/* SYSTEM.LOG_BIO_LOADED */}</p>
                 <p className="text-lg text-zinc-700 dark:text-zinc-300 leading-relaxed font-sans">
-                  {"Software Engineer focused on AI & Data, with hands-on experience analyzing datasets, building predictive models, and applying machine learning and deep learning algorithms to uncover actionable insights."}
+                  {"Machine Learning Engineer specializing in Deep Learning, Computer Vision, and NLP. Focused on building, productionizing, and optimizing end-to-end AI systems with robust MLOps pipelines."}
                 </p>
               </div>
               
@@ -70,11 +70,11 @@ export default function HomePage() {
               <div className="pt-8 flex flex-wrap gap-8 text-xs font-mono text-gray-500 dark:text-gray-400 uppercase tracking-widest border-t border-zinc-300 dark:border-zinc-800 mt-8">
                 <div className="flex items-center gap-2">
                   <span className="material-icons text-lg text-primary">storage</span>
-                  {"Machine Learning"}
+                  {"Deep Learning & MLOps"}
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="material-icons text-lg text-blue-400">code</span>
-                  {"Data Analysis & Visualization"}
+                  {"Computer Vision & NLP/LLM"}
                 </div>
               </div>
             </div>
@@ -583,10 +583,10 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-display font-medium text-zinc-900 dark:text-white mb-6">
-              {"Looking for a Software Engineer focused on AI & Data?"}
+              {"Looking for a Machine Learning Engineer?"}
             </h2>
             <p className="text-lg text-zinc-600 dark:text-zinc-300 mb-10">
-              {"I develop machine learning models, analyze complex datasets, and build intelligent data-driven software solutions."}
+              {"I build, evaluate, productionize, and optimize intelligent AI systems using modern Deep Learning and MLOps pipelines."}
             </p>
             
             <a

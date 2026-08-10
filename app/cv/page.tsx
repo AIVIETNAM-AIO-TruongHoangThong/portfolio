@@ -4,7 +4,7 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
 export default function CVPage() {
-    const pdfUrl = "https://drive.google.com/file/d/16IbuylI_uXwdOkehW1z9VreA2TzUjITN/view?usp=sharing";
+    const pdfUrl = "https://drive.google.com/file/d/1ZwOkIWpcIqRCB7irwnNhdAbNDeI3emvZ/view?usp=sharing";
 
   return (
     <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 flex flex-col justify-between">
@@ -20,7 +20,7 @@ export default function CVPage() {
                 TRUONG HOANG THONG
               </h1>
               <p className="text-primary font-mono text-sm font-semibold mt-1">
-                Software Engineer | AI & Data Focus
+                Machine Learning Engineer | Deep Learning | MLOps | Google Cloud
               </p>
               <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs font-mono text-zinc-500 dark:text-zinc-400 mt-2">
                 <a href="https://github.com/AIVIETNAM-AIO-TruongHoangThong" target="_blank" rel="noopener noreferrer" className="hover:text-primary underline">
@@ -55,7 +55,7 @@ export default function CVPage() {
                 Professional Summary
               </h2>
               <p className="text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">
-                Software Engineer focused on AI & Data with a strong background in developing web applications, data-intensive systems, and intelligent machine learning solutions. Specializes in Python and TypeScript development with a focus on traditional machine learning, deep learning models, RAG pipelines, and data-centric software architecture. Dual-degree graduate (B.S. Information Technology, B.A. Japanese Studies), fluent in English (IELTS 7.5) with JLPT N2 Japanese (certified 2020), and a proven track record of technical team leadership and AI-assisted workflows.
+                Machine Learning Engineer with a strong foundation in Applied ML, Deep Learning, and MLOps. Specializes in building end-to-end production AI pipelines, Computer Vision, NLP/LLM applications, and scalable cloud architectures. Dual-degree graduate (B.S. Information Technology, B.A. Japanese Studies), fluent in English (IELTS 7.5) with JLPT N2 Japanese (certified 2020), and a proven track record of bridging technical depth with production-ready engineering.
               </p>
             </section>
 
@@ -141,16 +141,21 @@ export default function CVPage() {
                 Key Projects & Research
               </h2>
 
-              {/* SiteBotic */}
+              {/* Player Style Clustering */}
               <div className="space-y-1">
                 <div className="flex items-center justify-between">
                   <h3 className="font-bold text-sm text-zinc-900 dark:text-zinc-100">
-                    SiteBotic - AI-Powered Chatbot Platform <span className="font-normal text-zinc-400">| <a href="https://sitebotic.com" target="_blank" rel="noopener noreferrer" className="underline text-primary">sitebotic.com</a></span>
+                    Player Style Clustering from Football Event Data <span className="font-normal text-zinc-400">| AI VIET NAM - AIO 2026</span>
                   </h3>
-                  <span className="font-mono text-xs text-zinc-400">Lead AI Engineer</span>
+                  <span className="font-mono text-xs text-zinc-400">ML & Evaluation Engineer</span>
                 </div>
-                <p className="text-xs text-zinc-600 dark:text-zinc-400">Built a production-grade multi-tenant SaaS platform featuring automated website crawling, vector search knowledge bases, and embeddable widgets.</p>
-                <p className="text-xs font-mono text-zinc-400"><strong>Tech Stack:</strong> Python, FastAPI, pgvector, PostgreSQL, Dramatiq, Redis, Crawl4AI, React, Docker.</p>
+                <p className="text-xs text-zinc-600 dark:text-zinc-400">Engineered 29 per-90 behavioral and spatial features from 1,140 matches across Premier League, La Liga, and Serie A (StatsBomb Open Data). Benchmarked feature scaling methods, demonstrating RobustScaler superiority for skewed sports metrics. Modeled tactical player archetypes with K-Means (k=5), verified cluster boundary stability via KNN 5-fold CV (96.6% accuracy), conducted hierarchical role sub-clustering, and co-authored the technical LaTeX report.</p>
+                <div className="flex flex-wrap gap-3 text-xs font-mono pt-1">
+                  <a href="/reports/interactive/all_players_clustering.html" target="_blank" rel="noopener noreferrer" className="text-primary underline font-medium">Interactive Archetypes</a>
+                  <a href="/reports/interactive/forwards_clustering.html" target="_blank" rel="noopener noreferrer" className="text-primary underline font-medium">Forwards Sub-Clusters</a>
+                  <a href="https://github.com/AIVIETNAM-AIO-Kaisye/player-style-clustering" target="_blank" rel="noopener noreferrer" className="text-primary underline">GitHub Repo</a>
+                  <a href="https://youtu.be/x0ZeIlDp7_4" target="_blank" rel="noopener noreferrer" className="text-primary underline">Demo Video</a>
+                </div>
               </div>
 
               {/* Multimodal Similarity */}
@@ -169,21 +174,16 @@ export default function CVPage() {
                 </div>
               </div>
 
-              {/* Player Style Clustering */}
+              {/* SiteBotic */}
               <div className="space-y-1">
                 <div className="flex items-center justify-between">
                   <h3 className="font-bold text-sm text-zinc-900 dark:text-zinc-100">
-                    Player Style Clustering from Football Event Data <span className="font-normal text-zinc-400">| AI VIET NAM - AIO 2026</span>
+                    SiteBotic - AI-Powered Chatbot Platform <span className="font-normal text-zinc-400">| <a href="https://sitebotic.com" target="_blank" rel="noopener noreferrer" className="underline text-primary">sitebotic.com</a></span>
                   </h3>
-                  <span className="font-mono text-xs text-zinc-400">ML & Evaluation Engineer</span>
+                  <span className="font-mono text-xs text-zinc-400">Lead AI Engineer</span>
                 </div>
-                <p className="text-xs text-zinc-600 dark:text-zinc-400">Engineered 29 per-90 behavioral and spatial features from 1,140 matches across Premier League, La Liga, and Serie A (StatsBomb Open Data). Benchmarked feature scaling methods, demonstrating RobustScaler superiority for skewed sports metrics. Modeled tactical player archetypes with K-Means (k=5), verified cluster boundary stability via KNN 5-fold CV (96.6% accuracy), conducted hierarchical role sub-clustering, and co-authored the technical LaTeX report.</p>
-                <div className="flex flex-wrap gap-3 text-xs font-mono pt-1">
-                  <a href="/reports/interactive/all_players_clustering.html" target="_blank" rel="noopener noreferrer" className="text-primary underline font-medium">Interactive Archetypes</a>
-                  <a href="/reports/interactive/forwards_clustering.html" target="_blank" rel="noopener noreferrer" className="text-primary underline font-medium">Forwards Sub-Clusters</a>
-                  <a href="https://github.com/AIVIETNAM-AIO-Kaisye/player-style-clustering" target="_blank" rel="noopener noreferrer" className="text-primary underline">GitHub Repo</a>
-                  <a href="https://youtu.be/x0ZeIlDp7_4" target="_blank" rel="noopener noreferrer" className="text-primary underline">Demo Video</a>
-                </div>
+                <p className="text-xs text-zinc-600 dark:text-zinc-400">Built a production-grade multi-tenant SaaS platform featuring automated website crawling, vector search knowledge bases, and embeddable widgets.</p>
+                <p className="text-xs font-mono text-zinc-400"><strong>Tech Stack:</strong> Python, FastAPI, pgvector, PostgreSQL, Dramatiq, Redis, Crawl4AI, React, Docker.</p>
               </div>
 
               {/* Customer 360 */}
