@@ -24,31 +24,30 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Thong Truong - Machine Learning Engineer',
+  title: 'Thong Truong | AI Engineer',
   description:
-    'Machine Learning Engineer specializing in Deep Learning, Computer Vision, and NLP. Focused on building, productionizing, and optimizing end-to-end AI systems with robust MLOps pipelines.',
+    'AI Engineer building end-to-end production AI pipelines, Computer Vision, NLP/LLM applications, and scalable cloud architectures.',
 
   keywords: [
-    'Machine Learning Engineer',
+    'AI Engineer',
+    'Software Engineer',
+    'Azure AI',
+    'Machine Learning',
     'Deep Learning',
+    'GenAI',
     'Computer Vision',
     'NLP',
-    'MLOps',
     'AI Systems',
-    'LLM',
-    'Python',
-    'PyTorch',
-    'FastAPI',
-    'Bilingual Developer',
-    'Japanese/English',
+    'Cloud',
+    'AI Solution Architecture',
     'Thong Truong'
   ],
   authors: [{ name: 'Thong Truong' }],
   creator: 'Thong Truong',
   openGraph: {
-    title: 'Thong Truong - Machine Learning Engineer',
+    title: 'Thong Truong | AI Engineer',
     description:
-      'Machine Learning Engineer specializing in Deep Learning, Computer Vision, and NLP. Focused on building, productionizing, and optimizing end-to-end AI systems with robust MLOps pipelines.',
+      'AI Engineer building end-to-end production AI pipelines, Computer Vision, NLP/LLM applications, and scalable cloud architectures.',
     url: 'https://thongtruong.com',
     siteName: 'Thong Truong - Portfolio',
     images: [
@@ -56,7 +55,7 @@ export const metadata: Metadata = {
         url: 'https://thongtruong.com/profile.jpg',
         width: 400,
         height: 533,
-        alt: 'Thong Truong - Machine Learning Engineer',
+        alt: 'Thong Truong | AI Engineer',
       },
     ],
     locale: 'en_US',
@@ -64,9 +63,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Thong Truong - Machine Learning Engineer',
+    title: 'Thong Truong | AI Engineer',
     description:
-      'Machine Learning Engineer specializing in Deep Learning, Computer Vision, and NLP. Focused on building, productionizing, and optimizing end-to-end AI systems with robust MLOps pipelines.',
+      'AI Engineer building end-to-end production AI pipelines, Computer Vision, NLP/LLM applications, and scalable cloud architectures.',
     images: ['https://thongtruong.com/profile.jpg'],
   }
 };
@@ -89,28 +88,28 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Person",
               "name": "Thong Truong",
-              "jobTitle": "Machine Learning Engineer",
-              "description": "Machine Learning Engineer specializing in Deep Learning, Computer Vision, and NLP. Focused on building, productionizing, and optimizing end-to-end AI systems with robust MLOps pipelines.",
+              "jobTitle": "AI Engineer",
+              "description": "AI Engineer building end-to-end production AI pipelines, Computer Vision, NLP/LLM applications, and scalable cloud architectures.",
               "url": "https://thongtruong.com",
               "sameAs": [
                 "https://github.com/AIVIETNAM-AIO-TruongHoangThong",
                 "https://www.linkedin.com/in/thongtr/"
               ],
                 "knowsAbout": [
+                "AI Engineering",
+                "Software Engineering",
                 "Machine Learning",
                 "Deep Learning",
+                "GenAI",
                 "Computer Vision",
                 "NLP",
-                "MLOps",
-                "Python",
-                "PyTorch",
-                "FastAPI",
-                "Generative AI",
-                "Japanese/English Bilingual"
+                "AI Systems",
+                "Cloud",
+                "Azure"
               ],
               "hasOccupation": {
                 "@type": "Occupation",
-                "name": "Machine Learning Engineer",
+                "name": "AI Engineer",
                 "occupationalCategory": "Engineering"
               }
             })

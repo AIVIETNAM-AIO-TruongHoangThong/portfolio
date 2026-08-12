@@ -47,7 +47,7 @@ export default function CVThankYouPage() {
 
             <div className="space-y-6">
               <a
-                href="https://drive.google.com/file/d/16IbuylI_uXwdOkehW1z9VreA2TzUjITN/view?usp=sharing"
+                href="https://drive.google.com/file/d/15-0phEBouJbXynK5b2rSj95OtkmN-KpH/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white bg-primary hover:bg-blue-600 font-mono transition-all duration-300 hover:-[0_0_20px_rgba(59,130,246,0.4)]"

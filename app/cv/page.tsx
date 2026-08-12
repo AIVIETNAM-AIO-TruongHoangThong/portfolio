@@ -4,7 +4,7 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 
 export default function CVPage() {
-    const pdfUrl = "https://drive.google.com/file/d/1ZwOkIWpcIqRCB7irwnNhdAbNDeI3emvZ/view?usp=sharing";
+    const pdfUrl = "https://drive.google.com/file/d/15-0phEBouJbXynK5b2rSj95OtkmN-KpH/view?usp=sharing";
 
   return (
     <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 flex flex-col justify-between">
@@ -20,7 +20,7 @@ export default function CVPage() {
                 TRUONG HOANG THONG
               </h1>
               <p className="text-primary font-mono text-sm font-semibold mt-1">
-                Machine Learning Engineer | Deep Learning | MLOps | Google Cloud
+                AI Engineer | Deep Learning | MLOps | Azure AI
               </p>
               <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs font-mono text-zinc-500 dark:text-zinc-400 mt-2">
                 <a href="https://github.com/AIVIETNAM-AIO-TruongHoangThong" target="_blank" rel="noopener noreferrer" className="hover:text-primary underline">
@@ -55,7 +55,7 @@ export default function CVPage() {
                 Professional Summary
               </h2>
               <p className="text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">
-                Machine Learning Engineer with a strong foundation in Applied ML, Deep Learning, and MLOps. Specializes in building end-to-end production AI pipelines, Computer Vision, NLP/LLM applications, and scalable cloud architectures. Dual-degree graduate (B.S. Information Technology, B.A. Japanese Studies), fluent in English (IELTS 7.5) with JLPT N2 Japanese (certified 2020), and a proven track record of bridging technical depth with production-ready engineering.
+                AI Engineer with a strong foundation in Applied ML, Deep Learning, and MLOps. Specializes in building end-to-end production AI pipelines, Computer Vision, NLP/LLM applications, and scalable cloud architectures. Dual-degree graduate (B.S. Information Technology, B.A. Japanese Studies), fluent in English (IELTS 7.5) with JLPT N2 Japanese (certified 2020), and a proven track record of bridging technical depth with production-ready engineering.
               </p>
             </section>
 
@@ -65,11 +65,11 @@ export default function CVPage() {
                 Technical Skills
               </h2>
               <ul className="space-y-2 text-sm text-zinc-600 dark:text-zinc-300">
-                <li><strong className="text-zinc-900 dark:text-zinc-100">AI & Data Science:</strong> NumPy, Pandas, Scikit-learn, PyTorch, Machine Learning (Classification, Clustering, Regression), Deep Learning, Computer Vision, Natural Language Processing (NLP), RAG & Vector Search.</li>
+                <li><strong className="text-zinc-900 dark:text-zinc-100">AI & Machine Learning:</strong> PyTorch, Scikit-learn, NumPy, Pandas, Deep Learning, Computer Vision, Natural Language Processing (NLP), RAG & Vector Search, Traditional ML (Classification, Clustering, Regression).</li>
+                <li><strong className="text-zinc-900 dark:text-zinc-100">MLOps & Data Engineering:</strong> Docker, Git, GitOps, DVC.</li>
+                <li><strong className="text-zinc-900 dark:text-zinc-100">Backend & APIs:</strong> Python (FastAPI, SQLAlchemy, SQLModel), Java, REST APIs, Celery/Dramatiq/arq, Redis, PHP (WordPress).</li>
+                <li><strong className="text-zinc-900 dark:text-zinc-100">Databases & Storage:</strong> PostgreSQL, pgvector, MySQL, SQL Server.</li>
                 <li><strong className="text-zinc-900 dark:text-zinc-100">Front-End Development:</strong> React.js, TypeScript, Next.js, Angular, Vite, HTML5/CSS3, Tailwind CSS.</li>
-                <li><strong className="text-zinc-900 dark:text-zinc-100">Backend & APIs:</strong> Python (FastAPI, SQLAlchemy, SQLModel), Java, REST APIs, Dramatiq, Redis, AsyncIO, PHP (WordPress).</li>
-                <li><strong className="text-zinc-900 dark:text-zinc-100">Databases & Storage:</strong> PostgreSQL, pgvector, MySQL.</li>
-                <li><strong className="text-zinc-900 dark:text-zinc-100">DevOps & Tooling:</strong> Docker, Git, GitOps, Crawl4AI.</li>
                 <li><strong className="text-zinc-900 dark:text-zinc-100">Languages:</strong> English (IELTS 7.5 - Professional Working), Japanese (JLPT N2 Certified 2020 - Reading & Basic Conversational).</li>
               </ul>
             </section>
@@ -86,7 +86,7 @@ export default function CVPage() {
                   <h3 className="font-bold text-base text-zinc-900 dark:text-zinc-100">Co-Founder & Technical Lead (Data & AI) <span className="font-normal text-zinc-500">| Nexus Tech Global (Project: SiteBotic)</span></h3>
                   <span className="font-mono text-xs text-zinc-400">March 2025 – Present | Adelaide, Australia</span>
                 </div>
-                <p className="text-xs text-zinc-500 italic">SiteBotic is a multi-tenant AI chatbot SaaS platform that crawls websites, builds knowledge bases, and deploys embeddable chatbot widgets.</p>
+                <p className="text-xs text-zinc-500 italic">SiteBotic is a production-grade RAG and semantic search platform that crawls organizational data, builds secure vector knowledge bases, and deploys embeddable AI agents.</p>
                 <ul className="list-disc list-inside text-sm text-zinc-600 dark:text-zinc-300 space-y-1 pl-1">
                   <li><strong>Data Pipeline Architecture:</strong> Designed core vector search pipelines using PostgreSQL/pgvector for scalable semantic data retrieval.</li>
                   <li><strong>Ingestion Optimization:</strong> Integrated Crawl4AI to parse website content, supporting JavaScript-rendered SPAs and resolving container memory crashes during heavy ingestion loads.</li>
@@ -153,7 +153,7 @@ export default function CVPage() {
                 <div className="flex flex-wrap gap-3 text-xs font-mono pt-1">
                   <a href="/reports/interactive/all_players_clustering.html" target="_blank" rel="noopener noreferrer" className="text-primary underline font-medium">Interactive Archetypes</a>
                   <a href="/reports/interactive/forwards_clustering.html" target="_blank" rel="noopener noreferrer" className="text-primary underline font-medium">Forwards Sub-Clusters</a>
-                  <a href="https://github.com/AIVIETNAM-AIO-Kaisye/player-style-clustering" target="_blank" rel="noopener noreferrer" className="text-primary underline">GitHub Repo</a>
+                  <a href="https://github.com/AIVIETNAM-AIO-TruongHoangThong/player-style-clustering" target="_blank" rel="noopener noreferrer" className="text-primary underline">GitHub Repo</a>
                   <a href="https://youtu.be/x0ZeIlDp7_4" target="_blank" rel="noopener noreferrer" className="text-primary underline">Demo Video</a>
                 </div>
               </div>
@@ -182,7 +182,7 @@ export default function CVPage() {
                   </h3>
                   <span className="font-mono text-xs text-zinc-400">Lead AI Engineer</span>
                 </div>
-                <p className="text-xs text-zinc-600 dark:text-zinc-400">Built a production-grade multi-tenant SaaS platform featuring automated website crawling, vector search knowledge bases, and embeddable widgets.</p>
+                <p className="text-xs text-zinc-600 dark:text-zinc-400">Built a production-grade RAG platform featuring automated website crawling, vector search knowledge bases, and embeddable AI widgets.</p>
                 <p className="text-xs font-mono text-zinc-400"><strong>Tech Stack:</strong> Python, FastAPI, pgvector, PostgreSQL, Dramatiq, Redis, Crawl4AI, React, Docker.</p>
               </div>
 
@@ -207,7 +207,7 @@ export default function CVPage() {
               <ul className="space-y-3 text-sm text-zinc-600 dark:text-zinc-300">
                 <li>
                   <strong className="text-zinc-900 dark:text-zinc-100">AIO 2026 AI Program</strong> | AI VIET NAM (<a href="https://aivietnam.edu.vn" target="_blank" rel="noopener noreferrer" className="text-primary underline">aivietnam.edu.vn</a>)<br />
-                  <span className="text-xs text-zinc-500 font-mono">June 2026 – Present • <a href="https://lms.aivietnam.edu.vn/verification/accomplishments/78243493" target="_blank" rel="noopener noreferrer" className="text-green-500 font-bold underline">Verified Module 01 Certificate</a></span>
+                  <span className="text-xs text-zinc-500 font-mono">June 2026 – Present • Verified Certificates: <a href="https://lms.aivietnam.edu.vn/verification/accomplishments/78243493" target="_blank" rel="noopener noreferrer" className="text-green-500 font-bold underline">Module 01</a>, <a href="https://lms.aivietnam.edu.vn/verification/accomplishments/79530055" target="_blank" rel="noopener noreferrer" className="text-green-500 font-bold underline">Module 02</a></span>
                 </li>
                 <li>
                   <strong className="text-zinc-900 dark:text-zinc-100">Bachelor of Information Technology</strong> | University of Information Technology (VNU-HCM)<br />

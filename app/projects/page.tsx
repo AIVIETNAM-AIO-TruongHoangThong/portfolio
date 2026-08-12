@@ -27,7 +27,7 @@ const projects = [
     year: "2026",
     category: "AI & Research",
     website: "https://youtu.be/x0ZeIlDp7_4",
-    github: "https://github.com/AIVIETNAM-AIO-Kaisye/player-style-clustering",
+    github: "https://github.com/AIVIETNAM-AIO-TruongHoangThong/player-style-clustering",
     demos: [
       { label: "5 Archetypes Map", href: "/reports/interactive/all_players_clustering.html", icon: "bubble_chart" },
       { label: "Forwards Sub-Clusters", href: "/reports/interactive/forwards_clustering.html", icon: "scatter_plot" },
@@ -55,8 +55,8 @@ const projects = [
   {
     id: 2,
     title: "SiteBotic",
-    description: "Multi-tenant AI chatbot SaaS platform that crawls websites, builds vector search knowledge bases, and deploys embeddable widgets.",
-    longDescription: "Production multi-tenant SaaS platform enabling websites to deploy custom AI chatbots. Engineered automated Crawl4AI ingestion pipelines, PostgreSQL/pgvector semantic search, and Dramatiq/Redis background workers for reliable knowledge base retrieval.",
+    description: "Production-grade RAG platform that crawls websites, builds vector search knowledge bases, and deploys embeddable AI agents.",
+    longDescription: "Production-grade applied AI platform enabling organizations to deploy custom AI agents. Engineered automated Crawl4AI ingestion pipelines, PostgreSQL/pgvector semantic search, and Dramatiq/Redis background workers for reliable knowledge base retrieval.",
     image: "/sitebotic-thumbnail.png",
     tags: [
       "FastAPI",
@@ -69,7 +69,7 @@ const projects = [
     ],
     version: "Production",
     year: "2025",
-    category: "AI & SaaS",
+    category: "Applied AI",
     website: "https://sitebotic.com",
     liveApp: "https://sitebotic.com",
   },
@@ -133,7 +133,7 @@ const projects = [
 const categories = [
   { label: "All Projects", value: "ALL" },
   { label: "AI & Research", value: "AI & Research" },
-  { label: "AI & SaaS", value: "AI & SaaS" },
+  { label: "Applied AI", value: "Applied AI" },
   { label: "Data Engineering", value: "Data Engineering" },
   { label: "Machine Learning & Systems", value: "Machine Learning & Systems" },
 ];
@@ -166,11 +166,11 @@ export default function ProjectsPage() {
               </div>
               
               <h1 className="text-4xl md:text-6xl font-display font-medium text-zinc-900 dark:text-white mb-6 leading-tight">
-                {"From Machine Learning Models to"} <br />{"AI & Data Products."}
+                {"Building Production AI Systems"} <br />{"across the Cloud."}
               </h1>
               
               <p className="text-lg text-zinc-600 dark:text-zinc-300 leading-relaxed max-w-3xl">
-                {"Applied machine learning research, automated data extraction, RAG pipelines, and enterprise-grade software. Explore production platforms, academic research, and engineering systems."}
+                {"Explore my technical journey transitioning from traditional enterprise architecture and data pipelines to end-to-end intelligent applications."}
               </p>
             </div>
           </div>
@@ -360,10 +360,10 @@ export default function ProjectsPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div className="max-w-3xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-display font-medium text-zinc-900 dark:text-white mb-6">
-                {"Looking for a Software Engineer focused on AI & Data?"}
+                {"Looking for an AI Engineer?"}
               </h2>
               <p className="text-lg text-zinc-600 dark:text-zinc-300 mb-10">
-                {"I develop machine learning models, analyze complex datasets, and build intelligent data-driven software solutions."}
+                {"I combine software engineering foundations, cloud architecture, and modern AI/ML to build and scale production systems."}
               </p>
               
               <a

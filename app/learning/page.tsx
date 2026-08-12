@@ -22,7 +22,7 @@ export default function LearningPage() {
                 <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
               </div>
               <span className="font-mono text-sm font-semibold text-green-600 dark:text-green-400">
-                {"Current Module: 02 (Player Style Clustering)"}
+                {"Current Module: 03 (Traditional Machine Learning & Time-Series Data)"}
               </span>
             </div>
             <h1 className="text-4xl md:text-5xl font-display font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
@@ -45,6 +45,73 @@ export default function LearningPage() {
           {/* Timeline container */}
           <div className="space-y-16 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-zinc-300 dark:before:via-zinc-700 before:to-transparent">
             
+            {/* Module 03 - In Progress */}
+            <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+              <div className="flex items-center justify-center w-10 h-10 rounded-full border-4 border-zinc-50 dark:border-zinc-950 bg-blue-500 text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                <span className="material-icons text-sm animate-spin-slow">sync</span>
+              </div>
+              
+              <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-md group-hover:border-blue-500 transition-all duration-300">
+                <div className="flex items-center justify-between mb-4">
+                  <span className="font-mono text-xs font-bold text-blue-600 dark:text-blue-400 bg-blue-500/10 px-2 py-1 flex items-center gap-1.5 border border-blue-500/20">
+                    <span className="h-1.5 w-1.5 rounded-full bg-blue-500 animate-pulse"></span>
+                    IN PROGRESS
+                  </span>
+                  <span className="font-mono text-xs text-zinc-400">08/2026 - Present (Month 3)</span>
+                </div>
+                <h3 className="font-display text-xl font-bold mb-3 text-zinc-900 dark:text-white group-hover:text-blue-500 transition-colors">
+                  {"[MODULE_03] Traditional Machine Learning & Time-Series Data"}
+                </h3>
+                <p className="text-sm text-zinc-600 dark:text-zinc-400 font-mono leading-relaxed mb-4">
+                  {"Deep dive into tree-based algorithms (Decision Trees, Random Forest, AdaBoost, Gradient Boosting, XGBoost, LightGBM) and Time-Series Data Analysis (Aggregation, Decomposition, Medical & Energy Analytics)."}
+                </p>
+                
+                {/* Media Container Placeholder */}
+                <div className="relative w-full h-[250px] bg-zinc-100 dark:bg-black border border-dashed border-zinc-300 dark:border-zinc-700 overflow-hidden flex flex-col items-center justify-center mb-4 transition-colors">
+                  <span className="material-icons text-3xl text-zinc-300 dark:text-zinc-700 mb-2">construction</span>
+                  <p className="font-mono text-xs text-zinc-400 text-center px-4">Research Media & Visualizers <br/> Will Be Published Upon Completion</p>
+                </div>
+
+                {/* Terminal Specs Box */}
+                <div className="bg-zinc-100 dark:bg-zinc-950 p-4 border border-zinc-200 dark:border-zinc-800 font-mono text-xs text-zinc-500 dark:text-zinc-400 space-y-2 mb-4">
+                  <div className="flex gap-2 items-center">
+                    <span className="text-blue-500">&gt;</span> 
+                    <span>Dataset: </span>
+                    <span className="text-zinc-700 dark:text-zinc-300 animate-pulse">To Be Determined...</span>
+                  </div>
+                  <div className="flex gap-2">
+                    <span className="text-blue-500">&gt;</span> 
+                    <span>Pipeline: </span>
+                    <span className="text-zinc-700 dark:text-zinc-300">Tree-based Models & Time-Series Forecasting</span>
+                  </div>
+                  <div className="flex gap-2">
+                    <span className="text-blue-500">&gt;</span> 
+                    <span>Validation: </span>
+                    <span className="text-zinc-700 dark:text-zinc-300 animate-pulse">Pending Assignments...</span>
+                  </div>
+                  <div className="flex gap-2">
+                    <span className="text-blue-500">&gt;</span> 
+                    <span className="text-blue-500">Status: Currently studying concepts and working on assignments...</span>
+                  </div>
+                </div>
+
+                <div className="flex flex-wrap gap-2.5 opacity-60">
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1.5 border border-dashed border-zinc-300 dark:border-zinc-700 text-xs font-mono text-zinc-500 dark:text-zinc-400 cursor-not-allowed">
+                    <span className="material-icons text-sm">lock_clock</span>
+                    Interactive Demo
+                  </span>
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1.5 border border-dashed border-zinc-300 dark:border-zinc-700 text-xs font-mono text-zinc-500 dark:text-zinc-400 cursor-not-allowed">
+                    <span className="material-icons text-sm">lock_clock</span>
+                    GitHub Repository
+                  </span>
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1.5 border border-dashed border-zinc-300 dark:border-zinc-700 text-xs font-mono text-zinc-500 dark:text-zinc-400 cursor-not-allowed">
+                    <span className="material-icons text-sm">lock_clock</span>
+                    YouTube Demo
+                  </span>
+                </div>
+              </div>
+            </div>
+
             {/* Module 02 - Completed */}
             <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
               <div className="flex items-center justify-center w-10 h-10 rounded-full border-4 border-zinc-50 dark:border-zinc-950 bg-primary text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
@@ -182,7 +249,7 @@ export default function LearningPage() {
                   </div>
                   <div className="flex gap-2">
                     <span className="text-primary">&gt;</span> 
-                    <span className="text-primary">Status: All code, modeling, LaTeX report, interactive visualizers &amp; YouTube video demo published</span>
+                    <span className="text-primary">Status: All code, modeling, interactive visualizers, YouTube video demo &amp; verified certificate published</span>
                   </div>
                 </div>
 
@@ -215,7 +282,7 @@ export default function LearningPage() {
                     YouTube Demo
                   </a>
                   <a 
-                    href="https://github.com/AIVIETNAM-AIO-Kaisye/player-style-clustering" 
+                    href="https://github.com/AIVIETNAM-AIO-TruongHoangThong/player-style-clustering" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="inline-flex items-center gap-1.5 px-3 py-1.5 border border-zinc-300 dark:border-zinc-700 hover:border-primary text-xs font-mono text-zinc-700 dark:text-zinc-300 hover:text-primary transition duration-200"
@@ -224,13 +291,13 @@ export default function LearningPage() {
                     GitHub Repository
                   </a>
                   <a 
-                    href="https://github.com/statsbomb/open-data" 
+                    href="https://lms.aivietnam.edu.vn/verification/accomplishments/79530055" 
                     target="_blank" 
                     rel="noopener noreferrer" 
-                    className="inline-flex items-center gap-1.5 px-3 py-1.5 border border-zinc-300 dark:border-zinc-700 hover:border-primary text-xs font-mono text-zinc-700 dark:text-zinc-300 hover:text-primary transition duration-200"
+                    className="inline-flex items-center gap-1.5 px-3 py-1.5 border border-primary/40 bg-primary/10 text-primary dark:text-primary hover:border-primary text-xs font-mono transition duration-200 font-bold"
                   >
-                    <span className="material-icons text-sm">dataset</span>
-                    StatsBomb Open Data
+                    <span className="material-icons text-sm text-primary">verified</span>
+                    Verify Certificate
                   </a>
                 </div>
               </div>

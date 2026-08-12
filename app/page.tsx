@@ -28,23 +28,21 @@ export default function HomePage() {
                     <span className="relative inline-flex h-2 w-2 bg-green-500"></span>
                   </span>
                   <span className="font-mono text-primary text-xs font-bold tracking-wide uppercase">
-                      {"Machine Learning Engineer"}
+                      {"AI Engineer"}
                   </span>
                 </div>
                 
                 <h1 className="text-6xl lg:text-8xl font-display font-medium text-zinc-900 dark:text-white leading-[1.05] tracking-tight border-l-8 border-primary pl-6">
-                  {"Building"} <br />
-                  <span className="text-primary italic">{"Production-Grade"}</span><br />
-                  {"Machine Learning"} <br />
-                  {"Systems"}
+                  {"AI"} <br />
+                  <span className="text-primary italic">{"Engineer"}</span><br />
                 </h1>
               </div>
               
               <div className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-6 max-w-2xl shadow-none">
                 <p className="font-mono text-sm text-zinc-500 dark:text-zinc-400 mb-2 uppercase tracking-widest">{/* SYSTEM.LOG_BIO_LOADED */}</p>
-                <p className="text-lg text-zinc-700 dark:text-zinc-300 leading-relaxed font-sans">
-                  {"Machine Learning Engineer specializing in Deep Learning, Computer Vision, and NLP. Focused on building, productionizing, and optimizing end-to-end AI systems with robust MLOps pipelines."}
-                </p>
+                <p className="text-lg text-zinc-600 dark:text-zinc-300 leading-relaxed max-w-3xl">
+                {"Building end-to-end production AI pipelines, NLP/LLM applications, and scalable cloud architectures. Explore intelligent enterprise systems, large-scale data pipelines, and applied machine learning research."}
+              </p>
               </div>
               
               <div className="flex flex-col sm:flex-row gap-5 pt-2">
@@ -70,11 +68,7 @@ export default function HomePage() {
               <div className="pt-8 flex flex-wrap gap-8 text-xs font-mono text-gray-500 dark:text-gray-400 uppercase tracking-widest border-t border-zinc-300 dark:border-zinc-800 mt-8">
                 <div className="flex items-center gap-2">
                   <span className="material-icons text-lg text-primary">storage</span>
-                  {"Deep Learning & MLOps"}
-                </div>
-                <div className="flex items-center gap-2">
-                  <span className="material-icons text-lg text-blue-400">code</span>
-                  {"Computer Vision & NLP/LLM"}
+                  {"Machine Learning • Deep Learning • GenAI • Computer Vision • NLP • AI Systems • Cloud"}
                 </div>
               </div>
             </div>
@@ -169,7 +163,7 @@ export default function HomePage() {
             <div className="lg:col-span-7 md:col-span-2 group relative bg-zinc-50 dark:bg-zinc-950 border border-zinc-300 dark:border-zinc-800 hover:border-primary/60 transition duration-300 flex flex-col justify-between overflow-hidden">
               <div className="relative aspect-w-16 aspect-h-8 sm:aspect-h-7 overflow-hidden border-b border-zinc-300 dark:border-zinc-800 bg-zinc-100 dark:bg-zinc-900">
                 <div className="absolute top-3 left-3 z-20 flex gap-2">
-                  <span className="bg-primary text-white text-[10px] font-mono font-bold px-2 py-0.5 uppercase tracking-wider">AI SaaS</span>
+                  <span className="bg-primary text-white text-[10px] font-mono font-bold px-2 py-0.5 uppercase tracking-wider">Applied AI</span>
                   <span className="bg-green-600 text-white text-[10px] font-mono font-bold px-2 py-0.5 uppercase tracking-wider flex items-center gap-1">
                     <span className="h-1.5 w-1.5 rounded-full bg-white animate-pulse"></span>
                     Production
@@ -192,7 +186,7 @@ export default function HomePage() {
                   </div>
                   <h3 className="text-2xl font-display font-medium text-zinc-900 dark:text-white mb-2 group-hover:text-primary transition-colors">SiteBotic</h3>
                   <p className="text-sm text-zinc-600 dark:text-zinc-400 font-mono leading-relaxed mb-4">
-                    {"Multi-tenant AI chatbot SaaS platform featuring automated Crawl4AI web extraction, pgvector semantic search, and customizable embeddable widgets."}
+                    {"Production-grade RAG platform featuring automated Crawl4AI web extraction, pgvector semantic search, and customizable embeddable AI agents."}
                   </p>
                   <div className="flex flex-wrap gap-1.5 mb-6">
                     {["FastAPI", "React", "TypeScript", "pgvector", "Dramatiq", "Redis", "Docker"].map((tech) => (
@@ -250,7 +244,7 @@ export default function HomePage() {
                     Player Style Clustering
                   </h3>
                   <p className="text-sm text-zinc-600 dark:text-zinc-400 font-mono leading-relaxed mb-4">
-                    {"Tactical behavioral profiling across 1,140 European matches (StatsBomb Open Data). RobustScaler K-Means (k=5) with 96.6% KNN stability."}
+                    {"Tactical behavioral profiling across 1,140 matches. Built robust data processing pipelines and applied K-Means clustering for business insight."}
                   </p>
                   <div className="flex flex-wrap gap-1.5 mb-6">
                     {["K-Means", "RobustScaler", "StatsBomb", "KNN Stability", "PCA"].map((tech) => (
@@ -280,7 +274,7 @@ export default function HomePage() {
                     YouTube Demo
                   </a>
                   <a 
-                    href="https://github.com/AIVIETNAM-AIO-Kaisye/player-style-clustering" 
+                    href="https://github.com/AIVIETNAM-AIO-TruongHoangThong/player-style-clustering" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="inline-flex items-center gap-1.5 px-3 py-1.5 border border-zinc-300 dark:border-zinc-700 hover:border-primary text-xs font-mono text-zinc-700 dark:text-zinc-300 hover:text-primary transition duration-200"
@@ -443,6 +437,7 @@ export default function HomePage() {
       </section>
       
       {/* Certifications & Degrees Section */}
+      {/* Certifications & Degrees Section */}
       <section className="py-24 bg-zinc-50 dark:bg-zinc-950 relative">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMSIgY3k9IjEiIHI9IjEiIGZpbGw9InJnYmEoNTksIDEzMCwgMjQ2LCAwLjEpIi8+PC9zdmc+')] [mask-image:linear-gradient(to_bottom,white,transparent)]"></div>
         
@@ -582,12 +577,12 @@ export default function HomePage() {
       <section className="py-24 bg-white dark:bg-zinc-900 relative border-t border-zinc-300 dark:border-zinc-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-display font-medium text-zinc-900 dark:text-white mb-6">
-              {"Looking for a Machine Learning Engineer?"}
-            </h2>
-            <p className="text-lg text-zinc-600 dark:text-zinc-300 mb-10">
-              {"I build, evaluate, productionize, and optimize intelligent AI systems using modern Deep Learning and MLOps pipelines."}
-            </p>
+              <h2 className="text-3xl md:text-4xl font-display font-medium text-zinc-900 dark:text-white mb-6">
+                {"Looking for an AI Engineer?"}
+              </h2>
+              <p className="text-lg text-zinc-600 dark:text-zinc-300 mb-10">
+                {"I combine deep learning foundations, cloud architecture, and modern AI systems engineering to build and scale production applications."}
+              </p>
             
             <a
               href="/contact"

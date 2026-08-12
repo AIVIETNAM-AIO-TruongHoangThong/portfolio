@@ -71,8 +71,8 @@ export default async function BlogPostDetail({ params }: PageProps) {
           {/* Blog Cover Image */}
           <div className="my-8 w-full">
             <Image
-              src="/ai_engineering_blog_cover_v2.jpg"
-              alt="AI Engineering Cover"
+              src={post.id === 'learning-ai-changed-how-i-see-software-industry' ? "/enterprise_ai_cover.jpg" : "/ai_engineering_blog_cover_v2.jpg"}
+              alt={`${post.category} Cover`}
               width={1200}
               height={675}
               className="w-full h-auto rounded-xl object-cover shadow-xl border border-zinc-200 dark:border-zinc-800"
@@ -91,6 +91,10 @@ export default async function BlogPostDetail({ params }: PageProps) {
 
           {/* Article Body Content */}
           <div className="prose prose-zinc dark:prose-invert max-w-none space-y-12 text-zinc-800 dark:text-zinc-200 text-base sm:text-lg leading-relaxed font-sans">
+            {post.id === 'learning-ai-changed-how-i-see-software-industry' ? (
+              <LearningAiContent />
+            ) : (
+              <>
 
             {/* SECTION 1: Honest Confusion & Skepticism */}
             <section id="honest-confusion" className="space-y-6">
@@ -114,11 +118,11 @@ export default async function BlogPostDetail({ params }: PageProps) {
               </blockquote>
 
               <p>
-                For a long time, my knee-jerk instinct was: if you want true AI, you have to go down to the metal. You have to be the person working on the raw physics and math of code—implementing Transformer attention blocks from scratch in <strong>PyTorch</strong>, writing custom <strong>CUDA / Triton</strong> kernels for matrix multiplication, optimizing GPU memory consumption, and running post-training alignment through <strong>RLHF, DPO, or GRPO</strong>.
+                For a long time, my knee-jerk instinct was: if you want true AI, you have to go down to the metal. You have to be the person working on the raw physics and math of code - implementing Transformer attention blocks from scratch in <strong>PyTorch</strong>, writing custom <strong>CUDA / Triton</strong> kernels for matrix multiplication, optimizing GPU memory consumption, and running post-training alignment through <strong>RLHF, DPO, or GRPO</strong>.
               </p>
 
               <p>
-                To me, that felt like where the true AI lived. Anything higher up the stack felt like superficial wrapper scripting around someone else&apos;s model—writing 500 lines of glue code just to parse a 5-word response, or spending half a afternoon engineering a prompt that politely begs the LLM not to make up fake SQL tables.
+                To me, that felt like where the true AI lived. Anything higher up the stack felt like superficial wrapper scripting around someone else&apos;s model - writing 500 lines of glue code just to parse a 5-word response, or spending half a afternoon engineering a prompt that politely begs the LLM not to make up fake SQL tables.
               </p>
             </section>
 
@@ -156,7 +160,7 @@ export default async function BlogPostDetail({ params }: PageProps) {
               </p>
 
               <p>
-                Calling an API isn&apos;t the hard part—anyone can <code className="font-mono text-sm px-1.5 py-0.5 bg-zinc-200 dark:bg-zinc-800">pip install</code> an SDK and burn through $50 in API credits in five minutes. The hard part is building software that produces predictable, type-safe telemetry out of an inherently stochastic model that might randomly decide to return JSON wrapped in markdown code blocks.
+                Calling an API isn&apos;t the hard part - anyone can <code className="font-mono text-sm px-1.5 py-0.5 bg-zinc-200 dark:bg-zinc-800">pip install</code> an SDK and burn through $50 in API credits in five minutes. The hard part is building software that produces predictable, type-safe telemetry out of an inherently stochastic model that might randomly decide to return JSON wrapped in markdown code blocks.
               </p>
 
               {/* Side-by-Side Comparison */}
@@ -259,7 +263,7 @@ export default async function BlogPostDetail({ params }: PageProps) {
                   Traditional web applications execute static decision trees: an incoming HTTP request hits an endpoint, runs nested <code className="font-mono text-sm px-1.5 py-0.5 bg-zinc-200 dark:bg-zinc-800">if/else</code> checks, and calls hard-coded API chains.
                 </p>
                 <p className="text-base text-zinc-700 dark:text-zinc-300">
-                  Agentic architectures shift decision-making into semantic space. Instead of static branches, agents ingest context, evaluate intent, autonomously select tools from a registry, assess their own intermediate execution results, and attempt self-correction when an API throws an error. That isn&apos;t simple scripting—it&apos;s dynamic control flow.
+                  Agentic architectures shift decision-making into semantic space. Instead of static branches, agents ingest context, evaluate intent, autonomously select tools from a registry, assess their own intermediate execution results, and attempt self-correction when an API throws an error. That isn&apos;t simple scripting - it&apos;s dynamic control flow.
                 </p>
               </div>
 
@@ -275,7 +279,7 @@ export default async function BlogPostDetail({ params }: PageProps) {
                   There&apos;s a popular myth that AI agents will somehow make relational SQL databases obsolete. But why would they? You don&apos;t use an LLM to replace fast B-tree index lookups or ACID-compliant joins.
                 </p>
                 <p className="text-base text-zinc-700 dark:text-zinc-300">
-                  We use agents as an <strong>intelligent controller</strong> positioned above relational and vector databases to handle human chaos. Human intent is messy and ambiguous; relational databases demand crisp SQL. The agent acts as a cognitive buffer—interpreting messy Text-to-SQL intent, resolving entity ambiguities, enriching dirty text, and reasoning through business edge cases before committing state to storage.
+                  We use agents as an <strong>intelligent controller</strong> positioned above relational and vector databases to handle human chaos. Human intent is messy and ambiguous; relational databases demand crisp SQL. The agent acts as a cognitive buffer - interpreting messy Text-to-SQL intent, resolving entity ambiguities, enriching dirty text, and reasoning through business edge cases before committing state to storage.
                 </p>
               </div>
 
@@ -288,7 +292,7 @@ export default async function BlogPostDetail({ params }: PageProps) {
                   Lessons from the <a href="https://aichallenge.hochiminhcity.gov.vn/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors underline">Ho Chi Minh City AI Challenge (HCMC AIC)</a>
                 </h3>
                 <p className="text-base text-zinc-700 dark:text-zinc-300">
-                  I&apos;m seeing this firsthand right now—as of writing this post, I&apos;m actively preparing and competing in the <a href="https://aichallenge.hochiminhcity.gov.vn/" target="_blank" rel="noopener noreferrer" className="text-primary underline hover:opacity-80 transition-opacity font-semibold">Ho Chi Minh City AI Challenge (HCMC AIC)</a>.
+                  I&apos;m seeing this firsthand right now - as of writing this post, I&apos;m actively preparing and competing in the <a href="https://aichallenge.hochiminhcity.gov.vn/" target="_blank" rel="noopener noreferrer" className="text-primary underline hover:opacity-80 transition-opacity font-semibold">Ho Chi Minh City AI Challenge (HCMC AIC)</a>.
                 </p>
                 <p className="text-base text-zinc-700 dark:text-zinc-300">
                   In these high-pressure settings, winning is never about training a 70-billion parameter model from scratch in a limited time frame. Victory comes down to system orchestration: multi-agent query expansion pipelines, indexing visual vectors across temporal keyframes, routing queries dynamically based on modality confidence, and executing sub-second hybrid searches across vector indices. System design beats brute-force training every single time.
@@ -310,11 +314,11 @@ export default async function BlogPostDetail({ params }: PageProps) {
               </p>
 
               <p>
-                Through this reflection, I realized I don&apos;t have to choose between being &quot;the low-level model trainer&quot; or &quot;the high-level systems architect.&quot; They aren&apos;t opposing paths—they are complementary layers of the same stack.
+                Through this reflection, I realized I don&apos;t have to choose between being &quot;the low-level model trainer&quot; or &quot;the high-level systems architect.&quot; They aren&apos;t opposing paths - they are complementary layers of the same stack.
               </p>
 
               <p>
-                That&apos;s why I&apos;ve been systematically grounding myself in traditional AI fundamentals—working through the mathematics, linear algebra, and classical deep learning architectures in the <a href="https://aivietnam.edu.vn/" target="_blank" rel="noopener noreferrer" className="text-primary underline hover:opacity-80 transition-opacity">AI Viet Nam (AIO)</a> program—while keeping my primary identity and focus as a production software engineer.
+                That&apos;s why I&apos;ve been systematically grounding myself in traditional AI fundamentals - working through the mathematics, linear algebra, and classical deep learning architectures in the <a href="https://aivietnam.edu.vn/" target="_blank" rel="noopener noreferrer" className="text-primary underline hover:opacity-80 transition-opacity">AI Viet Nam (AIO)</a> program - while keeping my primary identity and focus as a production software engineer.
               </p>
 
               <p>
@@ -360,6 +364,8 @@ export default async function BlogPostDetail({ params }: PageProps) {
                 That is the engineer I am building myself to be.
               </p>
             </section>
+              </>
+            )}
           </div>
 
           {/* Footer Author Bio Card */}
@@ -407,5 +413,88 @@ export default async function BlogPostDetail({ params }: PageProps) {
 
       <Footer />
     </div>
+  );
+}
+
+function LearningAiContent() {
+  return (
+    <>
+      <section className="space-y-6">
+        <div className="flex items-center gap-3 border-b border-zinc-200 dark:border-zinc-800 pb-3">
+          <span className="font-mono text-sm text-primary font-bold">01.</span>
+          <h2 className="text-2xl sm:text-3xl font-display font-bold text-zinc-900 dark:text-zinc-100 m-0">
+            The Illusion of Pure Engineering
+          </h2>
+        </div>
+
+        <p>
+          When I first enrolled in the <a href="https://aivietnam.edu.vn" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">AIO 2026 program</a>, my goal was purely technical. I wanted to understand the math behind Transformers, how self-attention works, and how to train deep learning models from scratch. 
+        </p>
+
+        <p>
+          I thought the peak of engineering was operating as close to the metal as possible. Coming from a traditional software engineering background where I spent my days designing backend APIs in Java/Spring and managing PostgreSQL databases, I viewed machine learning as this mythical, elite tier of computer science. If you weren't manually adjusting gradient descent algorithms in PyTorch, were you even doing "real" AI?
+        </p>
+        
+        <p>
+          But as I dove deeper into the reality of deploying AI in production, I realized something that completely shifted my perspective: <strong>building the model isn't the same as building the solution.</strong>
+        </p>
+
+        <blockquote className="border-l-4 border-primary pl-6 py-2 italic font-display text-xl text-zinc-700 dark:text-zinc-300 my-6 bg-primary/5">
+          "The most beautiful neural network in the world provides exactly zero business value if it isn't integrated into a secure, scalable enterprise architecture."
+        </blockquote>
+      </section>
+
+      <section className="space-y-6">
+        <div className="flex items-center gap-3 border-b border-zinc-200 dark:border-zinc-800 pb-3">
+          <span className="font-mono text-sm text-primary font-bold">02.</span>
+          <h2 className="text-2xl sm:text-3xl font-display font-bold text-zinc-900 dark:text-zinc-100 m-0">
+            The Enterprise AI Reality
+          </h2>
+        </div>
+
+        <p>
+          This is where the technology consulting landscape suddenly made sense to me. Enterprise technology consulting firms aren't just selling "AI" - they are solving complex business problems using technology.
+        </p>
+
+        <p>
+          When a Fortune 500 company decides they want to implement Generative AI, they don't just want a chatbot. They want a system that securely connects to their proprietary Azure data lake, respects their strict internal IAM (Identity and Access Management) rules, scales automatically during peak usage, and guarantees data privacy. They need a system that can be audited, monitored, and maintained by a DevOps team.
+        </p>
+        
+        <p>
+          To deliver that, you don't just need a Data Scientist writing Jupyter notebooks. You need an <strong>AI Solution Architect</strong> who understands the entire vertical stack:
+        </p>
+        
+        <ul>
+          <li><strong>The AI Layer:</strong> Understanding Generative AI, Retrieval-Augmented Generation (RAG), and how to orchestrate autonomous intelligent agents.</li>
+          <li><strong>The Application Layer:</strong> Building the software wrappers, RESTful APIs, and microservices. This is where traditional software engineering (Java, Python, C#) is absolutely vital.</li>
+          <li><strong>The Infrastructure Layer:</strong> Provisioning the cloud compute, networking, security, and identity frameworks (like Azure).</li>
+        </ul>
+        
+        <p>
+          A model without an application is just a math experiment. An application without secure infrastructure is a liability.
+        </p>
+      </section>
+
+      <section className="space-y-6">
+        <div className="flex items-center gap-3 border-b border-zinc-200 dark:border-zinc-800 pb-3">
+          <span className="font-mono text-sm text-primary font-bold">03.</span>
+          <h2 className="text-2xl sm:text-3xl font-display font-bold text-zinc-900 dark:text-zinc-100 m-0">
+            My Path Forward
+          </h2>
+        </div>
+
+        <p>
+          I realized that my background in traditional Java/Spring and Python backend engineering wasn't a distraction from AI - it was the critical missing piece. It gave me the discipline to think about state, persistence, latency, and system design.
+        </p>
+
+        <p>
+          By bridging my foundational AI education (AIO 2026) with robust enterprise cloud architecture, I am not just learning how to prompt an LLM or fine-tune a model. I am learning how to architect end-to-end intelligent systems that drive real business transformation. I am learning how to take an AI capability and actually put it into production where thousands of enterprise users can rely on it securely.
+        </p>
+
+        <p className="pt-4 font-display italic text-zinc-600 dark:text-zinc-400 text-lg">
+          The future of the software industry belongs to the engineers who can build the entire bridge - from the data science to the cloud architecture, and everything in between.
+        </p>
+      </section>
+    </>
   );
 }
