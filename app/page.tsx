@@ -28,21 +28,21 @@ export default function HomePage() {
                     <span className="relative inline-flex h-2 w-2 bg-green-500"></span>
                   </span>
                   <span className="font-mono text-primary text-xs font-bold tracking-wide uppercase">
-                      {"AI Engineer"}
+                    Software Engineer ➔ AI Engineer
                   </span>
                 </div>
                 
-                <h1 className="text-6xl lg:text-8xl font-display font-medium text-zinc-900 dark:text-white leading-[1.05] tracking-tight border-l-8 border-primary pl-6">
-                  {"AI"} <br />
-                  <span className="text-primary italic">{"Engineer"}</span><br />
+                <h1 className="text-5xl sm:text-6xl lg:text-7xl font-display font-medium text-zinc-900 dark:text-white leading-[1.1] tracking-tight border-l-8 border-primary pl-6">
+                  Thong Truong <br />
+                  <span className="text-primary italic font-light text-3xl sm:text-4xl lg:text-5xl block mt-2">AI Engineer</span>
                 </h1>
               </div>
               
               <div className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 p-6 max-w-2xl shadow-none">
                 <p className="font-mono text-sm text-zinc-500 dark:text-zinc-400 mb-2 uppercase tracking-widest">{/* SYSTEM.LOG_BIO_LOADED */}</p>
                 <p className="text-lg text-zinc-600 dark:text-zinc-300 leading-relaxed max-w-3xl">
-                {"Building end-to-end production AI pipelines, NLP/LLM applications, and scalable cloud architectures. Explore intelligent enterprise systems, large-scale data pipelines, and applied machine learning research."}
-              </p>
+                  {"Software engineer building production AI systems—combining foundational machine learning with scalable backend architecture and enterprise cloud integration."}
+                </p>
               </div>
               
               <div className="flex flex-col sm:flex-row gap-5 pt-2">
