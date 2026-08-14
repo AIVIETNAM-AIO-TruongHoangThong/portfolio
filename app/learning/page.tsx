@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
+import CurriculumSelector from './components/CurriculumSelector';
 
 export default function LearningPage() {
   const [module2View, setModule2View] = useState<'video' | 'archetypes' | 'forwards'>('video');
@@ -14,6 +15,8 @@ export default function LearningPage() {
       <main className="flex-grow pt-32 pb-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           
+          <CurriculumSelector />
+
           {/* Terminal Header */}
           <div className="mb-12 flex flex-col gap-4 border-b border-zinc-200 dark:border-zinc-800 pb-8">
             <div className="flex items-center gap-3">
